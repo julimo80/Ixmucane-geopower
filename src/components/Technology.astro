@@ -1,5 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import tech from '../data/technology.json';
+import growthImg from '../assets/paper/growth-algorithm.png';
+import lspImg from '../assets/paper/gbop-pump-sizing.png';
+import espImg from '../assets/paper/esp-pump-sizing.png';
+
+const { methodology } = tech;
 ---
 <section id="technology">
   <div class="wrap">
@@ -34,6 +40,39 @@ import tech from '../data/technology.json';
           F<sub>&beta;</sub> &#160;=&#160; &#8722; k k<sub>r&beta;</sub> / &mu;<sub>&beta;</sub> &#160;&#8901;&#160; (&#8711;P<sub>&beta;</sub> &#8722; &rho;<sub>&beta;</sub> g)
         </div>
         <p class="foot">M — mass/energy per volume · F — flux across face &Gamma;n · q — sink/source · k — permeability · k<sub>r&beta;</sub> — relative permeability</p>
+      </div>
+    </div>
+
+    <div class="method-section">
+      <div class="section-head">
+        <span class="eyebrow">{methodology.eyebrow}</span>
+        <h2 style="font-size:24px;">{methodology.heading}</h2>
+        <p>{methodology.lead}</p>
+      </div>
+
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="figure">
+            <Image src={growthImg} alt="Flowchart of the automated growth algorithm for siting production and reinjection wells" width={1600} />
+          </div>
+          <p class="figcap">Fig. — Production-growth and reinjection-growth loops, run independently per sample until each converges.</p>
+          <h3>{methodology.items[0].title}</h3>
+          <p>{methodology.items[0].description}</p>
+        </div>
+
+        <div class="method-card">
+          <div class="method-two-up">
+            <div class="figure">
+              <Image src={lspImg} alt="Line-shaft pump completion schematic with gas-breakout pressure thresholds vs. pump setting depth" width={1200} />
+            </div>
+            <div class="figure">
+              <Image src={espImg} alt="Electric submersible pump completion schematic with gas-breakout pressure thresholds vs. pump setting depth" width={1200} />
+            </div>
+          </div>
+          <p class="figcap">Fig. — Line-shaft pump (left) and electric submersible pump (right) completions, each sized against the same GBOP threshold.</p>
+          <h3>{methodology.items[1].title}</h3>
+          <p>{methodology.items[1].description}</p>
+        </div>
       </div>
     </div>
   </div>

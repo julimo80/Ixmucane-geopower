@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import caseStudies from '../data/caseStudies.json';
+import combinedChart from '../assets/paper/combined-net-power.png';
 ---
 <section id="case-studies">
   <div class="wrap">
@@ -11,7 +13,7 @@ import caseStudies from '../data/caseStudies.json';
 
     <div class="draft-note">
       <span>&#9888;</span>
-      <span><strong>Draft content.</strong> The engagements below are shaped like real project work but are placeholders — confirm scope, location and figures with each client before this section goes live.</span>
+      <span><strong>Mixed status.</strong> LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed) — see its source note below.</span>
     </div>
 
     <div class="case-list">
@@ -19,7 +21,7 @@ import caseStudies from '../data/caseStudies.json';
         <article class="case">
           <div class="case-rail">
             <span class="log">{c.log}</span>
-            {c.draft && <span class="badge">Draft</span>}
+            {c.badge ? <span class="badge">{c.badge}</span> : c.draft && <span class="badge">Draft</span>}
           </div>
           <div class="case-body">
             <h3>{c.title}</h3>
@@ -30,6 +32,27 @@ import caseStudies from '../data/caseStudies.json';
               <div class="stage"><div class="t">Method</div><p>{c.method}</p></div>
               <div class="stage"><div class="t">Outcome</div><p>{c.outcome}</p></div>
             </div>
+
+            {c.hasChart && (
+              <div class="case-chart">
+                <div class="figure">
+                  <Image src={combinedChart} alt="Combined net power output forecast, 25-year horizon, 293-sample ensemble with P10/P50/P90 bands" width={1800} />
+                </div>
+                <p class="figcap">{c.chartCaption}</p>
+                {c.stats && (
+                  <div class="case-stats">
+                    {c.stats.map((s) => (
+                      <div class="case-stat">
+                        <span class="case-stat-label">{s.label}</span>
+                        <span class="case-stat-value">{s.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {c.statsNote && <p class="case-stats-note">{c.statsNote}</p>}
+              </div>
+            )}
+            {c.source && <p class="case-source">{c.source}</p>}
           </div>
         </article>
       ))}

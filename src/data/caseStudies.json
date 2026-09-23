@@ -21,12 +21,22 @@
   },
   {
     "log": "LOG 03",
-    "draft": true,
-    "title": "Combined-scenario reinjection strategy assessment",
-    "loc": "Multi-field study · Long-term sustainability",
-    "brief": "Assess whether a revised reinjection strategy could extend productive field life without accelerating thermal breakthrough.",
-    "challenge": "Reinjection siting trades off pressure support against the risk of cooling production wells decades sooner than planned.",
-    "method": "Combined multi-scenario simulation comparing reinjection configurations against the calibrated natural-state and production-history model.",
-    "outcome": "Identified a reinjection configuration projected to add years of productive life with limited breakthrough risk."
+    "draft": false,
+    "badge": "In prep. — own research",
+    "title": "Combined development: Tecuamburro + Infiernitos, 25-year forecast",
+    "loc": "Tecuamburro Volcanic Complex, Guatemala · Two-resource joint development",
+    "brief": "Test whether developing Tecuamburro and Infiernitos as one combined project changes either resource's own forecast, using a framework where every combined-scenario sample shares the identical natural-state realisation, injection strategy and pump-sizing logic as its single-resource counterpart.",
+    "challenge": "Determine whether joint development causes genuine resource-scale interaction — shared pressure support, competition for reinjection capacity — or whether independent forecasts simply sum, and prove it at the level of reservoir pressure itself rather than inferring it from power output alone.",
+    "method": "293-sample stochastic ensemble; automated well-siting growth algorithm; source-network-coupled reinjection in Waiwera; matched sample-by-sample against each resource's independent forecast; interference tested directly via per-sample reservoir pressure at Infiernitos' own feedzones.",
+    "outcome": "Combined development changes each resource's own forecast by under 1% (Wasserstein-1 distance 0.13–0.38 MWe), and the distributions are not statistically distinguishable (Kolmogorov–Smirnov, p>0.05). A real but small hydraulic interference exists — 0.18 bar median pressure reduction at Infiernitos by year 25 — an order of magnitude below natural-state uncertainty.",
+    "hasChart": true,
+    "chartCaption": "Combined net power output, 25-year forecast, 293-sample ensemble — grey: individual samples; red: P10/P50/P90",
+    "stats": [
+      { "label": "P10", "value": "71.4 MWe" },
+      { "label": "P50", "value": "89.9 MWe" },
+      { "label": "P90", "value": "104.4 MWe" }
+    ],
+    "statsNote": "25-year time-averaged net output across the ensemble (mean 89.3 MWe)",
+    "source": "From our own in-preparation manuscript on Tecuamburro–Infiernitos combined resource assessment — not yet peer-reviewed."
   }
 ]

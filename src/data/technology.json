@@ -23,5 +23,22 @@
       "title": "Software & tools",
       "description": "TOUGH3 and Waiwera for the core physics, extended with proprietary Python and Julia tooling for mesh generation, automated calibration, and post-processing."
     }
-  ]
+  ],
+  "methodology": {
+    "eyebrow": "From our own research",
+    "heading": "Two methods from our in-preparation resource assessment paper",
+    "lead": "Drawn directly from our Tecuamburro–Infiernitos combined resource assessment manuscript (in preparation, not yet peer-reviewed) — the automated well-siting logic and pump-sizing safety margin behind the case study below.",
+    "items": [
+      {
+        "key": "growth",
+        "title": "Automated well-siting: the growth algorithm",
+        "description": "Production wells are added one at a time: every candidate block is scored on deliverability, the best is added as a well, its immediate neighbours are removed from the candidate list, and the reservoir simulation is re-run from that new state before the next candidate is scored — repeating until the additional steam gained drops below threshold. Reinjection wells grow the same way in parallel, ranked by permeability and drawdown, until reinjection pressure would exceed a defined limit. Every candidate is re-scored against the model's own updated state at each step, not a static initial guess."
+      },
+      {
+        "key": "gbop",
+        "title": "Two-tier pump sizing under gas-breakout pressure (GBOP)",
+        "description": "For CO2-bearing geothermal fluid, dissolved gas comes out of solution before the fluid reaches its own boiling point — a water-only NPSH threshold under-protects the pump. We size to GBOP (saturation pressure plus the fluid's own NCG partial pressure) plus a fixed safety margin, evaluated automatically for every candidate well at every growth step, then matched against a real vendor pump catalogue — line-shaft or electric submersible, up to 30 stages — for a buildable specification and its parasitic shaft power."
+      }
+    ]
+  }
 }
