@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Team & Publications",
+  "heading": "Grounded in academic reservoir engineering research.",
+  "lead": "Ixmucané GeoPower's modelling work builds on research training in computational geothermal reservoir engineering, including HPC-scale simulation work carried out with NeSI infrastructure.",
+  "foundingTeam": {
+    "title": "Reservoir engineers & computational scientists",
+    "note": "Individual bios, academic credentials and photos to be added here — placeholder pending confirmation of what you want public."
+  },
+  "publications": [
+    { "title": "[Placeholder] Equation-of-state validation for high-enthalpy reservoir simulation", "meta": "Add authors, venue, year & DOI" },
+    { "title": "[Placeholder] Ensemble uncertainty quantification for geothermal resource assessment", "meta": "Add authors, venue, year & DOI" },
+    { "title": "[Placeholder] Add further publications or conference proceedings", "meta": "Link to PDF or DOI" }
+  ]
+}

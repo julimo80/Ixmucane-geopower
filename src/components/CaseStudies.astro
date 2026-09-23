@@ -1,0 +1,38 @@
+---
+import caseStudies from '../data/caseStudies.json';
+---
+<section id="case-studies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Field Log</span>
+      <h2>Selected reservoir modelling engagements.</h2>
+      <p>Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.</p>
+    </div>
+
+    <div class="draft-note">
+      <span>&#9888;</span>
+      <span><strong>Draft content.</strong> The engagements below are shaped like real project work but are placeholders — confirm scope, location and figures with each client before this section goes live.</span>
+    </div>
+
+    <div class="case-list">
+      {caseStudies.map((c) => (
+        <article class="case">
+          <div class="case-rail">
+            <span class="log">{c.log}</span>
+            {c.draft && <span class="badge">Draft</span>}
+          </div>
+          <div class="case-body">
+            <h3>{c.title}</h3>
+            <span class="loc">{c.loc}</span>
+            <div class="case-stages">
+              <div class="stage"><div class="t">Brief</div><p>{c.brief}</p></div>
+              <div class="stage"><div class="t">Challenge</div><p>{c.challenge}</p></div>
+              <div class="stage"><div class="t">Method</div><p>{c.method}</p></div>
+              <div class="stage"><div class="t">Outcome</div><p>{c.outcome}</p></div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

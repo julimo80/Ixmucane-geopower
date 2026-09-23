@@ -1,0 +1,39 @@
+---
+import flagship from '../data/flagship.json';
+import services from '../data/services.json';
+import FavorabilityMap from './FavorabilityMap.astro';
+---
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Every stage of geothermal development, one modelling partner.</h2>
+      <p>We work across the full lifecycle of a geothermal field — from screening a country for undiscovered resource, to the well log that confirms a producer is on target.</p>
+    </div>
+
+    <div class="svc-flagship">
+      <div>
+        <div class="flag-eyebrow"><span class="num mono">{flagship.num}</span><span class="eyebrow">{flagship.label}</span></div>
+        <h3>{flagship.title}</h3>
+        <p class="desc">{flagship.description}</p>
+        <div class="tags">
+          {flagship.tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
+      </div>
+      <FavorabilityMap />
+    </div>
+
+    <div class="svc-grid">
+      {services.map((s) => (
+        <div class="svc-item">
+          <span class="idx">{s.idx}</span>
+          <div>
+            <h4>{s.title}</h4>
+            <p>{s.description}</p>
+            {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

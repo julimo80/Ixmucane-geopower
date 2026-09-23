@@ -1,0 +1,40 @@
+---
+import tech from '../data/technology.json';
+---
+<section id="technology">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{tech.eyebrow}</span>
+      <h2>{tech.heading}</h2>
+      <p>{tech.lead}</p>
+    </div>
+
+    <div class="tech-cols">
+      <div class="cap-list">
+        {tech.capabilities.map((c) => (
+          <div class="cap-item">
+            <span class="idx">{c.idx}</span>
+            <div>
+              <h3>{c.title}</h3>
+              <p>{c.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="eq-panel">
+        <span class="eyebrow">Governing Equations</span>
+        <h3>What the simulator actually solves</h3>
+        <div class="eq">
+          <span class="label">Mass &amp; energy conservation, per grid block n</span>
+          d/dt &#8747;<sub>Vn</sub> M dV &#160;=&#160; &#8747;<sub>&Gamma;n</sub> F&#8901;n&#8202;d&#915; &#160;+&#160; &#8747;<sub>Vn</sub> q dV
+        </div>
+        <div class="eq">
+          <span class="label">Darcy flux, phase &beta;</span>
+          F<sub>&beta;</sub> &#160;=&#160; &#8722; k k<sub>r&beta;</sub> / &mu;<sub>&beta;</sub> &#160;&#8901;&#160; (&#8711;P<sub>&beta;</sub> &#8722; &rho;<sub>&beta;</sub> g)
+        </div>
+        <p class="foot">M — mass/energy per volume · F — flux across face &Gamma;n · q — sink/source · k — permeability · k<sub>r&beta;</sub> — relative permeability</p>
+      </div>
+    </div>
+  </div>
+</section>

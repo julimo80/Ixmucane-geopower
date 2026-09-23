@@ -1,0 +1,11 @@
+---
+import site from '../data/site.json';
+const year = new Date().getFullYear();
+---
+<footer>
+  <div class="wrap foot-inner">
+    <span>&copy; {year} {site.name}</span>
+    <span class="mono">Geothermal reservoir simulation &amp; modelling services</span>
+  </div>
+  <p class="foot-note">{site.footerNote}</p>
+</footer>

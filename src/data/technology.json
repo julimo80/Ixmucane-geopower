@@ -1,0 +1,27 @@
+{
+  "eyebrow": "Technology · Service 06",
+  "heading": "Modelling built on first-principle physics, run at production scale.",
+  "lead": "Every model we deliver traces back to the governing equations of multiphase, multicomponent flow in porous and fractured rock — not a black box. We calibrate against field observations, then push the model through HPC-scale ensembles to quantify what we don't yet know.",
+  "capabilities": [
+    {
+      "idx": "01",
+      "title": "Numerical reservoir modelling",
+      "description": "Finite-volume, integral-finite-difference simulation of non-isothermal multiphase flow — natural-state calibration through decades-long production forecasting, in both single-porosity and fractured dual-porosity formulations."
+    },
+    {
+      "idx": "02",
+      "title": "Parallel computing",
+      "description": "Production and exploration models are run as MPI-parallel ensembles on NeSI HPC clusters, turning multi-day single runs into same-day scenario comparisons."
+    },
+    {
+      "idx": "03",
+      "title": "Uncertainty quantification",
+      "description": "Permeability, porosity and boundary conditions are treated as distributions, not point estimates — ensemble and history-matching methods translate geological uncertainty into a defensible resource-risk range."
+    },
+    {
+      "idx": "04",
+      "title": "Software & tools",
+      "description": "TOUGH3 and Waiwera for the core physics, extended with proprietary Python and Julia tooling for mesh generation, automated calibration, and post-processing."
+    }
+  ]
+}

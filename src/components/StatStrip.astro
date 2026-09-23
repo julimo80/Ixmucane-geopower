@@ -1,0 +1,10 @@
+---
+import site from '../data/site.json';
+---
+<div class="stats">
+  <div class="wrap stat-grid">
+    {site.stats.map((s) => (
+      <div class="stat"><div class="k">{s.k}</div><div class="v">{s.v}</div></div>
+    ))}
+  </div>
+</div>

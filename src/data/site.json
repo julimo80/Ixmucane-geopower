@@ -1,0 +1,32 @@
+{
+  "name": "Ixmucané GeoPower",
+  "tagline": "Geothermal Development Services",
+  "nav": [
+    { "label": "Services", "href": "#services" },
+    { "label": "Technology", "href": "#technology" },
+    { "label": "Case Studies", "href": "#case-studies" },
+    { "label": "Team", "href": "#team" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "eyebrow": "Reservoir Engineering · AI Exploration · High-Performance Computing",
+    "headlinePre": "Simulating the",
+    "headlineEm": "ground truth",
+    "headlinePost": "beneath every geothermal field.",
+    "lead": "Ixmucané GeoPower covers the full geothermal development lifecycle — from AI-driven regional favorability screening across Guatemala and Latin America, through geologic modelling, well targeting and design, to reservoir simulation, well testing and downhole logging.",
+    "ctaPrimary": { "label": "See our services", "href": "#services" },
+    "ctaSecondary": { "label": "Discuss a project", "href": "#contact" }
+  },
+  "stats": [
+    { "k": "HPC", "v": "Parallel ensemble runs on NeSI high-performance computing infrastructure" },
+    { "k": "Physics", "v": "Coupled mass, momentum & energy balance in porous and fractured media" },
+    { "k": "UQ", "v": "Ensemble history-matching and probabilistic P10–P90 forecasts" },
+    { "k": "Tooling", "v": "TOUGH3 · Waiwera · proprietary Python & Julia workflows" }
+  ],
+  "contact": {
+    "heading": "Let's model your field.",
+    "lead": "Tell us about the field, the stage it's at, and the decision the model needs to inform — we'll scope the modelling approach from there.",
+    "email": "hello@ixmucanegeopower.com"
+  },
+  "footerNote": "Prototype for review — case studies, team bios, publications and contact email are placeholders pending confirmation, not live content."
+}

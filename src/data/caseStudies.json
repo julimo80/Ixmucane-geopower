@@ -1,0 +1,32 @@
+[
+  {
+    "log": "LOG 01",
+    "draft": true,
+    "title": "Natural-state and production-history calibration, high-enthalpy volcanic field",
+    "loc": "Central America · Andesitic stratovolcano-hosted system",
+    "brief": "Validate an updated equation-of-state formulation against 30+ years of well and production history before it was used for new development scenarios.",
+    "challenge": "Steep topography and a shallow magmatic heat source produce strong lateral temperature gradients that simple models under-predict.",
+    "method": "Multi-scenario natural-state and history-matched runs across the revised EOS, cross-checked against a combined-field simulation case.",
+    "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee."
+  },
+  {
+    "log": "LOG 02",
+    "draft": true,
+    "title": "Natural-state model for a new exploration prospect",
+    "loc": "Undisclosed field · Early-stage exploration",
+    "brief": "Build a natural-state model from sparse exploration data to support a well-siting decision ahead of the first deep well.",
+    "challenge": "Limited well control meant permeability structure had to be inferred largely from surface geochemistry and resistivity surveys.",
+    "method": "Ensemble of plausible permeability structures run in parallel, ranked against surface manifestation temperatures and chemistry.",
+    "outcome": "Narrowed the candidate well-pad locations from five to two, with an explicit confidence range on target reservoir temperature."
+  },
+  {
+    "log": "LOG 03",
+    "draft": true,
+    "title": "Combined-scenario reinjection strategy assessment",
+    "loc": "Multi-field study · Long-term sustainability",
+    "brief": "Assess whether a revised reinjection strategy could extend productive field life without accelerating thermal breakthrough.",
+    "challenge": "Reinjection siting trades off pressure support against the risk of cooling production wells decades sooner than planned.",
+    "method": "Combined multi-scenario simulation comparing reinjection configurations against the calibrated natural-state and production-history model.",
+    "outcome": "Identified a reinjection configuration projected to add years of productive life with limited breakthrough risk."
+  }
+]

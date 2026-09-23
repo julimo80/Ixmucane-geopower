@@ -1,0 +1,64 @@
+---
+import flagship from '../data/flagship.json';
+---
+<div class="fav-card">
+  <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative geothermal favorability heatmap over a stylized Central American landmass, showing higher favorability concentrated along the volcanic arc">
+    <defs>
+      <clipPath id="landmass">
+        <path d="M 70 46 L 150 24 L 226 58 L 296 46 L 372 100 L 416 172 L 396 252 L 338 316 L 258 338 L 182 300 L 126 258 L 78 198 L 46 118 Z"/>
+      </clipPath>
+      <filter id="heatBlur" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="16"/>
+      </filter>
+      <radialGradient id="hotZunil" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="var(--fav-5)" stop-opacity="0.95"/>
+        <stop offset="1" stop-color="var(--fav-5)" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="hotAmatitlan" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="var(--fav-4)" stop-opacity="0.9"/>
+        <stop offset="1" stop-color="var(--fav-4)" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="hotTecuamburro" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="var(--fav-5)" stop-opacity="0.9"/>
+        <stop offset="1" stop-color="var(--fav-5)" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="warmMid" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="var(--fav-3)" stop-opacity="0.8"/>
+        <stop offset="1" stop-color="var(--fav-3)" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <g clip-path="url(#landmass)">
+      <rect x="20" y="10" width="440" height="350" fill="var(--fav-1)"/>
+      <g filter="url(#heatBlur)">
+        <circle cx="150" cy="120" r="70" fill="url(#hotZunil)"/>
+        <circle cx="210" cy="170" r="60" fill="url(#warmMid)"/>
+        <circle cx="260" cy="215" r="65" fill="url(#hotAmatitlan)"/>
+        <circle cx="320" cy="270" r="75" fill="url(#hotTecuamburro)"/>
+        <circle cx="370" cy="150" r="50" fill="url(#warmMid)"/>
+      </g>
+    </g>
+
+    <path d="M 70 46 L 150 24 L 226 58 L 296 46 L 372 100 L 416 172 L 396 252 L 338 316 L 258 338 L 182 300 L 126 258 L 78 198 L 46 118 Z"
+          fill="none" stroke="var(--border)" stroke-width="1.6"/>
+    <path d="M 130 60 Q 220 150, 340 290" stroke="var(--text-dim)" stroke-width="1" stroke-dasharray="2 4" fill="none" opacity="0.5"/>
+
+    <circle cx="150" cy="120" r="3.5" fill="var(--text)"/>
+    <text x="158" y="118" class="mono" font-size="10" fill="var(--text)">Zunil</text>
+    <circle cx="260" cy="215" r="3.5" fill="var(--text)"/>
+    <text x="268" y="213" class="mono" font-size="10" fill="var(--text)">Amatitlán</text>
+    <circle cx="320" cy="270" r="3.5" fill="var(--text)"/>
+    <text x="328" y="268" class="mono" font-size="10" fill="var(--text)">Tecuamburro</text>
+
+    <text x="34" y="30" class="mono" font-size="11" fill="var(--text-dim)" letter-spacing="1">GUATEMALA</text>
+  </svg>
+  <div class="fav-legend">
+    <span>Lower</span>
+    <div class="bar"></div>
+    <span>Higher favorability</span>
+  </div>
+  <div class="cap">
+    <span>{flagship.mapCaption.fig}</span>
+    <span>{flagship.mapCaption.note}</span>
+  </div>
+</div>

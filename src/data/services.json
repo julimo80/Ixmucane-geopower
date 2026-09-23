@@ -1,0 +1,38 @@
+[
+  {
+    "idx": "02",
+    "title": "Geologic & conceptual models",
+    "description": "3D structural and conceptual geological models integrating surface geology, well data and regional structure into a shared framework for the reservoir team."
+  },
+  {
+    "idx": "03",
+    "title": "Geophysics & geochemistry integration",
+    "description": "Interpretation of resistivity, gravity, seismic and fluid-chemistry surveys, integrated directly into the conceptual and numerical reservoir models."
+  },
+  {
+    "idx": "04",
+    "title": "Well targeting",
+    "description": "Candidate well locations and trajectories ranked against the geologic and numerical models, balancing resource temperature, permeability and drilling risk."
+  },
+  {
+    "idx": "05",
+    "title": "Well design",
+    "description": "Trajectory, casing and completion design for exploration, production and injection wells, matched to the expected downhole pressure and temperature regime."
+  },
+  {
+    "idx": "06",
+    "title": "Reservoir simulation & modelling",
+    "description": "Physics-based natural-state and production simulation with HPC-scale uncertainty quantification — our founding discipline.",
+    "goto": { "label": "See methodology", "href": "#technology" }
+  },
+  {
+    "idx": "07",
+    "title": "Well testing & equipment design",
+    "description": "Design and testing of downhole and surface well-test equipment for flow, injectivity and completion testing programs."
+  },
+  {
+    "idx": "08",
+    "title": "Well logging — PTS & ABI",
+    "description": "Pressure-temperature-spinner (PTS) and acoustic borehole imaging (ABI) logging services to characterise feed zones and confirm wellbore integrity."
+  }
+]
