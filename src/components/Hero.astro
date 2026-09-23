@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import site from '../data/site.json';
+import crossSection from '../assets/paper/tecuamburro-cross-section.png';
 const { hero } = site;
 ---
 <header class="hero">
@@ -14,58 +16,10 @@ const { hero } = site;
       </div>
     </div>
     <div class="hero-art">
-      <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of a geothermal reservoir showing injection and production wells, caprock, reservoir zone, isotherms and heat source">
-        <defs>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="var(--accent-soft)"/>
-            <stop offset="1" stop-color="var(--surface)"/>
-          </linearGradient>
-          <pattern id="caprockHatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
-            <rect width="8" height="8" fill="var(--surface-2)"/>
-            <line x1="0" y1="0" x2="0" y2="8" stroke="var(--border)" stroke-width="2"/>
-          </pattern>
-          <pattern id="resDots" width="12" height="12" patternUnits="userSpaceOnUse">
-            <rect width="12" height="12" fill="var(--surface)"/>
-            <circle cx="3" cy="3" r="1.2" fill="var(--border)"/>
-            <circle cx="9" cy="9" r="1.2" fill="var(--border)"/>
-          </pattern>
-          <radialGradient id="heat" cx="50%" cy="100%" r="75%">
-            <stop offset="0" stop-color="var(--accent-2)" stop-opacity="0.9"/>
-            <stop offset="1" stop-color="var(--accent-2)" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-
-        <rect x="0" y="0" width="560" height="120" fill="url(#sky)"/>
-        <rect x="0" y="120" width="560" height="30" fill="var(--surface-2)"/>
-        <rect x="0" y="150" width="560" height="100" fill="url(#caprockHatch)"/>
-        <rect x="0" y="250" width="560" height="150" fill="url(#resDots)"/>
-        <rect x="0" y="400" width="560" height="60" fill="var(--surface-2)"/>
-        <rect x="0" y="400" width="560" height="60" fill="url(#heat)"/>
-
-        <text x="14" y="170" class="mono" font-size="10" fill="var(--text-dim)">CAPROCK</text>
-        <text x="14" y="270" class="mono" font-size="10" fill="var(--text-dim)">RESERVOIR</text>
-        <text x="14" y="435" class="mono" font-size="10" fill="var(--accent-2)">HEAT SOURCE</text>
-
-        <path d="M 60 250 Q 280 230, 500 250" stroke="var(--accent)" stroke-width="1.4" fill="none" opacity="0.85"/>
-        <text x="500" y="245" text-anchor="end" class="mono" font-size="10" fill="var(--accent)">180°C</text>
-        <path d="M 60 310 Q 280 290, 500 315" stroke="var(--accent)" stroke-width="1.4" fill="none" opacity="0.85"/>
-        <text x="500" y="308" text-anchor="end" class="mono" font-size="10" fill="var(--accent)">240°C</text>
-        <path d="M 60 375 Q 280 358, 500 385" stroke="var(--accent)" stroke-width="1.4" fill="none" opacity="0.85"/>
-        <text x="500" y="368" text-anchor="end" class="mono" font-size="10" fill="var(--accent)">300°C</text>
-
-        <rect x="128" y="96" width="34" height="26" rx="2" fill="var(--surface)" stroke="var(--border)"/>
-        <rect x="134" y="80" width="6" height="18" fill="var(--text-dim)"/>
-        <rect x="150" y="76" width="6" height="22" fill="var(--text-dim)"/>
-
-        <line x1="150" y1="122" x2="150" y2="405" stroke="var(--accent)" stroke-width="3"/>
-        <text x="158" y="140" class="mono" font-size="10" fill="var(--text)">W-1 · INJ</text>
-
-        <line x1="330" y1="122" x2="360" y2="405" stroke="var(--accent-2)" stroke-width="3"/>
-        <text x="338" y="140" class="mono" font-size="10" fill="var(--text)">W-2 · PROD</text>
-      </svg>
+      <Image src={crossSection} alt="Geothermal conceptual model cross-section of the Tecuamburro field, showing shallow steam-dominated aquifer, deep liquid reservoir and isotherm contours" width={1400} />
       <div class="cap">
-        <span>Fig. 01 — Reservoir Cross-Section</span>
-        <span>Illustrative model geometry</span>
+        <span>Fig. 01 — Tecuamburro Conceptual Model (Section A–A′)</span>
+        <span>From our own field work</span>
       </div>
     </div>
   </div>

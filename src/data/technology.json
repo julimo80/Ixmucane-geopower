@@ -2,6 +2,32 @@
   "eyebrow": "Technology · Service 06",
   "heading": "Modelling built on first-principle physics, run at production scale.",
   "lead": "Every model we deliver traces back to the governing equations of multiphase, multicomponent flow in porous and fractured rock — not a black box. We calibrate against field observations, then push the model through HPC-scale ensembles to quantify what we don't yet know.",
+  "pipeline": {
+    "eyebrow": "Our process",
+    "heading": "From digital model to resource assessment.",
+    "steps": [
+      {
+        "title": "Digital Model",
+        "description": "3D geological model in Leapfrog — lithology, structure, clay-cap and fault geometry, built from surface geology, well data and geophysics."
+      },
+      {
+        "title": "Reservoir Model",
+        "description": "The geological model discretised into a numerical simulation mesh, with rock properties assigned per unit."
+      },
+      {
+        "title": "Natural-State Matching",
+        "description": "Calibrated against observed pressure, temperature and chemistry until the unperturbed model matches the real field."
+      },
+      {
+        "title": "Uncertainty Quantification",
+        "description": "An ensemble of accepted natural-state realisations spanning the plausible parameter space, not a single best-fit model."
+      },
+      {
+        "title": "Resource Assessment",
+        "description": "Automated well siting, pump sizing and production forecasting across the full ensemble — P10/P50/P90 output, not a point estimate."
+      }
+    ]
+  },
   "capabilities": [
     {
       "idx": "01",
@@ -26,18 +52,18 @@
   ],
   "methodology": {
     "eyebrow": "From our own research",
-    "heading": "Two methods from our in-preparation resource assessment paper",
-    "lead": "Drawn directly from our Tecuamburro–Infiernitos combined resource assessment manuscript (in preparation, not yet peer-reviewed) — the automated well-siting logic and pump-sizing safety margin behind the case study below.",
+    "heading": "Real figures from our in-preparation resource assessment paper",
+    "lead": "Drawn directly from our Tecuamburro–Infiernitos combined resource assessment manuscript (in preparation, not yet peer-reviewed) — the digital-to-reservoir modelling step and the pump-sizing safety margin behind the case study below.",
     "items": [
       {
-        "key": "growth",
-        "title": "Automated well-siting: the growth algorithm",
-        "description": "Production wells are added one at a time: every candidate block is scored on deliverability, the best is added as a well, its immediate neighbours are removed from the candidate list, and the reservoir simulation is re-run from that new state before the next candidate is scored — repeating until the additional steam gained drops below threshold. Reinjection wells grow the same way in parallel, ranked by permeability and drawdown, until reinjection pressure would exceed a defined limit. Every candidate is re-scored against the model's own updated state at each step, not a static initial guess."
+        "key": "geomodel",
+        "title": "Geological model to reservoir model",
+        "description": "(A) The 3D geological model in Leapfrog — lithology, structure, clay-cap and fault geometry. (B) The same volume discretised into the numerical reservoir simulation mesh, with rock properties assigned per unit — steps 1–2 of our process, made concrete."
       },
       {
         "key": "gbop",
         "title": "Two-tier pump sizing under gas-breakout pressure (GBOP)",
-        "description": "For CO2-bearing geothermal fluid, dissolved gas comes out of solution before the fluid reaches its own boiling point — a water-only NPSH threshold under-protects the pump. We size to GBOP (saturation pressure plus the fluid's own NCG partial pressure) plus a fixed safety margin, evaluated automatically for every candidate well at every growth step, then matched against a real vendor pump catalogue — line-shaft or electric submersible, up to 30 stages — for a buildable specification and its parasitic shaft power."
+        "description": "For CO2-bearing geothermal fluid, dissolved gas comes out of solution before the fluid reaches its own boiling point — a water-only NPSH threshold under-protects the pump. We size to GBOP (saturation pressure plus the fluid's own NCG partial pressure) plus a fixed safety margin, evaluated automatically for every candidate well, then matched against a real vendor pump catalogue — line-shaft or electric submersible, up to 30 stages — for a buildable specification and its parasitic shaft power."
       }
     ]
   }

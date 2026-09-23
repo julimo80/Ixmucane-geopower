@@ -1,11 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import tech from '../data/technology.json';
-import growthImg from '../assets/paper/growth-algorithm.png';
+import geoModelImg from '../assets/paper/geological-reservoir-model.png';
 import lspImg from '../assets/paper/gbop-pump-sizing.png';
 import espImg from '../assets/paper/esp-pump-sizing.png';
 
-const { methodology } = tech;
+const { methodology, pipeline } = tech;
 ---
 <section id="technology">
   <div class="wrap">
@@ -13,6 +13,23 @@ const { methodology } = tech;
       <span class="eyebrow">{tech.eyebrow}</span>
       <h2>{tech.heading}</h2>
       <p>{tech.lead}</p>
+    </div>
+
+    <div class="pipeline-block">
+      <span class="eyebrow">{pipeline.eyebrow}</span>
+      <h3>{pipeline.heading}</h3>
+      <div class="pipeline">
+        {pipeline.steps.map((s, i) => (
+          <>
+            <div class="pipeline-step">
+              <span class="pipeline-num">{String(i + 1).padStart(2, '0')}</span>
+              <h4>{s.title}</h4>
+              <p>{s.description}</p>
+            </div>
+            {i < pipeline.steps.length - 1 && <div class="pipeline-arrow" aria-hidden="true"></div>}
+          </>
+        ))}
+      </div>
     </div>
 
     <div class="tech-cols">
@@ -53,9 +70,9 @@ const { methodology } = tech;
       <div class="method-grid">
         <div class="method-card">
           <div class="figure">
-            <Image src={growthImg} alt="Flowchart of the automated growth algorithm for siting production and reinjection wells" width={1600} />
+            <Image src={geoModelImg} alt="Two-panel figure: (A) 3D geological model of the Tecuamburro field in Leapfrog, (B) the same volume discretised as a numerical reservoir simulation mesh" width={1800} />
           </div>
-          <p class="figcap">Fig. — Production-growth and reinjection-growth loops, run independently per sample until each converges.</p>
+          <p class="figcap">Fig. — (A) Leapfrog geological model. (B) Numerical reservoir simulation mesh, same volume.</p>
           <h3>{methodology.items[0].title}</h3>
           <p>{methodology.items[0].description}</p>
         </div>
