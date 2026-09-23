@@ -1,0 +1,50 @@
+[
+  {
+    "name": "San Marcos",
+    "x": 85,
+    "y": 95,
+    "tier": 3,
+    "status": "Exploration (geochemical)",
+    "note": "Deep reservoir ~240°C; shallow reservoirs ~195–200°C (geochemical estimate)"
+  },
+  {
+    "name": "Zunil",
+    "x": 150,
+    "y": 120,
+    "tier": 5,
+    "status": "Producing",
+    "note": "24 MWe installed capacity — Ormat binary plant, online since 1999"
+  },
+  {
+    "name": "El Ceibillo",
+    "x": 225,
+    "y": 175,
+    "tier": 4,
+    "status": "Licensed prospect",
+    "note": "Licensed for a 25 MW first-phase flash plant; 9 wells drilled, up to 275°C encountered"
+  },
+  {
+    "name": "Amatitlán",
+    "x": 260,
+    "y": 215,
+    "tier": 5,
+    "status": "Producing",
+    "note": "25.2 MWe installed capacity — 3 units (2×12 MW + 1×1.2 MW), online since 2007"
+  },
+  {
+    "name": "Tecuamburro",
+    "x": 320,
+    "y": 270,
+    "tier": 3,
+    "status": "Exploration (hydrogeochemical)",
+    "note": "High-enthalpy volcanic system under hydrogeochemical study"
+  },
+  {
+    "name": "Moyuta",
+    "x": 348,
+    "y": 295,
+    "tier": 3,
+    "status": "Pre-feasibility",
+    "note": "Two reservoir subsystems estimated at 210°C and 170°C; INDE/World Bank-funded studies ongoing"
+  }
+]
