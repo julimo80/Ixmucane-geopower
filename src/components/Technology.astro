@@ -2,7 +2,6 @@
 import { Image } from 'astro:assets';
 import tech from '../data/technology.json';
 import geoModelImg from '../assets/paper/geological-reservoir-model.png';
-import lspImg from '../assets/paper/gbop-pump-sizing.png';
 import espImg from '../assets/paper/esp-pump-sizing.png';
 
 const { methodology, pipeline } = tech;
@@ -78,15 +77,10 @@ const { methodology, pipeline } = tech;
         </div>
 
         <div class="method-card">
-          <div class="method-two-up">
-            <div class="figure">
-              <Image src={lspImg} alt="Line-shaft pump completion schematic with gas-breakout pressure thresholds vs. pump setting depth" width={1200} />
-            </div>
-            <div class="figure">
-              <Image src={espImg} alt="Electric submersible pump completion schematic with gas-breakout pressure thresholds vs. pump setting depth" width={1200} />
-            </div>
+          <div class="figure">
+            <Image src={espImg} alt="Electric submersible pump completion schematic with gas-breakout pressure and water-only NPSH thresholds vs. pump setting depth" width={1600} />
           </div>
-          <p class="figcap">Fig. — Line-shaft pump (left) and electric submersible pump (right) completions, each sized against the same GBOP threshold.</p>
+          <p class="figcap">Fig. — Electric submersible pump (ESP) completion, sized against the GBOP threshold.</p>
           <h3>{methodology.items[1].title}</h3>
           <p>{methodology.items[1].description}</p>
         </div>

@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import site from '../data/site.json';
-import crossSection from '../assets/paper/tecuamburro-cross-section.png';
+import crossSection from '../assets/paper/tecuamburro-permeability-cross-section.png';
 const { hero } = site;
 ---
 <header class="hero">
@@ -16,9 +16,9 @@ const { hero } = site;
       </div>
     </div>
     <div class="hero-art">
-      <Image src={crossSection} alt="Geothermal conceptual model cross-section of the Tecuamburro field, showing shallow steam-dominated aquifer, deep liquid reservoir and isotherm contours" width={1400} />
+      <Image src={crossSection} alt="Numerical reservoir model cross-sections through Tecuamburro (A-A') and Infiernitos (B-B'), coloured by vertical permeability, showing clay-cap geometry and well locations" width={1400} />
       <div class="cap">
-        <span>Fig. 01 — Tecuamburro Conceptual Model (Section A–A′)</span>
+        <span>Fig. 01 — Reservoir Model Cross-Sections (Tecuamburro A–A′, Infiernitos B–B′)</span>
         <span>From our own field work</span>
       </div>
     </div>
