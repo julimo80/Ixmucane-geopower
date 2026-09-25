@@ -18,10 +18,10 @@
     "ctaSecondary": { "label": "Discuss a project", "href": "#contact" }
   },
   "stats": [
-    { "k": "HPC", "v": "Parallel ensemble runs on NeSI high-performance computing infrastructure" },
+    { "k": "HPC", "v": "Parallel ensemble runs on NeSI, AWS and Azure high-performance computing infrastructure" },
     { "k": "Physics", "v": "Coupled mass, momentum & energy balance in porous and fractured media" },
     { "k": "UQ", "v": "Ensemble history-matching and probabilistic P10–P90 forecasts" },
-    { "k": "Tooling", "v": "TOUGH3 · Waiwera · proprietary Python & Julia workflows" }
+    { "k": "Tooling", "v": "Waiwera · TOUGH2 · GMF (O'Sullivan et al., 2023)" }
   ],
   "contact": {
     "heading": "Let's model your field.",

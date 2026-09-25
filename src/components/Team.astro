@@ -1,5 +1,20 @@
 ---
+import { Image } from 'astro:assets';
 import team from '../data/team.json';
+import julianPhoto from '../assets/team/julian-xicara.webp';
+import johnPhoto from '../assets/team/john-osullivan.webp';
+import mikePhoto from '../assets/team/michael-osullivan.webp';
+import gravattPhoto from '../assets/team/michael-gravatt.webp';
+
+const photos: Record<string, ImageMetadata> = {
+  julian: julianPhoto,
+  john: johnPhoto,
+  mike: mikePhoto,
+  gravatt: gravattPhoto,
+};
+
+const initials = (name: string) =>
+  name.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase();
 ---
 <section id="team">
   <div class="wrap">
@@ -12,6 +27,13 @@ import team from '../data/team.json';
     <div class="people-grid">
       {team.people.map((p) => (
         <div class="person-card">
+          <div class="person-photo">
+            {p.photoKey && photos[p.photoKey] ? (
+              <Image src={photos[p.photoKey]} alt={`Photo of ${p.name}`} width={200} />
+            ) : (
+              <span class="person-initials">{initials(p.name)}</span>
+            )}
+          </div>
           <h3>{p.name}</h3>
           <span class="person-role">{p.role}</span>
           <span class="person-affiliation">{p.affiliation}</span>

@@ -37,7 +37,7 @@
     {
       "idx": "02",
       "title": "Parallel computing",
-      "description": "Production and exploration models are run as MPI-parallel ensembles on NeSI HPC clusters, turning multi-day single runs into same-day scenario comparisons."
+      "description": "Production and exploration models are run as MPI-parallel ensembles across NeSI, AWS and Azure HPC infrastructure, turning multi-day single runs into same-day scenario comparisons."
     },
     {
       "idx": "03",
@@ -47,7 +47,7 @@
     {
       "idx": "04",
       "title": "Software & tools",
-      "description": "TOUGH3 and Waiwera for the core physics, extended with proprietary Python and Julia tooling for mesh generation, automated calibration, and post-processing."
+      "description": "Waiwera and TOUGH2 for the core physics, run through the Geothermal Modelling Framework (GMF) developed by O'Sullivan et al. (2023) for mesh generation, automated calibration, and post-processing."
     }
   ],
   "methodology": {

@@ -410,7 +410,16 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
   background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:22px;
   display:flex; flex-direction:column;
 }
-.person-card h3{ font-size:17px; }
+.person-photo{
+  width:64px; height:64px; border-radius:50%; overflow:hidden; flex:none;
+  background:var(--surface-2); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+}
+.person-photo img{ display:block; width:100%; height:100%; object-fit:cover; }
+.person-initials{
+  font-family:'IBM Plex Mono', monospace; font-size:16px; font-weight:500; color:var(--accent);
+}
+.person-card h3{ font-size:17px; margin-top:14px; }
 .person-role{
   margin-top:6px; font-family:'IBM Plex Mono', monospace; font-size:11px; text-transform:uppercase;
   letter-spacing:0.06em; color:var(--accent);

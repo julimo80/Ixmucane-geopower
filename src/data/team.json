@@ -7,19 +7,36 @@
       "name": "Julian Xicara",
       "role": "Founder",
       "affiliation": "Doctoral Candidate, Geothermal Institute, University of Auckland",
+      "photoKey": "julian",
       "bio": "Started in geothermal in 2006 at a binary power plant in Guatemala, followed by specialised geothermal training in El Salvador (2012). Worked as a testing engineer for Ormat evaluating wells across multiple continents, then as an Ormat Resource Engineer in Nevada, and most recently as Senior Reservoir Engineer at Cyrq Energy. Holds an MSc with First Class Honours from the University of Auckland (thesis on the Amatitlán geothermal system) and is now a PhD candidate integrating geochemical data into resource assessment and uncertainty-quantification frameworks, across projects in Guatemala, Nicaragua and the United States."
     },
     {
       "name": "John O'Sullivan",
       "role": "Academic Advisor",
       "affiliation": "Associate Professor & Co-Director, Geothermal Institute, University of Auckland",
+      "photoKey": "john",
       "bio": "PhD in Engineering Science (Auckland), MS in Aeronautics and Astronautics (Stanford), BE with First Class Honours (Auckland). Works globally with geothermal industry stakeholders on resource assessment, advanced simulator technology, cloud computing and uncertainty quantification, supercritical resources and digital-twin development — leading training programmes across Asia, South America, Africa, Europe and Australia, and collaborating with Lawrence Berkeley National Laboratory and the US Department of Energy."
+    },
+    {
+      "name": "Michael O'Sullivan",
+      "role": "Academic Advisor",
+      "affiliation": "Professor of Engineering Science, University of Auckland",
+      "photoKey": "mike",
+      "bio": "One of the world's leading experts in geothermal reservoir modelling; recipient of the Henry J. Ramey Award for Geothermal Reservoir Engineering (2011) and Fellow of the Institution of Professional Engineers New Zealand. PhD in Applied Mechanics (Caltech), with over 45 years at the University of Auckland (1969–2015) plus visiting positions at Lawrence Berkeley National Laboratory and New York University. Developed core numerical modelling techniques used across geothermal fields in New Zealand and internationally."
+    },
+    {
+      "name": "Michael Gravatt",
+      "role": "Academic Advisor",
+      "affiliation": "Senior Lecturer, Geothermal Institute, University of Auckland",
+      "photoKey": "gravatt",
+      "bio": "PhD and BE (First Class Honours) in Engineering Science, University of Auckland. Since 2019 has worked to standardise geothermal modelling approaches and make the technology accessible to industry and students — the same modelling framework this consultancy builds on. Research spans geothermal resource assessment, critical mineral extraction, CO2 sequestration, supercritical resources and digital twins, with industry collaborations including Contact Energy, Pertamina Geothermal Energy and Lawrence Berkeley National Laboratory."
     },
     {
       "name": "Enrique Porras Mendieta",
       "role": "Industry Advisor",
-      "affiliation": "Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
-      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and has proposed updated conceptual models of the system following years of reservoir monitoring. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system."
+      "affiliation": "Independent Geothermal Consultant — formerly Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
+      "photoKey": null,
+      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and proposed updated conceptual models of the system following years of reservoir monitoring. Now consulting independently. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system."
     }
   ],
   "publications": [
