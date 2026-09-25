@@ -19,11 +19,12 @@
       "name": "Enrique Porras Mendieta",
       "role": "Industry Advisor",
       "affiliation": "Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
-      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and has proposed updated conceptual models of the system following years of reservoir monitoring."
+      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and has proposed updated conceptual models of the system following years of reservoir monitoring. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system."
     }
   ],
   "publications": [
-    { "title": "Tecuamburro–Infiernitos combined geothermal resource assessment: automated well-siting, GBOP-constrained pump sizing and joint-development interference testing", "meta": "Xicara, J. et al. — manuscript in preparation, 2026" },
+    { "title": "A new numerical model of Amatitlán geothermal system, Guatemala", "meta": "Porras, E. & Xicara, J. (2020) — Proceedings, World Geothermal Congress 2020" },
+    { "title": "Resource assessment of the Tecuamburro geothermal system using reservoir simulation", "meta": "Xicara Lopez, J. G. (2025) — 47th New Zealand Geothermal Workshop, Rotorua" },
     { "title": "[Placeholder] Add further publications or conference proceedings", "meta": "Link to PDF or DOI" }
   ]
 }
