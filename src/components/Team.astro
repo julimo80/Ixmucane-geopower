@@ -9,19 +9,23 @@ import team from '../data/team.json';
       <p>{team.lead}</p>
     </div>
 
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="badge-line"><span class="eyebrow">Founding Team</span></div>
-        <h3 style="font-size:18px;">{team.foundingTeam.title}</h3>
-        <p style="margin-top:10px;color:var(--text-dim);font-size:14.5px;">{team.foundingTeam.note}</p>
-      </div>
-      <div class="team-card">
-        <div class="badge-line"><span class="eyebrow">Publications</span></div>
-        <div class="pub-list" style="margin-top:6px;">
-          {team.publications.map((p) => (
-            <div class="pub"><div class="t">{p.title}</div><div class="m">{p.meta}</div></div>
-          ))}
+    <div class="people-grid">
+      {team.people.map((p) => (
+        <div class="person-card">
+          <h3>{p.name}</h3>
+          <span class="person-role">{p.role}</span>
+          <span class="person-affiliation">{p.affiliation}</span>
+          <p>{p.bio}</p>
         </div>
+      ))}
+    </div>
+
+    <div class="team-card" style="margin-top:24px;">
+      <div class="badge-line"><span class="eyebrow">Publications</span></div>
+      <div class="pub-list" style="margin-top:6px;">
+        {team.publications.map((p) => (
+          <div class="pub"><div class="t">{p.title}</div><div class="m">{p.meta}</div></div>
+        ))}
       </div>
     </div>
   </div>

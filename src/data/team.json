@@ -1,14 +1,29 @@
 {
   "eyebrow": "Team & Publications",
   "heading": "Grounded in academic reservoir engineering research.",
-  "lead": "Ixmucané GeoPower's modelling work builds on research training in computational geothermal reservoir engineering, including HPC-scale simulation work carried out with NeSI infrastructure.",
-  "foundingTeam": {
-    "title": "Reservoir engineers & computational scientists",
-    "note": "Individual bios, academic credentials and photos to be added here — placeholder pending confirmation of what you want public."
-  },
+  "lead": "Ixmucané GeoPower's modelling work builds on research training in computational geothermal reservoir engineering at the University of Auckland's Geothermal Institute, and on decades of field experience across Central and South America.",
+  "people": [
+    {
+      "name": "Julian Xicara",
+      "role": "Founder",
+      "affiliation": "Doctoral Candidate, Geothermal Institute, University of Auckland",
+      "bio": "Started in geothermal in 2006 at a binary power plant in Guatemala, followed by specialised geothermal training in El Salvador (2012). Worked as a testing engineer for Ormat evaluating wells across multiple continents, then as an Ormat Resource Engineer in Nevada, and most recently as Senior Reservoir Engineer at Cyrq Energy. Holds an MSc with First Class Honours from the University of Auckland (thesis on the Amatitlán geothermal system) and is now a PhD candidate integrating geochemical data into resource assessment and uncertainty-quantification frameworks, across projects in Guatemala, Nicaragua and the United States."
+    },
+    {
+      "name": "John O'Sullivan",
+      "role": "Academic Advisor",
+      "affiliation": "Associate Professor & Co-Director, Geothermal Institute, University of Auckland",
+      "bio": "PhD in Engineering Science (Auckland), MS in Aeronautics and Astronautics (Stanford), BE with First Class Honours (Auckland). Works globally with geothermal industry stakeholders on resource assessment, advanced simulator technology, cloud computing and uncertainty quantification, supercritical resources and digital-twin development — leading training programmes across Asia, South America, Africa, Europe and Australia, and collaborating with Lawrence Berkeley National Laboratory and the US Department of Energy."
+    },
+    {
+      "name": "Enrique Porras Mendieta",
+      "role": "Industry Advisor",
+      "affiliation": "Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
+      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and has proposed updated conceptual models of the system following years of reservoir monitoring."
+    }
+  ],
   "publications": [
-    { "title": "[Placeholder] Equation-of-state validation for high-enthalpy reservoir simulation", "meta": "Add authors, venue, year & DOI" },
-    { "title": "[Placeholder] Ensemble uncertainty quantification for geothermal resource assessment", "meta": "Add authors, venue, year & DOI" },
+    { "title": "Tecuamburro–Infiernitos combined geothermal resource assessment: automated well-siting, GBOP-constrained pump sizing and joint-development interference testing", "meta": "Xicara, J. et al. — manuscript in preparation, 2026" },
     { "title": "[Placeholder] Add further publications or conference proceedings", "meta": "Link to PDF or DOI" }
   ]
 }

@@ -1,13 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import site from '../data/site.json';
+import logoIcon from '../assets/paper/logo-icon-1.png';
 ---
 <nav class="top">
   <div class="wrap nav-inner">
     <div class="brand">
-      <svg class="mark" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="15" stroke="var(--accent)" stroke-width="1.4"/>
-        <path d="M16 6 C 11 12, 21 14, 16 20 C 12 24, 16 27, 16 27" stroke="var(--accent-2)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-      </svg>
+      <Image class="mark" src={logoIcon} alt="" width={64} />
       <span>{site.name}<span class="sub" style="display:block;margin-top:1px;">{site.tagline}</span></span>
     </div>
     <div class="navlinks">

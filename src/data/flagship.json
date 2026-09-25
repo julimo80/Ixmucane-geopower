@@ -2,8 +2,8 @@
   "num": "01",
   "label": "Flagship",
   "title": "AI Favorability Mapping",
-  "description": "We fuse public geological, geophysical, geochemical and remote-sensing data with machine learning to rank geothermal favorability across entire regions — surfacing undrilled prospects across Guatemala and Latin America before a single exploration well is spudded.",
-  "tags": ["Public geoscience data", "Machine learning", "Regional screening", "Guatemala & Latin America"],
+  "description": "We fuse public geological, geophysical, geochemical and remote-sensing data with machine learning to rank geothermal favorability across entire regions — surfacing undrilled prospects across Latin America before a single exploration well is spudded.",
+  "tags": ["Public geoscience data", "Machine learning", "Regional screening", "Latin America"],
   "mapCaption": {
     "fig": "Fig. 02 — Concept Favorability Surface",
     "note": "Illustrative, not real analysis output"
