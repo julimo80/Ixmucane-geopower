@@ -120,7 +120,7 @@ nav.top{
   letter-spacing:0.01em;
 }
 .brand .mark{
-  width:auto; height:30px; flex:none; display:block;
+  width:auto; height:42px; flex:none; display:block;
 }
 .brand .sub{
   font-family:'IBM Plex Mono', monospace;
@@ -191,6 +191,25 @@ nav.top{
   font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--text-dim);
   padding:8px 6px 2px;
   text-transform:uppercase; letter-spacing:0.06em;
+}
+
+/* OVERVIEW LINKS (home) */
+.overview-grid{
+  margin-top:32px; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;
+}
+.overview-card{
+  position:relative;
+  display:block; text-decoration:none;
+  background:var(--surface); border:1px solid var(--border); border-radius:6px;
+  padding:22px; padding-right:44px;
+  transition:border-color 0.15s ease;
+}
+.overview-card:hover{ border-color:var(--accent); }
+.overview-card h3{ font-size:16.5px; color:var(--text); }
+.overview-card p{ margin-top:8px; font-size:13px; color:var(--text-dim); line-height:1.55; }
+.overview-arrow{
+  position:absolute; top:22px; right:20px;
+  font-family:'IBM Plex Mono', monospace; color:var(--accent); font-size:16px;
 }
 
 /* STAT STRIP */

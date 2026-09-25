@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Services",
+    "description": "AI favorability mapping, geologic modelling, well design, testing and logging — the full development lifecycle.",
+    "href": "/services"
+  },
+  {
+    "title": "Technology",
+    "description": "Our modelling pipeline, methodology and the physics behind every model.",
+    "href": "/technology"
+  },
+  {
+    "title": "Case Studies",
+    "description": "Selected reservoir modelling engagements — from draft placeholders to a real, published result.",
+    "href": "/case-studies"
+  },
+  {
+    "title": "Team",
+    "description": "Founder, academic and industry advisors, and our publications.",
+    "href": "/team"
+  },
+  {
+    "title": "Contact",
+    "description": "Tell us about your field and the decision the model needs to inform.",
+    "href": "/contact"
+  }
+]

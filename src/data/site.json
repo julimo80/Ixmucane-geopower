@@ -2,11 +2,11 @@
   "name": "Ixmucané GeoPower",
   "tagline": "Geothermal Development Services",
   "nav": [
-    { "label": "Services", "href": "#services" },
-    { "label": "Technology", "href": "#technology" },
-    { "label": "Case Studies", "href": "#case-studies" },
-    { "label": "Team", "href": "#team" },
-    { "label": "Contact", "href": "#contact" }
+    { "label": "Services", "href": "/services" },
+    { "label": "Technology", "href": "/technology" },
+    { "label": "Case Studies", "href": "/case-studies" },
+    { "label": "Team", "href": "/team" },
+    { "label": "Contact", "href": "/contact" }
   ],
   "hero": {
     "eyebrow": "Reservoir Engineering · AI Exploration · High-Performance Computing",
@@ -14,8 +14,8 @@
     "headlineEm": "ground truth",
     "headlinePost": "beneath every geothermal field.",
     "lead": "Ixmucané GeoPower covers the full geothermal development lifecycle — from AI-driven regional favorability screening across Latin America, through geologic modelling, well targeting and design, to reservoir simulation, well testing and downhole logging.",
-    "ctaPrimary": { "label": "See our services", "href": "#services" },
-    "ctaSecondary": { "label": "Discuss a project", "href": "#contact" }
+    "ctaPrimary": { "label": "See our services", "href": "/services" },
+    "ctaSecondary": { "label": "Discuss a project", "href": "/contact" }
   },
   "stats": [
     { "k": "HPC", "v": "Parallel ensemble runs on NeSI, AWS and Azure high-performance computing infrastructure" },

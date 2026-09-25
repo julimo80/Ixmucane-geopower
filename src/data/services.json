@@ -23,7 +23,7 @@
     "idx": "06",
     "title": "Reservoir simulation & modelling",
     "description": "Physics-based natural-state and production simulation with HPC-scale uncertainty quantification — our founding discipline.",
-    "goto": { "label": "See methodology", "href": "#technology" }
+    "goto": { "label": "See methodology", "href": "/technology" }
   },
   {
     "idx": "07",
