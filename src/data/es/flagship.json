@@ -1,0 +1,17 @@
+{
+  "num": "01",
+  "label": "Insignia",
+  "title": "Mapeo de Favorabilidad con IA",
+  "description": "Fusionamos datos públicos geológicos, geofísicos, geoquímicos y de sensores remotos con aprendizaje automático para clasificar la favorabilidad geotérmica en regiones completas — revelando prospectos no perforados en toda Latinoamérica antes de que se inicie un solo pozo de exploración.",
+  "tags": ["Datos geocientíficos públicos", "Aprendizaje automático", "Evaluación regional", "Latinoamérica"],
+  "mapCaption": {
+    "fig": "Fig. 02 — Superficie Conceptual de Favorabilidad",
+    "note": "Ilustrativo, no es resultado de un análisis real"
+  },
+  "mapUi": {
+    "ariaLabel": "Mapa de calor ilustrativo de favorabilidad geotérmica sobre una silueta estilizada de Centroamérica, marcando los campos y prospectos geotérmicos conocidos de Guatemala",
+    "legendLower": "Menor",
+    "legendHigher": "Mayor favorabilidad",
+    "sourceNote": "Estado y cifras de los campos según fuentes públicas (comunicados de operadores/prensa, actualizaciones académicas del país) a 2026 — no derivados de un análisis propio. El sombreado de favorabilidad en sí es ilustrativo."
+  }
+}

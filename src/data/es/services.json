@@ -1,0 +1,38 @@
+[
+  {
+    "idx": "02",
+    "title": "Modelos geológicos y conceptuales",
+    "description": "Modelos geológicos estructurales y conceptuales en 3D construidos en Leapfrog® y GemPy, integrando geología de superficie, datos de pozos y estructura regional en un marco compartido para el equipo de yacimientos."
+  },
+  {
+    "idx": "03",
+    "title": "Integración de geofísica y geoquímica",
+    "description": "Interpretación de estudios de resistividad, gravimetría, sísmica y química de fluidos, integrados directamente en los modelos conceptuales y numéricos del yacimiento."
+  },
+  {
+    "idx": "04",
+    "title": "Selección de ubicación de pozos",
+    "description": "Ubicaciones y trayectorias de pozos candidatos clasificadas contra los modelos geológicos y numéricos, equilibrando temperatura del recurso, permeabilidad y riesgo de perforación."
+  },
+  {
+    "idx": "05",
+    "title": "Diseño de pozos",
+    "description": "Diseño de trayectoria, revestimiento y terminación para pozos de exploración, producción e inyección, ajustado al régimen esperado de presión y temperatura de fondo."
+  },
+  {
+    "idx": "06",
+    "title": "Simulación y modelado de yacimientos",
+    "description": "Simulación de estado natural y producción basada en física, con cuantificación de incertidumbre a escala HPC — nuestra disciplina fundadora.",
+    "goto": { "label": "Ver metodología", "href": "/es/technology" }
+  },
+  {
+    "idx": "07",
+    "title": "Pruebas de pozos y diseño de equipos",
+    "description": "Diseño y pruebas de equipos de fondo y superficie para programas de pruebas de flujo, inyectividad y terminación."
+  },
+  {
+    "idx": "08",
+    "title": "Registros de pozos — PTS y ABI",
+    "description": "Servicios de registro de presión-temperatura-spinner (PTS) e imágenes acústicas de pozo (ABI) para caracterizar zonas de alimentación y confirmar la integridad del pozo."
+  }
+]

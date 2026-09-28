@@ -1,36 +1,39 @@
 ---
 import { Image } from 'astro:assets';
-import caseStudies from '../data/caseStudies.json';
+import { loadData } from '../i18n/data';
 import combinedChart from '../assets/paper/combined-net-power.png';
+
+const caseStudies = loadData(Astro.currentLocale ?? 'en', 'caseStudies');
+const { stageLabels } = caseStudies;
 ---
 <section id="case-studies">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Field Log</span>
-      <h2>Selected reservoir modelling engagements.</h2>
-      <p>Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.</p>
+      <span class="eyebrow">{caseStudies.eyebrow}</span>
+      <h2>{caseStudies.heading}</h2>
+      <p>{caseStudies.lead}</p>
     </div>
 
     <div class="draft-note">
       <span>&#9888;</span>
-      <span><strong>Mixed status.</strong> LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed) — see its source note below.</span>
+      <span><strong>{caseStudies.draftNote.strong}</strong> {caseStudies.draftNote.text}</span>
     </div>
 
     <div class="case-list">
-      {caseStudies.map((c) => (
+      {caseStudies.items.map((c) => (
         <article class="case">
           <div class="case-rail">
             <span class="log">{c.log}</span>
-            {c.badge ? <span class="badge">{c.badge}</span> : c.draft && <span class="badge">Draft</span>}
+            {c.badge ? <span class="badge">{c.badge}</span> : c.draft && <span class="badge">{caseStudies.draftBadge}</span>}
           </div>
           <div class="case-body">
             <h3>{c.title}</h3>
             <span class="loc">{c.loc}</span>
             <div class="case-stages">
-              <div class="stage"><div class="t">Brief</div><p>{c.brief}</p></div>
-              <div class="stage"><div class="t">Challenge</div><p>{c.challenge}</p></div>
-              <div class="stage"><div class="t">Method</div><p>{c.method}</p></div>
-              <div class="stage"><div class="t">Outcome</div><p>{c.outcome}</p></div>
+              <div class="stage"><div class="t">{stageLabels.brief}</div><p>{c.brief}</p></div>
+              <div class="stage"><div class="t">{stageLabels.challenge}</div><p>{c.challenge}</p></div>
+              <div class="stage"><div class="t">{stageLabels.method}</div><p>{c.method}</p></div>
+              <div class="stage"><div class="t">{stageLabels.outcome}</div><p>{c.outcome}</p></div>
             </div>
 
             {c.hasChart && (

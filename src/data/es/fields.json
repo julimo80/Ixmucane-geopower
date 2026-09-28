@@ -1,0 +1,50 @@
+[
+  {
+    "name": "San Marcos",
+    "x": 85,
+    "y": 95,
+    "tier": 3,
+    "status": "Exploración (geoquímica)",
+    "note": "Yacimiento profundo ~240°C; yacimientos someros ~195–200°C (estimación geoquímica)"
+  },
+  {
+    "name": "Zunil",
+    "x": 150,
+    "y": 120,
+    "tier": 5,
+    "status": "En producción",
+    "note": "24 MWe de capacidad instalada — planta binaria de Ormat, en operación desde 1999"
+  },
+  {
+    "name": "El Ceibillo",
+    "x": 225,
+    "y": 175,
+    "tier": 4,
+    "status": "Prospecto licenciado",
+    "note": "Licenciado para una planta flash de primera fase de 25 MW; 9 pozos perforados, hasta 275°C encontrados"
+  },
+  {
+    "name": "Amatitlán",
+    "x": 260,
+    "y": 215,
+    "tier": 5,
+    "status": "En producción",
+    "note": "25.2 MWe de capacidad instalada — 3 unidades (2×12 MW + 1×1.2 MW), en operación desde 2007"
+  },
+  {
+    "name": "Tecuamburro",
+    "x": 320,
+    "y": 270,
+    "tier": 3,
+    "status": "Exploración (hidrogeoquímica)",
+    "note": "Sistema volcánico de alta entalpía bajo estudio hidrogeoquímico"
+  },
+  {
+    "name": "Moyuta",
+    "x": 348,
+    "y": 295,
+    "tier": 3,
+    "status": "Prefactibilidad",
+    "note": "Dos subsistemas de yacimiento estimados en 210°C y 170°C; estudios en curso financiados por INDE/Banco Mundial"
+  }
+]

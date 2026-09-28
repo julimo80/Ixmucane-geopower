@@ -6,11 +6,10 @@ import logoIcon from '../assets/paper/logo-icon-2.png';
 const locale = Astro.currentLocale ?? 'en';
 const site = loadData(locale, 'site');
 
-// Only the Home page has a Spanish translation so far, so the switcher maps
-// "/" <-> "/es/" specifically; once more pages get an es/ counterpart this
-// should generalise to swap the locale prefix on Astro.url.pathname instead.
+// Every page now has an es/ counterpart at the same sub-path, so the
+// switcher just adds/strips the "/es" prefix on the current path.
 const path = Astro.url.pathname;
-const otherLocaleHref = locale === 'es' ? (path === '/es/' || path === '/es' ? '/' : '/') : '/es/';
+const otherLocaleHref = locale === 'es' ? (path.replace(/^\/es/, '') || '/') : `/es${path}`;
 const otherLocaleLabel = locale === 'es' ? 'EN' : 'ES';
 ---
 <nav class="top">

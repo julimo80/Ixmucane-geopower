@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import team from '../data/team.json';
+import { loadData } from '../i18n/data';
 import julianPhoto from '../assets/team/julian-xicara.webp';
 import johnPhoto from '../assets/team/john-osullivan.webp';
 import mikePhoto from '../assets/team/michael-osullivan.webp';
@@ -12,6 +12,8 @@ const photos: Record<string, ImageMetadata> = {
   mike: mikePhoto,
   gravatt: gravattPhoto,
 };
+
+const team = loadData(Astro.currentLocale ?? 'en', 'team');
 
 const initials = (name: string) =>
   name.split(' ').map((w) => w[0]).slice(0, 2).join('').toUpperCase();
@@ -43,7 +45,7 @@ const initials = (name: string) =>
     </div>
 
     <div class="team-card" style="margin-top:24px;">
-      <div class="badge-line"><span class="eyebrow">Publications</span></div>
+      <div class="badge-line"><span class="eyebrow">{team.publicationsLabel}</span></div>
       <div class="pub-list" style="margin-top:6px;">
         {team.publications.map((p) => (
           <div class="pub"><div class="t">{p.title}</div><div class="m">{p.meta}</div></div>

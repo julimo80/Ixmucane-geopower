@@ -1,21 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import tech from '../data/technology.json';
+import { loadData } from '../i18n/data';
 import geoModelImg from '../assets/paper/geological-reservoir-model.png';
 import crossSectionImg from '../assets/paper/tecuamburro-permeability-cross-section.png';
 import espImg from '../assets/paper/esp-pump-sizing.png';
 
-const { methodology, pipeline } = tech;
+const tech = loadData(Astro.currentLocale ?? 'en', 'technology');
+const { methodology, pipeline, eqPanel } = tech;
 
 const figureImages = {
   geomodel: geoModelImg,
   permeability: crossSectionImg,
   gbop: espImg,
-} as const;
-const figureAlts = {
-  geomodel: "Two-panel figure: (A) 3D geological model of the Tecuamburro field in Leapfrog, (B) the same volume discretised as a numerical reservoir simulation mesh",
-  permeability: "Numerical reservoir model cross-sections through Tecuamburro (A-A') and Infiernitos (B-B'), coloured by vertical permeability, showing clay-cap geometry and well locations",
-  gbop: "Electric submersible pump completion schematic with gas-breakout pressure and water-only NPSH thresholds vs. pump setting depth",
 } as const;
 ---
 
@@ -58,17 +54,17 @@ const figureAlts = {
       </div>
 
       <div class="eq-panel">
-        <span class="eyebrow">Governing Equations</span>
-        <h3>What the simulator actually solves</h3>
+        <span class="eyebrow">{eqPanel.eyebrow}</span>
+        <h3>{eqPanel.heading}</h3>
         <div class="eq">
-          <span class="label">Mass &amp; energy conservation, per grid block n</span>
+          <span class="label">{eqPanel.eq1Label}</span>
           d/dt &#8747;<sub>Vn</sub> M dV &#160;=&#160; &#8747;<sub>&Gamma;n</sub> F&#8901;n&#8202;d&#915; &#160;+&#160; &#8747;<sub>Vn</sub> q dV
         </div>
         <div class="eq">
-          <span class="label">Darcy flux, phase &beta;</span>
+          <span class="label">{eqPanel.eq2Label}</span>
           F<sub>&beta;</sub> &#160;=&#160; &#8722; k k<sub>r&beta;</sub> / &mu;<sub>&beta;</sub> &#160;&#8901;&#160; (&#8711;P<sub>&beta;</sub> &#8722; &rho;<sub>&beta;</sub> g)
         </div>
-        <p class="foot">M — mass/energy per volume · F — flux across face &Gamma;n · q — sink/source · k — permeability · k<sub>r&beta;</sub> — relative permeability</p>
+        <p class="foot">{eqPanel.foot}</p>
       </div>
     </div>
 
@@ -85,7 +81,7 @@ const figureAlts = {
             <div class="figure">
               <Image
                 src={figureImages[item.key as keyof typeof figureImages]}
-                alt={figureAlts[item.key as keyof typeof figureAlts]}
+                alt={item.alt}
                 width={item.key === 'gbop' ? 900 : 1800}
               />
             </div>

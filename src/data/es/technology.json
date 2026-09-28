@@ -1,0 +1,88 @@
+{
+  "eyebrow": "Tecnología · Servicio 06",
+  "heading": "Modelado basado en física de primeros principios, ejecutado a escala de producción.",
+  "lead": "Cada modelo que entregamos se remonta a las ecuaciones que gobiernan el flujo multifásico y multicomponente en roca porosa y fracturada — no es una caja negra. Calibramos contra observaciones de campo y luego llevamos el modelo a través de conjuntos (ensembles) a escala HPC para cuantificar lo que aún no sabemos.",
+  "pipeline": {
+    "eyebrow": "Nuestro proceso",
+    "heading": "Del modelo digital a la evaluación de recursos.",
+    "steps": [
+      {
+        "title": "Modelo Digital",
+        "description": "Modelo geológico 3D en Leapfrog — litología, estructura, geometría de capa sello (clay-cap) y fallas, construido a partir de geología de superficie, datos de pozos y geofísica."
+      },
+      {
+        "title": "Modelo de Yacimiento",
+        "description": "El modelo geológico discretizado en una malla de simulación numérica, con propiedades de roca asignadas por unidad."
+      },
+      {
+        "title": "Ajuste de Estado Natural",
+        "description": "Calibrado contra presión, temperatura y química observadas hasta que el modelo no perturbado coincide con el campo real."
+      },
+      {
+        "title": "Cuantificación de Incertidumbre",
+        "description": "Un conjunto (ensemble) de realizaciones de estado natural aceptadas que abarca el espacio de parámetros plausible, no un único modelo de mejor ajuste."
+      },
+      {
+        "title": "Evaluación de Recursos",
+        "description": "Ubicación automatizada de pozos, dimensionamiento de bombas y pronóstico de producción en todo el conjunto — resultado P10/P50/P90, no una estimación puntual."
+      }
+    ]
+  },
+  "eqPanel": {
+    "eyebrow": "Ecuaciones Gobernantes",
+    "heading": "Lo que el simulador realmente resuelve",
+    "eq1Label": "Conservación de masa y energía, por bloque de malla n",
+    "eq2Label": "Flujo de Darcy, fase β",
+    "foot": "M — masa/energía por volumen · F — flujo a través de la cara Γn · q — fuente/sumidero · k — permeabilidad · krβ — permeabilidad relativa"
+  },
+  "capabilities": [
+    {
+      "idx": "01",
+      "title": "Modelado numérico de yacimientos",
+      "description": "Simulación de flujo multifásico no isotérmico por volumen finito y diferencias finitas integrales — calibración de estado natural hasta pronósticos de producción a décadas, tanto en formulaciones de porosidad simple como de doble porosidad fracturada."
+    },
+    {
+      "idx": "02",
+      "title": "Computación paralela",
+      "description": "Los modelos de producción y exploración se ejecutan como conjuntos (ensembles) paralelos por MPI en infraestructura HPC de NeSI, AWS y Azure, convirtiendo corridas individuales de varios días en comparaciones de escenarios en un mismo día."
+    },
+    {
+      "idx": "03",
+      "title": "Cuantificación de incertidumbre",
+      "description": "La permeabilidad, porosidad y condiciones de frontera se tratan como distribuciones, no como valores puntuales — los métodos de conjunto y ajuste histórico traducen la incertidumbre geológica en un rango de riesgo del recurso defendible."
+    },
+    {
+      "idx": "04",
+      "title": "Software y herramientas",
+      "description": "Waiwera y TOUGH2 para la física central, ejecutados a través del Geothermal Modelling Framework (GMF) desarrollado por O'Sullivan et al. (2023) para generación de malla, calibración automatizada y post-procesamiento."
+    }
+  ],
+  "methodology": {
+    "eyebrow": "De nuestra propia investigación",
+    "heading": "Figuras reales de nuestro artículo en preparación sobre evaluación de recursos",
+    "lead": "Tomado directamente de nuestro manuscrito sobre la evaluación combinada de recursos de Tecuamburro–Infiernitos (en preparación, aún no revisado por pares) — el paso de modelo digital a modelo de yacimiento y el margen de seguridad en el dimensionamiento de bombas detrás del caso de estudio a continuación.",
+    "items": [
+      {
+        "key": "geomodel",
+        "title": "Del modelo geológico al modelo de yacimiento",
+        "description": "(A) El modelo geológico 3D en Leapfrog — litología, estructura, geometría de capa sello y fallas. (B) El mismo volumen discretizado en la malla de simulación numérica de yacimiento, con propiedades de roca asignadas por unidad — los pasos 1–2 de nuestro proceso, hechos concretos.",
+        "figcap": "Fig. — (A) Modelo geológico en Leapfrog. (B) Malla de simulación numérica de yacimiento, mismo volumen.",
+        "alt": "Figura de dos paneles: (A) modelo geológico 3D del campo Tecuamburro en Leapfrog, (B) el mismo volumen discretizado como malla de simulación numérica de yacimiento"
+      },
+      {
+        "key": "permeability",
+        "title": "Estructura de permeabilidad vertical calibrada",
+        "description": "Una vez que el modelo está calibrado contra presión, temperatura y química observadas, podemos cortar una sección transversal en cualquier punto — aquí a través de Tecuamburro (A–A′) y el recurso vecino de Infiernitos (B–B′), mostrando la geometría de la capa sello, fallas y ubicaciones de pozos junto con la permeabilidad vertical calibrada.",
+        "figcap": "Fig. — Secciones transversales de permeabilidad vertical calibrada, Tecuamburro (A–A′) e Infiernitos (B–B′).",
+        "alt": "Secciones transversales del modelo numérico de yacimiento a través de Tecuamburro (A-A') e Infiernitos (B-B'), coloreadas por permeabilidad vertical, mostrando la geometría de la capa sello y ubicaciones de pozos"
+      },
+      {
+        "key": "gbop",
+        "title": "Dimensionamiento de bomba en dos niveles bajo presión de salida de gas (GBOP)",
+        "description": "Para fluido geotérmico con CO2, el gas disuelto sale de solución antes de que el fluido alcance su propio punto de ebullición — un umbral NPSH de solo agua deja la bomba subprotegida. Dimensionamos según el GBOP (presión de saturación más la presión parcial de los gases no condensables propios del fluido) más un margen de seguridad fijo, evaluado automáticamente para cada pozo candidato, y luego lo comparamos contra un catálogo real de bombas de proveedores — de eje largo o electrosumergibles, hasta 30 etapas — para obtener una especificación construible y su potencia parásita de eje.",
+        "figcap": "Fig. — Terminación de bomba electrosumergible (ESP), dimensionada según el umbral GBOP.",
+        "alt": "Esquema de terminación de bomba electrosumergible con los umbrales de presión de salida de gas y NPSH de solo agua frente a la profundidad de asentamiento de la bomba"
+      }
+    ]
+  }
+}

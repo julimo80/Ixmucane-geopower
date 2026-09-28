@@ -2,12 +2,12 @@
   "name": "Ixmucané GeoPower",
   "tagline": "Servicios de Desarrollo Geotérmico",
   "nav": [
-    { "label": "Inicio", "href": "/" },
-    { "label": "Servicios", "href": "/services" },
-    { "label": "Tecnología", "href": "/technology" },
-    { "label": "Casos de Estudio", "href": "/case-studies" },
-    { "label": "Equipo", "href": "/team" },
-    { "label": "Contacto", "href": "/contact" }
+    { "label": "Inicio", "href": "/es/" },
+    { "label": "Servicios", "href": "/es/services" },
+    { "label": "Tecnología", "href": "/es/technology" },
+    { "label": "Casos de Estudio", "href": "/es/case-studies" },
+    { "label": "Equipo", "href": "/es/team" },
+    { "label": "Contacto", "href": "/es/contact" }
   ],
   "hero": {
     "eyebrow": "Ingeniería de Yacimientos · Exploración con IA · Computación de Alto Rendimiento",
@@ -15,8 +15,8 @@
     "headlineEm": "verdad del subsuelo",
     "headlinePost": "bajo cada campo geotérmico.",
     "lead": "Ixmucané GeoPower cubre todo el ciclo de desarrollo geotérmico — desde el mapeo regional de favorabilidad con IA en Latinoamérica, pasando por el modelado geológico, la selección y diseño de pozos, hasta la simulación de yacimientos, pruebas de pozos y registros de fondo.",
-    "ctaPrimary": { "label": "Ver nuestros servicios", "href": "/services" },
-    "ctaSecondary": { "label": "Conversemos sobre su proyecto", "href": "/contact" }
+    "ctaPrimary": { "label": "Ver nuestros servicios", "href": "/es/services" },
+    "ctaSecondary": { "label": "Conversemos sobre su proyecto", "href": "/es/contact" }
   },
   "stats": [
     { "k": "HPC", "v": "Corridas paralelas de conjuntos (ensembles) en infraestructura de alto rendimiento de NeSI, AWS y Azure" },
@@ -25,6 +25,7 @@
     { "k": "Herramientas", "v": "Waiwera · TOUGH2 · GMF (O'Sullivan et al., 2023)" }
   ],
   "contact": {
+    "eyebrow": "Contacto",
     "heading": "Modelemos su campo.",
     "lead": "Cuéntenos sobre el campo, la etapa en la que se encuentra, y la decisión que el modelo debe informar — a partir de ahí definimos el enfoque de modelado.",
     "email": "hello@ixmucanegeopower.com"

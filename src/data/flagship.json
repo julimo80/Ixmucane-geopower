@@ -7,5 +7,11 @@
   "mapCaption": {
     "fig": "Fig. 02 — Concept Favorability Surface",
     "note": "Illustrative, not real analysis output"
+  },
+  "mapUi": {
+    "ariaLabel": "Illustrative geothermal favorability heatmap over a stylized Central American landmass, marking Guatemala's known geothermal fields and prospects",
+    "legendLower": "Lower",
+    "legendHigher": "Higher favorability",
+    "sourceNote": "Field status and figures from public sources (operator/press releases, academic country updates) as of 2026 — not derived from our own analysis. The favorability shading itself is illustrative."
   }
 }

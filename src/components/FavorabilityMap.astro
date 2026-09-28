@@ -1,9 +1,13 @@
 ---
-import flagship from '../data/flagship.json';
-import fields from '../data/fields.json';
+import { loadData } from '../i18n/data';
+
+const locale = Astro.currentLocale ?? 'en';
+const flagship = loadData(locale, 'flagship');
+const fields = loadData(locale, 'fields');
+const { mapUi } = flagship;
 ---
 <div class="fav-card">
-  <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative geothermal favorability heatmap over a stylized Central American landmass, marking Guatemala's known geothermal fields and prospects">
+  <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label={mapUi.ariaLabel}>
     <defs>
       <clipPath id="landmass">
         <path d="M 70 46 L 150 24 L 226 58 L 296 46 L 372 100 L 416 172 L 396 252 L 338 316 L 258 338 L 182 300 L 126 258 L 78 198 L 46 118 Z"/>
@@ -42,9 +46,9 @@ import fields from '../data/fields.json';
     <text x="34" y="30" class="mono" font-size="11" fill="var(--text-dim)" letter-spacing="1">GUATEMALA</text>
   </svg>
   <div class="fav-legend">
-    <span>Lower</span>
+    <span>{mapUi.legendLower}</span>
     <div class="bar"></div>
-    <span>Higher favorability</span>
+    <span>{mapUi.legendHigher}</span>
   </div>
 
   <div class="field-key">
@@ -58,7 +62,7 @@ import fields from '../data/fields.json';
       </div>
     ))}
   </div>
-  <p class="field-source">Field status and figures from public sources (operator/press releases, academic country updates) as of 2026 — not derived from our own analysis. The favorability shading itself is illustrative.</p>
+  <p class="field-source">{mapUi.sourceNote}</p>
 
   <div class="cap">
     <span>{flagship.mapCaption.fig}</span>

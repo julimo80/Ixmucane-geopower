@@ -1,14 +1,18 @@
 ---
-import flagship from '../data/flagship.json';
-import services from '../data/services.json';
+import { loadData } from '../i18n/data';
 import FavorabilityMap from './FavorabilityMap.astro';
+
+const locale = Astro.currentLocale ?? 'en';
+const flagship = loadData(locale, 'flagship');
+const services = loadData(locale, 'services');
+const servicesPage = loadData(locale, 'servicesPage');
 ---
 <section id="services">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Services</span>
-      <h2>Every stage of geothermal development, one modelling partner.</h2>
-      <p>We work across the full lifecycle of a geothermal field — from screening a country for undiscovered resource, to the well log that confirms a producer is on target.</p>
+      <span class="eyebrow">{servicesPage.eyebrow}</span>
+      <h2>{servicesPage.heading}</h2>
+      <p>{servicesPage.lead}</p>
     </div>
 
     <div class="svc-flagship">

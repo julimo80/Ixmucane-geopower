@@ -1,11 +1,12 @@
 ---
-import site from '../data/site.json';
+import { loadData } from '../i18n/data';
+const site = loadData(Astro.currentLocale ?? 'en', 'site');
 const { contact } = site;
 ---
 <section id="contact" class="contact" style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow" style="color:var(--accent);">Contact</span>
+      <span class="eyebrow" style="color:var(--accent);">{contact.eyebrow}</span>
       <h2>{contact.heading}</h2>
       <p>{contact.lead}</p>
       <a class="btn btn-primary" href={`mailto:${contact.email}`}>{contact.email}</a>

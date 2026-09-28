@@ -1,0 +1,53 @@
+{
+  "eyebrow": "Bitácora de Campo",
+  "heading": "Proyectos seleccionados de modelado de yacimientos.",
+  "lead": "Estructurado tal como entregamos el trabajo a nuestros clientes: el encargo, el problema geológico, cómo lo modelamos, y qué cambió en el plan de desarrollo del campo.",
+  "draftNote": {
+    "strong": "Estado mixto.",
+    "text": "LOG 01–02 son marcadores de posición ilustrativos, pendientes de confirmación del cliente. LOG 03 es real, de nuestro propio manuscrito de investigación en preparación (aún no revisado por pares) — ver su nota de fuente abajo."
+  },
+  "stageLabels": { "brief": "Encargo", "challenge": "Desafío", "method": "Método", "outcome": "Resultado" },
+  "draftBadge": "Borrador",
+  "items": [
+    {
+      "log": "LOG 01",
+      "draft": true,
+      "title": "Calibración de estado natural e historial de producción, campo volcánico de alta entalpía",
+      "loc": "Centroamérica · Sistema alojado en estratovolcán andesítico",
+      "brief": "Validar una formulación actualizada de ecuación de estado contra más de 30 años de historial de pozos y producción, antes de usarla en nuevos escenarios de desarrollo.",
+      "challenge": "La topografía escarpada y una fuente de calor magmática somera producen fuertes gradientes laterales de temperatura que los modelos simples subestiman.",
+      "method": "Corridas multi-escenario de estado natural y ajuste histórico con la ecuación de estado revisada, verificadas contra un caso de simulación de campo combinado.",
+      "outcome": "Se confirmó que la corrección de la ecuación de estado se mantuvo en los pronósticos de producción; se redujo el rango de riesgo del recurso para el comité de desarrollo del cliente."
+    },
+    {
+      "log": "LOG 02",
+      "draft": true,
+      "title": "Modelo de estado natural para un nuevo prospecto de exploración",
+      "loc": "Campo no revelado · Exploración en etapa temprana",
+      "brief": "Construir un modelo de estado natural a partir de datos de exploración escasos, para apoyar una decisión de ubicación de pozos antes del primer pozo profundo.",
+      "challenge": "El control limitado de pozos implicó que la estructura de permeabilidad tuviera que inferirse principalmente a partir de geoquímica superficial y estudios de resistividad.",
+      "method": "Conjunto (ensemble) de estructuras de permeabilidad plausibles corridas en paralelo, clasificadas contra las temperaturas y química de las manifestaciones superficiales.",
+      "outcome": "Se redujeron las ubicaciones candidatas de plataformas de pozos de cinco a dos, con un rango de confianza explícito sobre la temperatura objetivo del yacimiento."
+    },
+    {
+      "log": "LOG 03",
+      "draft": false,
+      "badge": "En preparación — investigación propia",
+      "title": "Desarrollo combinado: Tecuamburro + Infiernitos, pronóstico a 25 años",
+      "loc": "Complejo Volcánico de Tecuamburro, Guatemala · Desarrollo conjunto de dos recursos",
+      "brief": "Evaluar si desarrollar Tecuamburro e Infiernitos como un proyecto combinado cambia el pronóstico propio de cualquiera de los dos recursos, usando un marco donde cada muestra del escenario combinado comparte la misma realización de estado natural, estrategia de inyección y lógica de dimensionamiento de bombas que su contraparte de recurso único.",
+      "challenge": "Determinar si el desarrollo conjunto causa una interacción real a escala de yacimiento — soporte de presión compartido, competencia por capacidad de reinyección — o si los pronósticos independientes simplemente se suman, y demostrarlo a nivel de la presión del yacimiento misma en lugar de inferirlo solo a partir de la potencia generada.",
+      "method": "Conjunto estocástico de 293 muestras; algoritmo automatizado de crecimiento y ubicación de pozos; reinyección acoplada por red de fuentes en Waiwera; comparación muestra por muestra contra el pronóstico independiente de cada recurso; interferencia probada directamente mediante la presión del yacimiento por muestra en las propias zonas de alimentación de Infiernitos.",
+      "outcome": "El desarrollo combinado cambia el pronóstico propio de cada recurso en menos del 1% (distancia de Wasserstein-1 de 0.13–0.38 MWe), y las distribuciones no son estadísticamente distinguibles (Kolmogorov–Smirnov, p>0.05). Existe una interferencia hidráulica real pero pequeña — una reducción mediana de presión de 0.18 bar en Infiernitos para el año 25 — un orden de magnitud por debajo de la incertidumbre del estado natural.",
+      "hasChart": true,
+      "chartCaption": "Potencia neta combinada, pronóstico a 25 años, conjunto de 293 muestras — gris: muestras individuales; rojo: P10/P50/P90",
+      "stats": [
+        { "label": "P10", "value": "71.4 MWe" },
+        { "label": "P50", "value": "89.9 MWe" },
+        { "label": "P90", "value": "104.4 MWe" }
+      ],
+      "statsNote": "Producción neta promediada en el tiempo a 25 años, en todo el conjunto (media de 89.3 MWe)",
+      "source": "De nuestro propio manuscrito en preparación sobre la evaluación combinada de recursos de Tecuamburro–Infiernitos — aún no revisado por pares."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "eyebrow": "Equipo y Publicaciones",
+  "heading": "Fundamentado en investigación académica de ingeniería de yacimientos.",
+  "lead": "El trabajo de modelado de Ixmucané GeoPower se basa en formación investigativa en ingeniería computacional de yacimientos geotérmicos del Geothermal Institute de la Universidad de Auckland, y en décadas de experiencia de campo en Centro y Sudamérica.",
+  "publicationsLabel": "Publicaciones",
+  "people": [
+    {
+      "name": "Julian Xicara",
+      "role": "Fundador",
+      "affiliation": "Candidato a Doctorado, Geothermal Institute, Universidad de Auckland",
+      "photoKey": "julian",
+      "bio": "Inició en geotermia en 2006 en una planta binaria en Guatemala, seguido de formación geotérmica especializada en El Salvador (2012). Trabajó como ingeniero de pruebas para Ormat evaluando pozos en múltiples continentes, luego como Ingeniero de Recursos de Ormat en Nevada, y más recientemente como Ingeniero Senior de Yacimientos en Cyrq Energy. Posee una Maestría con Honores de Primera Clase de la Universidad de Auckland (tesis sobre el sistema geotérmico de Amatitlán) y actualmente es candidato a doctorado, integrando datos geoquímicos en marcos de evaluación de recursos y cuantificación de incertidumbre, en proyectos en Guatemala, Nicaragua y Estados Unidos."
+    },
+    {
+      "name": "John O'Sullivan",
+      "role": "Asesor Académico",
+      "affiliation": "Profesor Asociado y Co-Director, Geothermal Institute, Universidad de Auckland",
+      "photoKey": "john",
+      "bio": "PhD en Ciencias de la Ingeniería (Auckland), Maestría en Aeronáutica y Astronáutica (Stanford), Ingeniería con Honores de Primera Clase (Auckland). Trabaja a nivel mundial con actores de la industria geotérmica en evaluación de recursos, tecnología avanzada de simuladores, computación en la nube y cuantificación de incertidumbre, recursos supercríticos y desarrollo de gemelos digitales — liderando programas de capacitación en Asia, Sudamérica, África, Europa y Australia, y colaborando con el Lawrence Berkeley National Laboratory y el Departamento de Energía de EE. UU."
+    },
+    {
+      "name": "Michael O'Sullivan",
+      "role": "Asesor Académico",
+      "affiliation": "Profesor de Ciencias de la Ingeniería, Universidad de Auckland",
+      "photoKey": "mike",
+      "bio": "Uno de los expertos líderes a nivel mundial en modelado de yacimientos geotérmicos; ganador del Premio Henry J. Ramey de Ingeniería de Yacimientos Geotérmicos (2011) y Miembro (Fellow) del Institution of Professional Engineers New Zealand. PhD en Mecánica Aplicada (Caltech), con más de 45 años en la Universidad de Auckland (1969–2015) además de posiciones visitantes en el Lawrence Berkeley National Laboratory y la Universidad de Nueva York. Desarrolló técnicas centrales de modelado numérico usadas en campos geotérmicos de Nueva Zelanda y a nivel internacional."
+    },
+    {
+      "name": "Michael Gravatt",
+      "role": "Asesor Académico",
+      "affiliation": "Profesor Titular (Senior Lecturer), Geothermal Institute, Universidad de Auckland",
+      "photoKey": "gravatt",
+      "bio": "PhD e Ingeniería con Honores de Primera Clase en Ciencias de la Ingeniería, Universidad de Auckland. Desde 2019 ha trabajado en estandarizar los enfoques de modelado geotérmico y hacer la tecnología accesible para la industria y los estudiantes — el mismo marco de modelado en el que se basa esta consultora. Su investigación abarca evaluación de recursos geotérmicos, extracción de minerales críticos, secuestro de CO2, recursos supercríticos y gemelos digitales, con colaboraciones industriales que incluyen Contact Energy, Pertamina Geothermal Energy y el Lawrence Berkeley National Laboratory."
+    },
+    {
+      "name": "Enrique Porras Mendieta",
+      "role": "Asesor de Industria",
+      "affiliation": "Consultor Geotérmico Independiente — anteriormente Ingeniero Principal de Yacimientos y Gerente General, Complejo Geotérmico Momotombo, Nicaragua",
+      "photoKey": null,
+      "bio": "PhD en Ingeniería de la Universidad de Kyushu. Más de 30 años de experiencia en evaluación de recursos geotérmicos, pruebas de pozos y simulación de yacimientos. Construyó el primer modelo numérico 3D completo del campo geotérmico de Momotombo (en producción desde 1983, 77 MWe instalados) y propuso modelos conceptuales actualizados del sistema tras años de monitoreo del yacimiento. Actualmente consulta de forma independiente. Coautor, junto con Julian Xicara, del artículo del Congreso Mundial de Geotermia (World Geothermal Congress) 2020 sobre un nuevo modelo numérico del sistema de Amatitlán."
+    }
+  ],
+  "publications": [
+    { "title": "A new numerical model of Amatitlán geothermal system, Guatemala", "meta": "Porras, E. & Xicara, J. (2020) — Proceedings, World Geothermal Congress 2020" },
+    { "title": "Resource assessment of the Tecuamburro geothermal system using reservoir simulation", "meta": "Xicara Lopez, J. G. (2025) — 47th New Zealand Geothermal Workshop, Rotorua" },
+    { "title": "[Provisional] Agregar más publicaciones o actas de congresos", "meta": "Enlace a PDF o DOI" }
+  ]
+}

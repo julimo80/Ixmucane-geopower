@@ -5,27 +5,27 @@
     {
       "title": "Servicios",
       "description": "Mapeo de favorabilidad con IA, modelado geológico, diseño de pozos, pruebas y registros — todo el ciclo de desarrollo.",
-      "href": "/services"
+      "href": "/es/services"
     },
     {
       "title": "Tecnología",
       "description": "Nuestro flujo de modelado, la metodología y la física detrás de cada modelo.",
-      "href": "/technology"
+      "href": "/es/technology"
     },
     {
       "title": "Casos de Estudio",
       "description": "Proyectos seleccionados de modelado de yacimientos — desde borradores hasta un resultado real y publicado.",
-      "href": "/case-studies"
+      "href": "/es/case-studies"
     },
     {
       "title": "Equipo",
       "description": "Fundador, asesores académicos y de la industria, y nuestras publicaciones.",
-      "href": "/team"
+      "href": "/es/team"
     },
     {
       "title": "Contacto",
       "description": "Cuéntenos sobre su campo y la decisión que el modelo debe informar.",
-      "href": "/contact"
+      "href": "/es/contact"
     }
   ]
 }

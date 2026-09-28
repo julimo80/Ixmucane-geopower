@@ -1,42 +1,53 @@
-[
-  {
-    "log": "LOG 01",
-    "draft": true,
-    "title": "Natural-state and production-history calibration, high-enthalpy volcanic field",
-    "loc": "Central America · Andesitic stratovolcano-hosted system",
-    "brief": "Validate an updated equation-of-state formulation against 30+ years of well and production history before it was used for new development scenarios.",
-    "challenge": "Steep topography and a shallow magmatic heat source produce strong lateral temperature gradients that simple models under-predict.",
-    "method": "Multi-scenario natural-state and history-matched runs across the revised EOS, cross-checked against a combined-field simulation case.",
-    "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee."
+{
+  "eyebrow": "Field Log",
+  "heading": "Selected reservoir modelling engagements.",
+  "lead": "Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.",
+  "draftNote": {
+    "strong": "Mixed status.",
+    "text": "LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed) — see its source note below."
   },
-  {
-    "log": "LOG 02",
-    "draft": true,
-    "title": "Natural-state model for a new exploration prospect",
-    "loc": "Undisclosed field · Early-stage exploration",
-    "brief": "Build a natural-state model from sparse exploration data to support a well-siting decision ahead of the first deep well.",
-    "challenge": "Limited well control meant permeability structure had to be inferred largely from surface geochemistry and resistivity surveys.",
-    "method": "Ensemble of plausible permeability structures run in parallel, ranked against surface manifestation temperatures and chemistry.",
-    "outcome": "Narrowed the candidate well-pad locations from five to two, with an explicit confidence range on target reservoir temperature."
-  },
-  {
-    "log": "LOG 03",
-    "draft": false,
-    "badge": "In prep. — own research",
-    "title": "Combined development: Tecuamburro + Infiernitos, 25-year forecast",
-    "loc": "Tecuamburro Volcanic Complex, Guatemala · Two-resource joint development",
-    "brief": "Test whether developing Tecuamburro and Infiernitos as one combined project changes either resource's own forecast, using a framework where every combined-scenario sample shares the identical natural-state realisation, injection strategy and pump-sizing logic as its single-resource counterpart.",
-    "challenge": "Determine whether joint development causes genuine resource-scale interaction — shared pressure support, competition for reinjection capacity — or whether independent forecasts simply sum, and prove it at the level of reservoir pressure itself rather than inferring it from power output alone.",
-    "method": "293-sample stochastic ensemble; automated well-siting growth algorithm; source-network-coupled reinjection in Waiwera; matched sample-by-sample against each resource's independent forecast; interference tested directly via per-sample reservoir pressure at Infiernitos' own feedzones.",
-    "outcome": "Combined development changes each resource's own forecast by under 1% (Wasserstein-1 distance 0.13–0.38 MWe), and the distributions are not statistically distinguishable (Kolmogorov–Smirnov, p>0.05). A real but small hydraulic interference exists — 0.18 bar median pressure reduction at Infiernitos by year 25 — an order of magnitude below natural-state uncertainty.",
-    "hasChart": true,
-    "chartCaption": "Combined net power output, 25-year forecast, 293-sample ensemble — grey: individual samples; red: P10/P50/P90",
-    "stats": [
-      { "label": "P10", "value": "71.4 MWe" },
-      { "label": "P50", "value": "89.9 MWe" },
-      { "label": "P90", "value": "104.4 MWe" }
-    ],
-    "statsNote": "25-year time-averaged net output across the ensemble (mean 89.3 MWe)",
-    "source": "From our own in-preparation manuscript on Tecuamburro–Infiernitos combined resource assessment — not yet peer-reviewed."
-  }
-]
+  "stageLabels": { "brief": "Brief", "challenge": "Challenge", "method": "Method", "outcome": "Outcome" },
+  "draftBadge": "Draft",
+  "items": [
+    {
+      "log": "LOG 01",
+      "draft": true,
+      "title": "Natural-state and production-history calibration, high-enthalpy volcanic field",
+      "loc": "Central America · Andesitic stratovolcano-hosted system",
+      "brief": "Validate an updated equation-of-state formulation against 30+ years of well and production history before it was used for new development scenarios.",
+      "challenge": "Steep topography and a shallow magmatic heat source produce strong lateral temperature gradients that simple models under-predict.",
+      "method": "Multi-scenario natural-state and history-matched runs across the revised EOS, cross-checked against a combined-field simulation case.",
+      "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee."
+    },
+    {
+      "log": "LOG 02",
+      "draft": true,
+      "title": "Natural-state model for a new exploration prospect",
+      "loc": "Undisclosed field · Early-stage exploration",
+      "brief": "Build a natural-state model from sparse exploration data to support a well-siting decision ahead of the first deep well.",
+      "challenge": "Limited well control meant permeability structure had to be inferred largely from surface geochemistry and resistivity surveys.",
+      "method": "Ensemble of plausible permeability structures run in parallel, ranked against surface manifestation temperatures and chemistry.",
+      "outcome": "Narrowed the candidate well-pad locations from five to two, with an explicit confidence range on target reservoir temperature."
+    },
+    {
+      "log": "LOG 03",
+      "draft": false,
+      "badge": "In prep. — own research",
+      "title": "Combined development: Tecuamburro + Infiernitos, 25-year forecast",
+      "loc": "Tecuamburro Volcanic Complex, Guatemala · Two-resource joint development",
+      "brief": "Test whether developing Tecuamburro and Infiernitos as one combined project changes either resource's own forecast, using a framework where every combined-scenario sample shares the identical natural-state realisation, injection strategy and pump-sizing logic as its single-resource counterpart.",
+      "challenge": "Determine whether joint development causes genuine resource-scale interaction — shared pressure support, competition for reinjection capacity — or whether independent forecasts simply sum, and prove it at the level of reservoir pressure itself rather than inferring it from power output alone.",
+      "method": "293-sample stochastic ensemble; automated well-siting growth algorithm; source-network-coupled reinjection in Waiwera; matched sample-by-sample against each resource's independent forecast; interference tested directly via per-sample reservoir pressure at Infiernitos' own feedzones.",
+      "outcome": "Combined development changes each resource's own forecast by under 1% (Wasserstein-1 distance 0.13–0.38 MWe), and the distributions are not statistically distinguishable (Kolmogorov–Smirnov, p>0.05). A real but small hydraulic interference exists — 0.18 bar median pressure reduction at Infiernitos by year 25 — an order of magnitude below natural-state uncertainty.",
+      "hasChart": true,
+      "chartCaption": "Combined net power output, 25-year forecast, 293-sample ensemble — grey: individual samples; red: P10/P50/P90",
+      "stats": [
+        { "label": "P10", "value": "71.4 MWe" },
+        { "label": "P50", "value": "89.9 MWe" },
+        { "label": "P90", "value": "104.4 MWe" }
+      ],
+      "statsNote": "25-year time-averaged net output across the ensemble (mean 89.3 MWe)",
+      "source": "From our own in-preparation manuscript on Tecuamburro–Infiernitos combined resource assessment — not yet peer-reviewed."
+    }
+  ]
+}
