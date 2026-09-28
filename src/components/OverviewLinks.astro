@@ -1,14 +1,15 @@
 ---
-import pages from '../data/pages.json';
+import { loadData } from '../i18n/data';
+const pages = loadData(Astro.currentLocale ?? 'en', 'pages');
 ---
 <section class="overview">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Explore</span>
-      <h2>Everything about how we work, in one place each.</h2>
+      <span class="eyebrow">{pages.eyebrow}</span>
+      <h2>{pages.heading}</h2>
     </div>
     <div class="overview-grid">
-      {pages.map((p) => (
+      {pages.items.map((p) => (
         <a class="overview-card" href={p.href}>
           <h3>{p.title}</h3>
           <p>{p.description}</p>

@@ -1,0 +1,40 @@
+{
+  "name": "Ixmucané GeoPower",
+  "tagline": "Servicios de Desarrollo Geotérmico",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Servicios", "href": "/services" },
+    { "label": "Tecnología", "href": "/technology" },
+    { "label": "Casos de Estudio", "href": "/case-studies" },
+    { "label": "Equipo", "href": "/team" },
+    { "label": "Contacto", "href": "/contact" }
+  ],
+  "hero": {
+    "eyebrow": "Ingeniería de Yacimientos · Exploración con IA · Computación de Alto Rendimiento",
+    "headlinePre": "Simulando la",
+    "headlineEm": "verdad del subsuelo",
+    "headlinePost": "bajo cada campo geotérmico.",
+    "lead": "Ixmucané GeoPower cubre todo el ciclo de desarrollo geotérmico — desde el mapeo regional de favorabilidad con IA en Latinoamérica, pasando por el modelado geológico, la selección y diseño de pozos, hasta la simulación de yacimientos, pruebas de pozos y registros de fondo.",
+    "ctaPrimary": { "label": "Ver nuestros servicios", "href": "/services" },
+    "ctaSecondary": { "label": "Conversemos sobre su proyecto", "href": "/contact" }
+  },
+  "stats": [
+    { "k": "HPC", "v": "Corridas paralelas de conjuntos (ensembles) en infraestructura de alto rendimiento de NeSI, AWS y Azure" },
+    { "k": "Física", "v": "Balance acoplado de masa, momento y energía en medios porosos y fracturados" },
+    { "k": "UQ", "v": "Ajuste histórico por conjuntos (ensemble) y pronósticos probabilísticos P10–P90" },
+    { "k": "Herramientas", "v": "Waiwera · TOUGH2 · GMF (O'Sullivan et al., 2023)" }
+  ],
+  "contact": {
+    "heading": "Modelemos su campo.",
+    "lead": "Cuéntenos sobre el campo, la etapa en la que se encuentra, y la decisión que el modelo debe informar — a partir de ahí definimos el enfoque de modelado.",
+    "email": "hello@ixmucanegeopower.com"
+  },
+  "footerTagline": "Servicios de simulación y modelado de yacimientos geotérmicos",
+  "footerNote": "Prototipo en revisión — los casos de estudio, biografías del equipo, publicaciones y el correo de contacto son marcadores de posición pendientes de confirmación, no son contenido definitivo.",
+  "geoMark": {
+    "line1": "Energía",
+    "line2": "Geotérmica",
+    "capLine1": "Producción (rojo) — reinyección (azul)",
+    "capLine2": "Esquema ilustrativo, no el diseño de un pozo específico"
+  }
+}

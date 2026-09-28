@@ -145,6 +145,12 @@ nav.top{
   padding-bottom:3px;
 }
 .navlinks a:hover{ color:var(--text); border-color:var(--accent); }
+.lang-switch{
+  color:var(--accent) !important;
+  border:1px solid var(--border); border-radius:20px;
+  padding:3px 10px !important;
+}
+.lang-switch:hover{ border-color:var(--accent) !important; }
 
 /* HERO */
 .hero{

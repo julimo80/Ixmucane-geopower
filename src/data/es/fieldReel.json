@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Pruebas de campo",
+  "heading": "Estamos en sitio para hacerlo, no solo para modelarlo después.",
+  "lead": "Clips sin editar de pruebas de flujo y trabajo de pozos realizados por nuestro equipo — silenciado, en bucle. [Provisional] confirmar nombres de campo antes de publicar.",
+  "clips": [
+    { "key": "reel-1-plume", "file": "reel-1-plume.mp4", "alt": "Vapor venteando por el silenciador de un pozo durante una prueba de flujo" },
+    { "key": "reel-2-rig", "file": "reel-2-rig.mp4", "alt": "Columna de vapor con una torre de perforación en sitio detrás" },
+    { "key": "reel-3-worker", "file": "reel-3-worker.mp4", "alt": "Técnico de campo en una válvula del cabezal durante una prueba de flujo" },
+    { "key": "reel-4-wellhead", "file": "reel-4-wellhead.mp4", "alt": "Silenciador venteando vapor durante una prueba de flujo, toma estática" }
+  ]
+}

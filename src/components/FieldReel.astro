@@ -1,5 +1,6 @@
 ---
-import reel from '../data/fieldReel.json';
+import { loadData } from '../i18n/data';
+const reel = loadData(Astro.currentLocale ?? 'en', 'fieldReel');
 ---
 <section class="field-reel">
   <div class="wrap">

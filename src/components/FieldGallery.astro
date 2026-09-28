@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
-import gallery from '../data/gallery.json';
+import { loadData } from '../i18n/data';
+const gallery = loadData(Astro.currentLocale ?? 'en', 'gallery');
 
 const images = import.meta.glob('../assets/field/*.jpg', { eager: true });
 function getImage(key: string) {

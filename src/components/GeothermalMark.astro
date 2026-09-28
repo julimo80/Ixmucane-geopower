@@ -1,4 +1,9 @@
 ---
+interface Props {
+  line1?: string;
+  line2?: string;
+}
+const { line1 = 'Geothermal', line2 = 'Power' } = Astro.props;
 ---
 <div class="geo-mark">
   <svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -33,7 +38,7 @@
     </g>
   </svg>
   <div class="geo-mark-word">
-    <span>Geothermal</span>
-    <span>Power</span>
+    <span>{line1}</span>
+    <span>{line2}</span>
   </div>
 </div>

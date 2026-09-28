@@ -1,5 +1,6 @@
 ---
-import site from '../data/site.json';
+import { loadData } from '../i18n/data';
+const site = loadData(Astro.currentLocale ?? 'en', 'site');
 ---
 <div class="stats">
   <div class="wrap stat-grid">

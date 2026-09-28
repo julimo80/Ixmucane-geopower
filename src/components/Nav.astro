@@ -1,16 +1,27 @@
 ---
 import { Image } from 'astro:assets';
-import site from '../data/site.json';
+import { loadData } from '../i18n/data';
 import logoIcon from '../assets/paper/logo-icon-2.png';
+
+const locale = Astro.currentLocale ?? 'en';
+const site = loadData(locale, 'site');
+
+// Only the Home page has a Spanish translation so far, so the switcher maps
+// "/" <-> "/es/" specifically; once more pages get an es/ counterpart this
+// should generalise to swap the locale prefix on Astro.url.pathname instead.
+const path = Astro.url.pathname;
+const otherLocaleHref = locale === 'es' ? (path === '/es/' || path === '/es' ? '/' : '/') : '/es/';
+const otherLocaleLabel = locale === 'es' ? 'EN' : 'ES';
 ---
 <nav class="top">
   <div class="wrap nav-inner">
-    <a class="brand" href="/">
+    <a class="brand" href={locale === 'es' ? '/es/' : '/'}>
       <Image class="mark" src={logoIcon} alt="" width={64} />
       <span>{site.name}<span class="sub" style="display:block;margin-top:1px;">{site.tagline}</span></span>
     </a>
     <div class="navlinks">
       {site.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+      <a href={otherLocaleHref} class="lang-switch">{otherLocaleLabel}</a>
     </div>
   </div>
 </nav>

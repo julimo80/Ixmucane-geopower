@@ -1,7 +1,10 @@
 ---
-import site from '../data/site.json';
+import { loadData } from '../i18n/data';
 import GeothermalMark from './GeothermalMark.astro';
-const { hero } = site;
+
+const locale = Astro.currentLocale ?? 'en';
+const site = loadData(locale, 'site');
+const { hero, geoMark } = site;
 ---
 <header class="hero">
   <div class="wrap hero-grid">
@@ -15,10 +18,10 @@ const { hero } = site;
       </div>
     </div>
     <div class="hero-art hero-art-mark">
-      <GeothermalMark />
+      <GeothermalMark line1={geoMark.line1} line2={geoMark.line2} />
       <div class="cap">
-        <span>Production (red) — reinjection (blue)</span>
-        <span>Illustrative schematic, not a specific well design</span>
+        <span>{geoMark.capLine1}</span>
+        <span>{geoMark.capLine2}</span>
       </div>
     </div>
   </div>

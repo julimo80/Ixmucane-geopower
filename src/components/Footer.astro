@@ -1,11 +1,12 @@
 ---
-import site from '../data/site.json';
+import { loadData } from '../i18n/data';
+const site = loadData(Astro.currentLocale ?? 'en', 'site');
 const year = new Date().getFullYear();
 ---
 <footer>
   <div class="wrap foot-inner">
     <span>&copy; {year} {site.name}</span>
-    <span class="mono">Geothermal reservoir simulation &amp; modelling services</span>
+    <span class="mono">{site.footerTagline}</span>
   </div>
   <p class="foot-note">{site.footerNote}</p>
 </footer>

@@ -1,0 +1,47 @@
+{
+  "eyebrow": "En el campo",
+  "heading": "Trabajo de campo real, no renders.",
+  "lead": "Pruebas de flujo, trabajo de pozos y revisiones de planta en las que nuestro equipo ha estado presente — leyendas provisionales pendientes de confirmar campo, cliente y fecha de cada una.",
+  "photos": [
+    {
+      "key": "zebras",
+      "caption": "Fauna silvestre junto a un campo geotérmico",
+      "note": "[Provisional] confirmar campo, país y año"
+    },
+    {
+      "key": "drilling-rig-blue-sky",
+      "caption": "Torre de perforación en sitio",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "rig-steam-nevada",
+      "caption": "Piso de perforación junto a un pozo en flujo",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "wellhead-volcano",
+      "caption": "Cabezal de pozo con el complejo volcánico anfitrión de fondo",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "wellhead-green-hills",
+      "caption": "Árbol de válvulas del cabezal, campo de altura",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "steam-plume-backlit",
+      "caption": "Prueba de flujo — vapor venteando por el silenciador",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "technician-on-lift",
+      "caption": "Trabajo en válvulas del cabezal, con acceso elevado",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    },
+    {
+      "key": "pipeline-amatitlan",
+      "caption": "Tubería de recolección del campo de vapor",
+      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+    }
+  ]
+}

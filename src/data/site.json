@@ -29,5 +29,12 @@
     "lead": "Tell us about the field, the stage it's at, and the decision the model needs to inform — we'll scope the modelling approach from there.",
     "email": "hello@ixmucanegeopower.com"
   },
-  "footerNote": "Prototype for review — case studies, team bios, publications and contact email are placeholders pending confirmation, not live content."
+  "footerTagline": "Geothermal reservoir simulation & modelling services",
+  "footerNote": "Prototype for review — case studies, team bios, publications and contact email are placeholders pending confirmation, not live content.",
+  "geoMark": {
+    "line1": "Geothermal",
+    "line2": "Power",
+    "capLine1": "Production (red) — reinjection (blue)",
+    "capLine2": "Illustrative schematic, not a specific well design"
+  }
 }
