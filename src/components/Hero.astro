@@ -1,7 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import site from '../data/site.json';
-import crossSection from '../assets/paper/tecuamburro-permeability-cross-section.png';
+import GeothermalMark from './GeothermalMark.astro';
 const { hero } = site;
 ---
 <header class="hero">
@@ -15,11 +14,11 @@ const { hero } = site;
         <a class="btn btn-secondary" href={hero.ctaSecondary.href}>{hero.ctaSecondary.label}</a>
       </div>
     </div>
-    <div class="hero-art">
-      <Image src={crossSection} alt="Numerical reservoir model cross-sections through Tecuamburro (A-A') and Infiernitos (B-B'), coloured by vertical permeability, showing clay-cap geometry and well locations" width={1400} />
+    <div class="hero-art hero-art-mark">
+      <GeothermalMark />
       <div class="cap">
-        <span>Fig. 01 — Reservoir Model Cross-Sections (Tecuamburro A–A′, Infiernitos B–B′)</span>
-        <span>From our own field work</span>
+        <span>Production (red) — reinjection (blue)</span>
+        <span>Illustrative schematic, not a specific well design</span>
       </div>
     </div>
   </div>

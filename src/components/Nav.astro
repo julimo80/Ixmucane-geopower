@@ -5,10 +5,10 @@ import logoIcon from '../assets/paper/logo-icon-2.png';
 ---
 <nav class="top">
   <div class="wrap nav-inner">
-    <div class="brand">
+    <a class="brand" href="/">
       <Image class="mark" src={logoIcon} alt="" width={64} />
       <span>{site.name}<span class="sub" style="display:block;margin-top:1px;">{site.tagline}</span></span>
-    </div>
+    </a>
     <div class="navlinks">
       {site.nav.map((item) => <a href={item.href}>{item.label}</a>)}
     </div>

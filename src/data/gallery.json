@@ -1,0 +1,47 @@
+{
+  "eyebrow": "In the field",
+  "heading": "Real fieldwork, not renders.",
+  "lead": "Flow testing, well work and power-plant overhauls our team has been on-site for — placeholder captions pending confirmation of field, client and date for each.",
+  "photos": [
+    {
+      "key": "zebras",
+      "caption": "Wildlife grazing beside a geothermal field",
+      "note": "[Placeholder] confirm field, country, year"
+    },
+    {
+      "key": "drilling-rig-blue-sky",
+      "caption": "Drilling rig on location",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "rig-steam-nevada",
+      "caption": "Rig floor alongside a flowing well",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "wellhead-volcano",
+      "caption": "Wellhead with the host volcanic complex behind it",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "wellhead-green-hills",
+      "caption": "Wellhead valve tree, high-country field",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "steam-plume-backlit",
+      "caption": "Flow test — steam venting through a silencer",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "technician-on-lift",
+      "caption": "Wellhead valve work, lift access",
+      "note": "[Placeholder] confirm field, well name, year"
+    },
+    {
+      "key": "pipeline-amatitlan",
+      "caption": "Steamfield gathering pipework",
+      "note": "[Placeholder] confirm field, well name, year"
+    }
+  ]
+}

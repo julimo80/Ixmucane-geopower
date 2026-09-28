@@ -1,0 +1,39 @@
+---
+---
+<div class="geo-mark">
+  <svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- below-surface zone tint -->
+    <rect x="0" y="128" width="220" height="68" rx="4" fill="var(--geo-blue)" opacity="0.08" />
+    <!-- ground line -->
+    <path d="M2 128 Q30 118 58 128 T114 128 T170 128 T218 128"
+      stroke="var(--text-dim)" stroke-width="4" fill="none" stroke-linecap="round" />
+
+    <!-- PRODUCTION SIDE: wellhead, riser, plant building, chimneys — all above ground -->
+    <g stroke="var(--geo-red)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M34 128 V104" />
+      <path d="M34 104 H58 V88" />
+      <rect x="58" y="46" width="56" height="42" rx="6" />
+      <path d="M70 46 V28" />
+      <path d="M98 46 V22" />
+    </g>
+
+    <!-- animated steam, production side -->
+    <g class="geo-steam" fill="var(--geo-red)">
+      <circle class="steam s1" cx="70" cy="22" r="7" />
+      <circle class="steam s2" cx="80" cy="13" r="5" />
+      <circle class="steam s3" cx="98" cy="16" r="8" />
+      <circle class="steam s4" cx="109" cy="6" r="6" />
+    </g>
+
+    <!-- INJECTION SIDE: pipe leaving plant, well going back below surface -->
+    <g stroke="var(--geo-blue)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M114 74 H152 V128" />
+      <path d="M152 128 V162" />
+      <path d="M140 162 H164" />
+    </g>
+  </svg>
+  <div class="geo-mark-word">
+    <span>Geothermal</span>
+    <span>Power</span>
+  </div>
+</div>

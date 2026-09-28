@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import gallery from '../data/gallery.json';
+
+const images = import.meta.glob('../assets/field/*.jpg', { eager: true });
+function getImage(key: string) {
+  const mod = images[`../assets/field/${key}.jpg`] as { default: ImageMetadata } | undefined;
+  return mod?.default;
+}
+---
+<section class="field-gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{gallery.eyebrow}</span>
+      <h2>{gallery.heading}</h2>
+      <p>{gallery.lead}</p>
+    </div>
+    <div class="gallery-grid">
+      {gallery.photos.map((p) => {
+        const img = getImage(p.key);
+        return img ? (
+          <figure class="gallery-item">
+            <Image src={img} alt={p.caption} width={900} />
+            <figcaption>
+              <span>{p.caption}</span>
+              <span class="note">{p.note}</span>
+            </figcaption>
+          </figure>
+        ) : null;
+      })}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,301 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{mdframed}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\definecolor{ixaccent}{HTML}{0E7A64}
+\definecolor{ixred}{HTML}{C0432B}
+\definecolor{ixblue}{HTML}{2E6FA3}
+\definecolor{ixdim}{HTML}{4A5851}
+\definecolor{codebg}{HTML}{F2F5F0}
+\definecolor{codeborder}{HTML}{C7D1C1}
+\definecolor{notebg}{HTML}{F1E4C8}
+\definecolor{noteborder}{HTML}{A66E14}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=ixaccent,
+  urlcolor=ixaccent,
+  pdftitle={Ixmucan\'e GeoPower -- Website Editing \& Deployment Guide},
+  pdfauthor={Prepared with Claude Code}
+}
+
+\titleformat{\section}{\Large\bfseries\color{ixaccent}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{black}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.6em}
+\titlespacing*{\subsection}{0pt}{1.1em}{0.4em}
+
+\newmdenv[
+  backgroundcolor=codebg,
+  linecolor=codeborder,
+  linewidth=0.8pt,
+  roundcorner=3pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  skipabove=8pt,
+  skipbelow=8pt,
+  fontcolor=black
+]{codebox}
+
+\newmdenv[
+  backgroundcolor=notebg,
+  linecolor=noteborder,
+  linewidth=0.8pt,
+  roundcorner=3pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  skipabove=8pt,
+  skipbelow=8pt
+]{notebox}
+
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\file}[1]{\texttt{\small\color{ixaccent}#1}}
+
+\fvset{fontsize=\small, frame=none, xleftmargin=0pt}
+
+\title{\vspace{-1.5cm}\textbf{\color{ixaccent}Ixmucan\'e GeoPower}\\[4pt]\Large Website Editing \& Deployment Guide}
+\author{Prototype repository: \file{github.com/julimo80/Ixmucane-geopower}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\vspace{-1.2cm}
+
+\section*{Overview}
+The site is an Astro + Tailwind static site. Almost all real content --- copy,
+stats, service descriptions, case studies, team bios, photo/video captions ---
+lives in plain JSON files under \file{src/data/}. You should not need to
+touch the \file{.astro} component files (the layout/code) for day-to-day
+content edits; only for structural changes.
+
+\section{Running the Prototype}
+
+The project needs Node.js $\geq$ 22 and ffmpeg (for video work). Both are
+installed in a dedicated conda environment, \code{ixmucane-web}, kept separate
+from your other project environments so nothing else on the machine is
+affected.
+
+\begin{codebox}
+\begin{Verbatim}
+# one-time per terminal session
+conda activate ixmucane-web
+
+cd ~/Ixmucane-geopower
+
+npm run dev        # dev server at http://localhost:4321, hot-reloads on save
+\end{Verbatim}
+\end{codebox}
+
+\begin{notebox}
+\textbf{Note:} a dev server may already be running in the background from an
+earlier session. If \code{npm run dev} complains the port is taken, either
+reuse the one already running (just edit \& refresh the browser) or stop it
+first with \code{pkill -f "astro dev"}.
+\end{notebox}
+
+Other commands, same environment:
+
+\begin{codebox}
+\begin{Verbatim}
+npm run build       # production build to dist/ -- also catches JSON/syntax
+                     # errors before they reach a live site
+npm run preview     # serves that production build locally, for a final
+                     # sanity check before deploying
+\end{Verbatim}
+\end{codebox}
+
+To stop the dev server: \code{Ctrl+C} in its terminal, or \code{astro dev stop}
+(the project's own convention, see \file{AGENTS.md}).
+
+\section{Where to Edit Content}
+
+Everything below is in \file{src/data/*.json}. Edit the text, save, and the
+dev server updates the page automatically.
+
+\begin{longtable}{@{}p{4.6cm}p{9.6cm}@{}}
+\toprule
+\textbf{File} & \textbf{Controls} \\
+\midrule
+\endhead
+\file{site.json} & Site name, tagline, nav links, hero headline/lead, stat
+  strip, contact heading/email, footer note. \\[4pt]
+\file{pages.json} & The four link cards on the Home page (Services,
+  Technology, Case Studies, Team, Contact overview text). \\[4pt]
+\file{flagship.json} & The ``AI Favorability Mapping'' flagship service card
+  and its map caption. \\[4pt]
+\file{services.json} & The seven remaining numbered services (02--08). \\[4pt]
+\file{technology.json} & Technology page: capability list, the 5-step
+  process pipeline, and the \code{methodology.items[].figcap} /
+  \code{description} fields -- the three figure captions (geological model,
+  permeability cross-sections, ESP/GBOP pump sizing). \\[4pt]
+\file{caseStudies.json} & The three case-study cards. Set
+  \code{"draft": false} once a case study is client-confirmed; the yellow
+  draft banner disappears automatically. \code{chartCaption} controls the
+  chart caption on LOG 03. \\[4pt]
+\file{team.json} & Team bios and the publications list. \\[4pt]
+\file{fields.json} & The six Guatemalan fields plotted on the favorability
+  map (name, status, note). \\[4pt]
+\file{gallery.json} & \textbf{Home page photo gallery}: 8 entries, each with
+  \code{key} (must match a filename in \file{src/assets/field/}),
+  \code{caption}, and \code{note}. \\[4pt]
+\file{fieldReel.json} & \textbf{Home page video collage}: 4 clips, each with
+  \code{key}, \code{file} (filename in \file{public/videos/}), and
+  \code{alt} (screen-reader text only, not shown visually). \\
+\bottomrule
+\end{longtable}
+
+\section{Editing Photos and Videos}
+
+\subsection{If you edit an existing image and keep the same filename}
+\textbf{Yes --- the build will use your edited version automatically.} Astro
+re-processes every image from \file{src/assets/} on each build/dev reload
+and writes a fresh, content-hashed output file, so there is no manual
+cache-busting step on the build side. The only thing that can look stale is
+your \emph{browser's} own cache of the old picture -- do a hard refresh
+(Ctrl+Shift+R) if you don't see the change.
+
+\subsection{If you rename a file or switch to a different photo}
+This depends on \emph{how} that image reaches the page:
+
+\begin{itemize}[leftmargin=1.4em]
+  \item \textbf{Home page gallery \& video collage} (\file{gallery.json} /
+    \file{fieldReel.json}): fully key-driven, no code changes needed. Drop
+    the new file into \file{src/assets/field/} (photos) or
+    \file{public/videos/} (clips), then update \code{key} / \code{file} in
+    the JSON to match the new filename.
+  \item \textbf{Everything else} (Hero, Nav logo, Team photos, Technology
+    figures, Case Study chart): these are imported by exact path at the top
+    of the relevant \file{.astro} component (e.g.\
+    \file{src/components/Team.astro} line 4:
+    \code{import julianPhoto from '../assets/team/julian-xicara.webp'}). To
+    swap one of these, either \textbf{overwrite the existing file in place}
+    (simplest -- no code edit), or replace the file and edit that one
+    \code{import} line to point at the new filename.
+\end{itemize}
+
+\begin{notebox}
+\textbf{Rule of thumb:} same filename, no code touch, ever. Different
+filename: check whether it is JSON-driven (edit JSON only) or
+component-imported (edit one import line).
+\end{notebox}
+
+\subsection{Adding a brand-new photo to the gallery (not just replacing one)}
+\begin{enumerate}[leftmargin=1.4em]
+  \item Put the file in \file{src/assets/field/}, e.g.\ \file{new-shot.jpg}.
+  \item Add an entry to \file{gallery.json}:
+\begin{codebox}
+\begin{Verbatim}
+{ "key": "new-shot", "caption": "...", "note": "..." }
+\end{Verbatim}
+\end{codebox}
+  \item Save -- it appears in the grid automatically (the component globs
+    the folder by key, no import statement needed for gallery photos).
+\end{enumerate}
+
+\section{Verifying Your Changes}
+\begin{enumerate}[leftmargin=1.4em]
+  \item Keep \code{npm run dev} running and check the page in a browser at
+    \url{http://localhost:4321}.
+  \item Before considering something final, run \code{npm run build} once --
+    it will fail loudly on a malformed JSON file or a broken image path,
+    which the dev server sometimes lets slide silently.
+\end{enumerate}
+
+\section{Before Going Live}
+
+\subsection{Content still marked as placeholder}
+The footer currently says outright: \textit{``Prototype for review --- case
+studies, team bios, publications and contact email are placeholders pending
+confirmation, not live content.''} Concretely, that means:
+
+\begin{itemize}[leftmargin=1.4em]
+  \item \textbf{Photo/video captions} -- every entry in \file{gallery.json}
+    and \file{fieldReel.json} has a \code{[Placeholder]} note asking you to
+    confirm the field, well name, and year before publishing.
+  \item \textbf{Case studies} -- LOG 01 and LOG 02 in \file{caseStudies.json}
+    are marked \code{"draft": true} (real content, unconfirmed client). LOG
+    03 (Tecuamburro--Infiernitos) is real and confirmed.
+  \item \textbf{Publications} -- \file{team.json} has one placeholder entry
+    inviting further publications/conference proceedings to be added.
+  \item \textbf{Contact email} -- \file{site.json}'s
+    \code{contact.email} (currently \code{hello@ixmucanegeopower.com}) needs
+    to be a real, monitored mailbox before launch.
+  \item Once everything above is confirmed, delete or rewrite
+    \code{site.json}'s \code{footerNote} -- it exists specifically to flag
+    this prototype status to reviewers.
+\end{itemize}
+
+\subsection{Deployment (turning this into a live, public website)}
+The project is a fully static site (\code{npm run build} produces plain
+HTML/CSS/JS/images in \file{dist/} -- no server or database needed), so
+hosting is simple:
+
+\begin{enumerate}[leftmargin=1.4em]
+  \item \textbf{Pick a static host} and connect it to the GitHub repository
+    (\file{github.com/julimo80/Ixmucane-geopower}). Any of these
+    auto-detect Astro, run \code{npm run build}, and redeploy on every push
+    to \code{main}:
+    \begin{itemize}[leftmargin=1.2em]
+      \item \href{https://vercel.com}{Vercel}
+      \item \href{https://netlify.com}{Netlify}
+      \item \href{https://pages.cloudflare.com}{Cloudflare Pages}
+    \end{itemize}
+    All three have a free tier sufficient for a marketing site like this
+    one, and all three provision HTTPS/SSL automatically.
+  \item \textbf{Domain name.} If \code{ixmucanegeopower.com} (or whichever
+    domain you want) is not already registered, register it through any
+    domain registrar. Point its DNS at the host chosen in step 1 --
+    each host's dashboard gives you the exact records to add.
+  \item \textbf{Contact form (optional upgrade).} The Contact page currently
+    uses a plain \code{mailto:} link (no backend needed, works immediately).
+    If you would rather have an in-page form, a service like
+    \href{https://formspree.io}{Formspree} or the hosting platform's own
+    form handling (e.g.\ Netlify Forms) can be wired in without standing up
+    a custom backend.
+  \item \textbf{Analytics (optional).} None is wired in yet. A
+    privacy-friendly option such as Plausible, or Google Analytics if you
+    prefer, can be added as a small script tag in
+    \file{src/layouts/Base.astro}.
+  \item \textbf{SEO basics (optional, nice-to-have).} The page already has a
+    title/meta description per page. Not yet present: a
+    \file{sitemap.xml}, a real Open Graph share image, and
+    \file{robots.txt} -- worth adding once the domain is live, low effort
+    via an Astro integration (\code{@astrojs/sitemap}).
+\end{enumerate}
+
+\section*{Quick Reference}
+\begin{codebox}
+\begin{Verbatim}
+conda activate ixmucane-web        # once per terminal
+cd ~/Ixmucane-geopower
+
+npm run dev                         # edit + preview live
+npm run build                       # verify a clean production build
+npm run preview                     # preview that production build
+
+# edit captions/copy:
+src/data/gallery.json               # Home page photo captions
+src/data/fieldReel.json             # Home page video alt text
+src/data/technology.json            # Technology page figure captions
+src/data/caseStudies.json           # Case study text + draft flags
+src/data/team.json                  # Team bios + publications
+src/data/site.json                  # Site-wide copy, contact email, footer
+\end{Verbatim}
+\end{codebox}
+
+\end{document}

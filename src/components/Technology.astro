@@ -2,10 +2,23 @@
 import { Image } from 'astro:assets';
 import tech from '../data/technology.json';
 import geoModelImg from '../assets/paper/geological-reservoir-model.png';
+import crossSectionImg from '../assets/paper/tecuamburro-permeability-cross-section.png';
 import espImg from '../assets/paper/esp-pump-sizing.png';
 
 const { methodology, pipeline } = tech;
+
+const figureImages = {
+  geomodel: geoModelImg,
+  permeability: crossSectionImg,
+  gbop: espImg,
+} as const;
+const figureAlts = {
+  geomodel: "Two-panel figure: (A) 3D geological model of the Tecuamburro field in Leapfrog, (B) the same volume discretised as a numerical reservoir simulation mesh",
+  permeability: "Numerical reservoir model cross-sections through Tecuamburro (A-A') and Infiernitos (B-B'), coloured by vertical permeability, showing clay-cap geometry and well locations",
+  gbop: "Electric submersible pump completion schematic with gas-breakout pressure and water-only NPSH thresholds vs. pump setting depth",
+} as const;
 ---
+
 <section id="technology">
   <div class="wrap">
     <div class="section-head">
@@ -67,23 +80,20 @@ const { methodology, pipeline } = tech;
       </div>
 
       <div class="method-grid">
-        <div class="method-card">
-          <div class="figure">
-            <Image src={geoModelImg} alt="Two-panel figure: (A) 3D geological model of the Tecuamburro field in Leapfrog, (B) the same volume discretised as a numerical reservoir simulation mesh" width={1800} />
+        {methodology.items.map((item) => (
+          <div class:list={['method-card', item.key === 'gbop' && 'method-card-sm']}>
+            <div class="figure">
+              <Image
+                src={figureImages[item.key as keyof typeof figureImages]}
+                alt={figureAlts[item.key as keyof typeof figureAlts]}
+                width={item.key === 'gbop' ? 900 : 1800}
+              />
+            </div>
+            <p class="figcap">{item.figcap}</p>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
           </div>
-          <p class="figcap">Fig. — (A) Leapfrog geological model. (B) Numerical reservoir simulation mesh, same volume.</p>
-          <h3>{methodology.items[0].title}</h3>
-          <p>{methodology.items[0].description}</p>
-        </div>
-
-        <div class="method-card">
-          <div class="figure">
-            <Image src={espImg} alt="Electric submersible pump completion schematic with gas-breakout pressure and water-only NPSH thresholds vs. pump setting depth" width={1600} />
-          </div>
-          <p class="figcap">Fig. — Electric submersible pump (ESP) completion, sized against the GBOP threshold.</p>
-          <h3>{methodology.items[1].title}</h3>
-          <p>{methodology.items[1].description}</p>
-        </div>
+        ))}
       </div>
     </div>
   </div>

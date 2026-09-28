@@ -2,6 +2,7 @@
   "name": "Ixmucané GeoPower",
   "tagline": "Geothermal Development Services",
   "nav": [
+    { "label": "Home", "href": "/" },
     { "label": "Services", "href": "/services" },
     { "label": "Technology", "href": "/technology" },
     { "label": "Case Studies", "href": "/case-studies" },

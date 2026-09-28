@@ -1,0 +1,28 @@
+---
+import reel from '../data/fieldReel.json';
+---
+<section class="field-reel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{reel.eyebrow}</span>
+      <h2>{reel.heading}</h2>
+      <p>{reel.lead}</p>
+    </div>
+    <div class="reel-grid">
+      {reel.clips.map((clip) => (
+        <div class="reel-tile">
+          <video
+            src={`/videos/${clip.file}`}
+            poster={`/videos/posters/${clip.key}-poster.jpg`}
+            aria-hidden="true"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
