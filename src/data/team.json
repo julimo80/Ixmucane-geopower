@@ -12,6 +12,13 @@
       "bio": "Started in geothermal in 2006 at a binary power plant in Guatemala, followed by specialised geothermal training in El Salvador (2012). Worked as a testing engineer for Ormat evaluating wells across multiple continents, then as an Ormat Resource Engineer in Nevada, and most recently as Senior Reservoir Engineer at Cyrq Energy. Holds an MSc with First Class Honours from the University of Auckland (thesis on the Amatitlán geothermal system) and is now a PhD candidate integrating geochemical data into resource assessment and uncertainty-quantification frameworks, across projects in Guatemala, Nicaragua and the United States."
     },
     {
+      "name": "Enrique Porras Mendieta",
+      "role": "Industry Advisor",
+      "affiliation": "Independent Geothermal Consultant — formerly Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
+      "photoKey": null,
+      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and proposed updated conceptual models of the system following years of reservoir monitoring. Now consulting independently. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system."
+    },
+    {
       "name": "John O'Sullivan",
       "role": "Academic Advisor",
       "affiliation": "Associate Professor & Co-Director, Geothermal Institute, University of Auckland",
@@ -31,13 +38,6 @@
       "affiliation": "Senior Lecturer, Geothermal Institute, University of Auckland",
       "photoKey": "gravatt",
       "bio": "PhD and BE (First Class Honours) in Engineering Science, University of Auckland. Since 2019 has worked to standardise geothermal modelling approaches and make the technology accessible to industry and students — the same modelling framework this consultancy builds on. Research spans geothermal resource assessment, critical mineral extraction, CO2 sequestration, supercritical resources and digital twins, with industry collaborations including Contact Energy, Pertamina Geothermal Energy and Lawrence Berkeley National Laboratory."
-    },
-    {
-      "name": "Enrique Porras Mendieta",
-      "role": "Industry Advisor",
-      "affiliation": "Independent Geothermal Consultant — formerly Principal Reservoir Engineer & General Manager, Momotombo Geothermal Complex, Nicaragua",
-      "photoKey": null,
-      "bio": "PhD in Engineering from Kyushu University. 30+ years of experience in geothermal resource assessment, well testing and reservoir simulation. Built the first full 3D numerical reservoir model of the Momotombo geothermal field (in production since 1983, 77 MWe installed) and proposed updated conceptual models of the system following years of reservoir monitoring. Now consulting independently. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system."
     }
   ],
   "publications": [
