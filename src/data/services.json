@@ -53,7 +53,7 @@
   {
     "idx": "12",
     "title": "Wellbore modelling",
-    "description": "Transient, multi-feed wellbore simulation — two-phase flow, counter-flow, start-up and shut-in behaviour inside the well itself — built on the transient wellbore simulator developed by our academic advisor Dr. Ryan Tonkin (University of Auckland).",
+    "description": "Transient, multi-feed wellbore simulation — two-phase flow, counter-flow, start-up and shut-in behaviour inside the well itself — built on a transient wellbore simulator developed at the University of Auckland.",
     "goto": { "label": "Meet our team", "href": "/team" }
   }
 ]
