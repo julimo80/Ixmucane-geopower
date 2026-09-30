@@ -14,9 +14,9 @@
     {
       "name": "Enrique Porras Mendieta",
       "role": "Asesor de Industria",
-      "affiliation": "Consultor Geotérmico Independiente — anteriormente Ingeniero Principal de Yacimientos y Gerente General, Complejo Geotérmico Momotombo, Nicaragua",
-      "photoKey": null,
-      "bio": "PhD en Ingeniería de la Universidad de Kyushu. Más de 30 años de experiencia en evaluación de recursos geotérmicos, pruebas de pozos y simulación de yacimientos. Construyó el primer modelo numérico 3D completo del campo geotérmico de Momotombo (en producción desde 1983, 77 MWe instalados) y propuso modelos conceptuales actualizados del sistema tras años de monitoreo del yacimiento. Actualmente consulta de forma independiente. Coautor, junto con Julian Xicara, del artículo del Congreso Mundial de Geotermia (World Geothermal Congress) 2020 sobre un nuevo modelo numérico del sistema de Amatitlán."
+      "affiliation": "Consultor Geotérmico Independiente — anteriormente Ingeniero Principal de Yacimientos, ORMAT Inc., y Gerente de Campo, Complejo Geotérmico Momotombo, Nicaragua",
+      "photoKey": "enrique",
+      "bio": "PhD en Ingeniería de la Universidad de Kyushu (2005). Casi cuatro décadas en la industria — desde ENEL en Nicaragua hasta tres décadas en ORMAT, más recientemente como Ingeniero Principal de Yacimientos, antes de independizarse en 2025 — construyendo y calibrando modelos numéricos para Momotombo, Zunil, Amatitlán, Olkaria III y Dixie Valley, y diseñando los sistemas de monitoreo continuo de presión de fondo y de inhibición de calcita que hoy operan en varios de esos campos. Coautor, junto con Julian Xicara, del artículo del Congreso Mundial de Geotermia (World Geothermal Congress) 2020 sobre un nuevo modelo numérico del sistema de Amatitlán, y de tres artículos del Geothermal Resources Council (2021–2025) sobre inhibición de calcita y tratamientos cáusticos de limpieza en pozos inyectores en Zunil, Guatemala."
     },
     {
       "name": "John O'Sullivan",
@@ -38,11 +38,23 @@
       "affiliation": "Profesor Titular (Senior Lecturer), Geothermal Institute, Universidad de Auckland",
       "photoKey": "gravatt",
       "bio": "PhD e Ingeniería con Honores de Primera Clase en Ciencias de la Ingeniería, Universidad de Auckland. Desde 2019 ha trabajado en estandarizar los enfoques de modelado geotérmico y hacer la tecnología accesible para la industria y los estudiantes — el mismo marco de modelado en el que se basa esta consultora. Su investigación abarca evaluación de recursos geotérmicos, extracción de minerales críticos, secuestro de CO2, recursos supercríticos y gemelos digitales, con colaboraciones industriales que incluyen Contact Energy, Pertamina Geothermal Energy y el Lawrence Berkeley National Laboratory."
+    },
+    {
+      "name": "Ryan Tonkin",
+      "role": "Asesor Académico",
+      "affiliation": "Investigador (Research Fellow), Geothermal Institute, Universidad de Auckland",
+      "photoKey": null,
+      "bio": "PhD e Ingeniería con Honores de Primera Clase en Ciencias de la Ingeniería, Universidad de Auckland (2021). Investigador (Research Fellow) que desarrolla simuladores transitorios de pozos que modelan flujo bifásico complejo dentro de pozos geotérmicos — la misma clase de herramienta detrás de nuestro propio trabajo de dimensionamiento de bombas ESP/GBOP — con investigación adicional en acoplamiento pozo-yacimiento, flujo supercrítico y secuestro de CO2. Dicta cátedra en la Facultad de Ingeniería, enseña cursos cortos del Geothermal Institute sobre modelado de yacimientos y estimación de recursos, y asesora a empresas geotérmicas a nivel internacional."
     }
   ],
   "publications": [
     { "title": "A new numerical model of Amatitlán geothermal system, Guatemala", "meta": "Porras, E. & Xicara, J. (2020) — Proceedings, World Geothermal Congress 2020" },
     { "title": "Resource assessment of the Tecuamburro geothermal system using reservoir simulation", "meta": "Xicara Lopez, J. G. (2025) — 47th New Zealand Geothermal Workshop, Rotorua" },
+    { "title": "A review of mathematical models for geothermal wellbore simulation", "meta": "Tonkin, R.A., O'Sullivan, M.J. & O'Sullivan, J.P. (2021) — Geothermics, Vol. 97" },
+    { "title": "A transient geothermal wellbore simulator", "meta": "Tonkin, R., O'Sullivan, J., Gravatt, M. & O'Sullivan, M. (2023) — Geothermics, Vol. 110" },
+    { "title": "Development of a transient, multi-feed geothermal wellbore simulator", "meta": "Tonkin, R., O'Sullivan, J. & O'Sullivan, M. (2020) — Proceedings, World Geothermal Congress 2020" },
+    { "title": "Ensemble Kalman inversion for geothermal reservoir modelling", "meta": "de Beer, A., Bjarkason, E.K., Gravatt, M., Nicholson, R., O'Sullivan, J.P., O'Sullivan, M.J. & Maclaren, O.J. (2025) — Geophysical Journal International, Vol. 241" },
+    { "title": "Improved modelling of fluid production and reinjection in geothermal reservoirs", "meta": "Croucher, A.E., O'Sullivan, M.J. & O'Sullivan, J.P. (2025) — Computers & Geosciences, Vol. 196" },
     { "title": "[Provisional] Agregar más publicaciones o actas de congresos", "meta": "Enlace a PDF o DOI" }
   ]
 }

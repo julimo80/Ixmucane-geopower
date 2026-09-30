@@ -34,5 +34,26 @@
     "idx": "08",
     "title": "Well logging — PTS & ABI",
     "description": "Pressure-temperature-spinner (PTS) and acoustic borehole imaging (ABI) logging services to characterise feed zones and confirm wellbore integrity."
+  },
+  {
+    "idx": "09",
+    "title": "Downhole pressure monitoring systems",
+    "description": "Design and installation of continuous downhole reservoir-pressure monitoring systems, giving an early, direct read on reservoir response rather than inferring it from surface data alone."
+  },
+  {
+    "idx": "10",
+    "title": "Calcite inhibition systems",
+    "description": "Design and installation of calcite (CaCO3) inhibition systems for production wells, preventing scale-related output decline before it starts rather than treating it after the fact."
+  },
+  {
+    "idx": "11",
+    "title": "Injection-well chemical clean-outs",
+    "description": "Low-cost caustic treatment programs to remove silica and other scale from reinjection wells, restoring injectivity without a workover rig."
+  },
+  {
+    "idx": "12",
+    "title": "Wellbore modelling",
+    "description": "Transient, multi-feed wellbore simulation — two-phase flow, counter-flow, start-up and shut-in behaviour inside the well itself — built on the transient wellbore simulator developed by our academic advisor Dr. Ryan Tonkin (University of Auckland).",
+    "goto": { "label": "Meet our team", "href": "/team" }
   }
 ]
