@@ -5,18 +5,11 @@
   "publicationsLabel": "Publicaciones",
   "people": [
     {
-      "name": "Julian Xicara",
-      "role": "Fundador",
-      "affiliation": "Candidato a Doctorado, Geothermal Institute, Universidad de Auckland",
-      "photoKey": "julian",
-      "bio": "Inició en geotermia en 2006 en una planta binaria en Guatemala, seguido de formación geotérmica especializada en El Salvador (2012). Trabajó como ingeniero de pruebas para Ormat evaluando pozos en múltiples continentes, luego como Ingeniero de Recursos de Ormat en Nevada, y más recientemente como Ingeniero Senior de Yacimientos en Cyrq Energy. Posee una Maestría con Honores de Primera Clase de la Universidad de Auckland (tesis sobre el sistema geotérmico de Amatitlán) y actualmente es candidato a doctorado, integrando datos geoquímicos en marcos de evaluación de recursos y cuantificación de incertidumbre, en proyectos en Guatemala y Estados Unidos."
-    },
-    {
-      "name": "Enrique Porras Mendieta",
-      "role": "Asesor de Industria",
-      "affiliation": "Consultor Geotérmico Independiente — anteriormente Ingeniero Principal de Yacimientos, ORMAT Inc., y Gerente de Campo, Complejo Geotérmico Momotombo, Nicaragua",
-      "photoKey": "enrique",
-      "bio": "PhD en Ingeniería de la Universidad de Kyushu (2005). Casi cuatro décadas en la industria — desde ENEL en Nicaragua hasta tres décadas en ORMAT, más recientemente como Ingeniero Principal de Yacimientos, antes de independizarse en 2025 — construyendo y calibrando modelos numéricos para Momotombo, Zunil, Amatitlán, Olkaria III y Dixie Valley, y diseñando los sistemas de monitoreo continuo de presión de fondo y de inhibición de calcita que hoy operan en varios de esos campos. Coautor, junto con Julian Xicara, del artículo del Congreso Mundial de Geotermia (World Geothermal Congress) 2020 sobre un nuevo modelo numérico del sistema de Amatitlán, y de tres artículos del Geothermal Resources Council (2021–2025) sobre inhibición de calcita y tratamientos cáusticos de limpieza en pozos inyectores en Zunil, Guatemala."
+      "name": "Michael O'Sullivan",
+      "role": "Asesor Académico",
+      "affiliation": "Profesor de Ciencias de la Ingeniería, Universidad de Auckland",
+      "photoKey": "mike",
+      "bio": "Uno de los expertos líderes a nivel mundial en modelado de yacimientos geotérmicos; ganador del Premio Henry J. Ramey de Ingeniería de Yacimientos Geotérmicos (2011) y Miembro (Fellow) del Institution of Professional Engineers New Zealand. PhD en Mecánica Aplicada (Caltech), con más de 45 años en la Universidad de Auckland (1969–2015) además de posiciones visitantes en el Lawrence Berkeley National Laboratory y la Universidad de Nueva York. Desarrolló técnicas centrales de modelado numérico usadas en campos geotérmicos de Nueva Zelanda y a nivel internacional."
     },
     {
       "name": "John O'Sullivan",
@@ -26,11 +19,11 @@
       "bio": "PhD en Ciencias de la Ingeniería (Auckland), Maestría en Aeronáutica y Astronáutica (Stanford), Ingeniería con Honores de Primera Clase (Auckland). Trabaja a nivel mundial con actores de la industria geotérmica en evaluación de recursos, tecnología avanzada de simuladores, computación en la nube y cuantificación de incertidumbre, recursos supercríticos y desarrollo de gemelos digitales — liderando programas de capacitación en Asia, Sudamérica, África, Europa y Australia, y colaborando con el Lawrence Berkeley National Laboratory y el Departamento de Energía de EE. UU."
     },
     {
-      "name": "Michael O'Sullivan",
-      "role": "Asesor Académico",
-      "affiliation": "Profesor de Ciencias de la Ingeniería, Universidad de Auckland",
-      "photoKey": "mike",
-      "bio": "Uno de los expertos líderes a nivel mundial en modelado de yacimientos geotérmicos; ganador del Premio Henry J. Ramey de Ingeniería de Yacimientos Geotérmicos (2011) y Miembro (Fellow) del Institution of Professional Engineers New Zealand. PhD en Mecánica Aplicada (Caltech), con más de 45 años en la Universidad de Auckland (1969–2015) además de posiciones visitantes en el Lawrence Berkeley National Laboratory y la Universidad de Nueva York. Desarrolló técnicas centrales de modelado numérico usadas en campos geotérmicos de Nueva Zelanda y a nivel internacional."
+      "name": "Enrique Porras Mendieta",
+      "role": "Asesor de Industria",
+      "affiliation": "Consultor Geotérmico Independiente — anteriormente Ingeniero Principal de Yacimientos, ORMAT Inc., y Gerente de Campo, Complejo Geotérmico Momotombo, Nicaragua",
+      "photoKey": "enrique",
+      "bio": "PhD en Ingeniería de la Universidad de Kyushu (2005). Casi cuatro décadas en la industria — desde ENEL en Nicaragua hasta tres décadas en ORMAT, más recientemente como Ingeniero Principal de Yacimientos, antes de independizarse en 2025 — construyendo y calibrando modelos numéricos para Momotombo, Zunil, Amatitlán, Olkaria III y Dixie Valley, y diseñando los sistemas de monitoreo continuo de presión de fondo y de inhibición de calcita que hoy operan en varios de esos campos. Coautor, junto con Julian Xicara, del artículo del Congreso Mundial de Geotermia (World Geothermal Congress) 2020 sobre un nuevo modelo numérico del sistema de Amatitlán, y de tres artículos del Geothermal Resources Council (2021–2025) sobre inhibición de calcita y tratamientos cáusticos de limpieza en pozos inyectores en Zunil, Guatemala."
     },
     {
       "name": "Michael Gravatt",
@@ -45,6 +38,13 @@
       "affiliation": "Investigador (Research Fellow), Geothermal Institute, Universidad de Auckland",
       "photoKey": "ryan",
       "bio": "PhD e Ingeniería con Honores de Primera Clase en Ciencias de la Ingeniería, Universidad de Auckland (2021). Investigador (Research Fellow) que desarrolla simuladores transitorios de pozos que modelan flujo bifásico complejo dentro de pozos geotérmicos — la misma clase de herramienta detrás de nuestro propio trabajo de dimensionamiento de bombas ESP/GBOP — con investigación adicional en acoplamiento pozo-yacimiento, flujo supercrítico y secuestro de CO2. Dicta cátedra en la Facultad de Ingeniería, enseña cursos cortos del Geothermal Institute sobre modelado de yacimientos y estimación de recursos, y asesora a empresas geotérmicas a nivel internacional."
+    },
+    {
+      "name": "Julian Xicara",
+      "role": "Fundador",
+      "affiliation": "Candidato a Doctorado, Geothermal Institute, Universidad de Auckland",
+      "photoKey": "julian",
+      "bio": "Inició en geotermia en 2006 en una planta binaria en Guatemala, seguido de formación geotérmica especializada en El Salvador (2012). Trabajó como ingeniero de pruebas para Ormat evaluando pozos en múltiples continentes, luego como Ingeniero de Recursos de Ormat en Nevada, y más recientemente como Ingeniero Senior de Yacimientos en Cyrq Energy. Posee una Maestría con Honores de Primera Clase de la Universidad de Auckland (tesis sobre el sistema geotérmico de Amatitlán) y actualmente es candidato a doctorado, integrando datos geoquímicos en marcos de evaluación de recursos y cuantificación de incertidumbre, en proyectos en Guatemala y Estados Unidos."
     }
   ],
   "publications": [

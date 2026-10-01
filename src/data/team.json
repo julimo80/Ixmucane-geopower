@@ -5,18 +5,11 @@
   "publicationsLabel": "Publications",
   "people": [
     {
-      "name": "Julian Xicara",
-      "role": "Founder",
-      "affiliation": "Doctoral Candidate, Geothermal Institute, University of Auckland",
-      "photoKey": "julian",
-      "bio": "Started in geothermal in 2006 at a binary power plant in Guatemala, followed by specialised geothermal training in El Salvador (2012). Worked as a testing engineer for Ormat evaluating wells across multiple continents, then as an Ormat Resource Engineer in Nevada, and most recently as Senior Reservoir Engineer at Cyrq Energy. Holds an MSc with First Class Honours from the University of Auckland (thesis on the Amatitlán geothermal system) and is now a PhD candidate integrating geochemical data into resource assessment and uncertainty-quantification frameworks, across projects in Guatemala and the United States."
-    },
-    {
-      "name": "Enrique Porras Mendieta",
-      "role": "Industry Advisor",
-      "affiliation": "Independent Geothermal Consultant — formerly Principal Reservoir Engineer, ORMAT Inc., and Field Manager, Momotombo Geothermal Complex, Nicaragua",
-      "photoKey": "enrique",
-      "bio": "PhD in Engineering from Kyushu University (2005). Nearly four decades in the industry — from Nicaragua's ENEL to three decades at ORMAT, most recently as Principal Reservoir Engineer, before going independent in 2025 — building and calibrating numerical models for Momotombo, Zunil, Amatitlán, Olkaria III and Dixie Valley, and designing the downhole pressure-monitoring and calcite-inhibition systems now running at several of those fields. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system, and of three Geothermal Resources Council papers (2021–2025) on calcite inhibition and injection-well caustic treatments at Zunil, Guatemala."
+      "name": "Michael O'Sullivan",
+      "role": "Academic Advisor",
+      "affiliation": "Professor of Engineering Science, University of Auckland",
+      "photoKey": "mike",
+      "bio": "One of the world's leading experts in geothermal reservoir modelling; recipient of the Henry J. Ramey Award for Geothermal Reservoir Engineering (2011) and Fellow of the Institution of Professional Engineers New Zealand. PhD in Applied Mechanics (Caltech), with over 45 years at the University of Auckland (1969–2015) plus visiting positions at Lawrence Berkeley National Laboratory and New York University. Developed core numerical modelling techniques used across geothermal fields in New Zealand and internationally."
     },
     {
       "name": "John O'Sullivan",
@@ -26,11 +19,11 @@
       "bio": "PhD in Engineering Science (Auckland), MS in Aeronautics and Astronautics (Stanford), BE with First Class Honours (Auckland). Works globally with geothermal industry stakeholders on resource assessment, advanced simulator technology, cloud computing and uncertainty quantification, supercritical resources and digital-twin development — leading training programmes across Asia, South America, Africa, Europe and Australia, and collaborating with Lawrence Berkeley National Laboratory and the US Department of Energy."
     },
     {
-      "name": "Michael O'Sullivan",
-      "role": "Academic Advisor",
-      "affiliation": "Professor of Engineering Science, University of Auckland",
-      "photoKey": "mike",
-      "bio": "One of the world's leading experts in geothermal reservoir modelling; recipient of the Henry J. Ramey Award for Geothermal Reservoir Engineering (2011) and Fellow of the Institution of Professional Engineers New Zealand. PhD in Applied Mechanics (Caltech), with over 45 years at the University of Auckland (1969–2015) plus visiting positions at Lawrence Berkeley National Laboratory and New York University. Developed core numerical modelling techniques used across geothermal fields in New Zealand and internationally."
+      "name": "Enrique Porras Mendieta",
+      "role": "Industry Advisor",
+      "affiliation": "Independent Geothermal Consultant — formerly Principal Reservoir Engineer, ORMAT Inc., and Field Manager, Momotombo Geothermal Complex, Nicaragua",
+      "photoKey": "enrique",
+      "bio": "PhD in Engineering from Kyushu University (2005). Nearly four decades in the industry — from Nicaragua's ENEL to three decades at ORMAT, most recently as Principal Reservoir Engineer, before going independent in 2025 — building and calibrating numerical models for Momotombo, Zunil, Amatitlán, Olkaria III and Dixie Valley, and designing the downhole pressure-monitoring and calcite-inhibition systems now running at several of those fields. Co-author, with Julian Xicara, of the 2020 World Geothermal Congress paper on a new numerical model of the Amatitlán system, and of three Geothermal Resources Council papers (2021–2025) on calcite inhibition and injection-well caustic treatments at Zunil, Guatemala."
     },
     {
       "name": "Michael Gravatt",
@@ -45,6 +38,13 @@
       "affiliation": "Research Fellow, Geothermal Institute, University of Auckland",
       "photoKey": "ryan",
       "bio": "PhD and BE with First Class Honours in Engineering Science, University of Auckland (2021). Research Fellow developing transient wellbore simulators that model complex two-phase flow inside geothermal wells — the same class of tool behind our own ESP/GBOP pump-sizing work — with further research in wellbore-reservoir coupling, supercritical flow and CO2 sequestration. Lectures for the Faculty of Engineering, teaches Geothermal Institute short courses on reservoir modelling and resource estimation, and consults for geothermal companies internationally."
+    },
+    {
+      "name": "Julian Xicara",
+      "role": "Founder",
+      "affiliation": "Doctoral Candidate, Geothermal Institute, University of Auckland",
+      "photoKey": "julian",
+      "bio": "Started in geothermal in 2006 at a binary power plant in Guatemala, followed by specialised geothermal training in El Salvador (2012). Worked as a testing engineer for Ormat evaluating wells across multiple continents, then as an Ormat Resource Engineer in Nevada, and most recently as Senior Reservoir Engineer at Cyrq Energy. Holds an MSc with First Class Honours from the University of Auckland (thesis on the Amatitlán geothermal system) and is now a PhD candidate integrating geochemical data into resource assessment and uncertainty-quantification frameworks, across projects in Guatemala and the United States."
     }
   ],
   "publications": [
