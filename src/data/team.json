@@ -40,6 +40,13 @@
       "bio": "PhD and BE with First Class Honours in Engineering Science, University of Auckland (2021). Research Fellow developing transient wellbore simulators that model complex two-phase flow inside geothermal wells — the same class of tool behind our own ESP/GBOP pump-sizing work — with further research in wellbore-reservoir coupling, supercritical flow and CO2 sequestration. Lectures for the Faculty of Engineering, teaches Geothermal Institute short courses on reservoir modelling and resource estimation, and consults for geothermal companies internationally."
     },
     {
+      "name": "Ken Dekkers",
+      "role": "Academic Advisor",
+      "affiliation": "Research Engineer, Geothermal Institute, University of Auckland",
+      "photoKey": "ken",
+      "bio": "Master's (2021) and Bachelor's (2017) in Mechanical Engineering from Eindhoven University of Technology — his master's thesis, on inverse modelling and uncertainty quantification of an updated Rotorua geothermal model, was itself a collaboration with the University of Auckland. Research Engineer at the Geothermal Institute since 2020, now maintaining the cloud computing infrastructure behind fast, parallel Waiwera reservoir simulations and developing a general-purpose uncertainty-quantification framework used across the group's modelling projects, including a new method for greenfield resource assessment that combines field data with expert knowledge to constrain the model ensemble."
+    },
+    {
       "name": "Julian Xicara",
       "role": "Founder",
       "affiliation": "Doctoral Candidate, Geothermal Institute, University of Auckland",
@@ -54,6 +61,7 @@
     { "title": "A transient geothermal wellbore simulator", "meta": "Tonkin, R., O'Sullivan, J., Gravatt, M. & O'Sullivan, M. (2023) — Geothermics, Vol. 110" },
     { "title": "Development of a transient, multi-feed geothermal wellbore simulator", "meta": "Tonkin, R., O'Sullivan, J. & O'Sullivan, M. (2020) — Proceedings, 42nd New Zealand Geothermal Workshop, Waitangi" },
     { "title": "Ensemble Kalman inversion for geothermal reservoir modelling", "meta": "de Beer, A., Bjarkason, E.K., Gravatt, M., Nicholson, R., O'Sullivan, J.P., O'Sullivan, M.J. & Maclaren, O.J. (2025) — Geophysical Journal International, Vol. 241" },
-    { "title": "Improved modelling of fluid production and reinjection in geothermal reservoirs", "meta": "Croucher, A.E., O'Sullivan, M.J. & O'Sullivan, J.P. (2025) — Computers & Geosciences, Vol. 196" }
+    { "title": "Improved modelling of fluid production and reinjection in geothermal reservoirs", "meta": "Croucher, A.E., O'Sullivan, M.J. & O'Sullivan, J.P. (2025) — Computers & Geosciences, Vol. 196" },
+    { "title": "An instruction to use cloud computing for complex geothermal simulations using parallel software Waiwera", "meta": "Dekkers, K., Croucher, A., Gravatt, M., Renaud, T., Nicholson, R., Maclaren, O., O'Sullivan, J. & O'Sullivan, M. (2023) — Proceedings, 45th New Zealand Geothermal Workshop, Auckland" }
   ]
 }
