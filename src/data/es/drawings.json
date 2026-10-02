@@ -4,11 +4,6 @@
   "lead": "Planos reales de fabricación de programas de pruebas de flujo y registros que hemos ejecutado — haga clic en cualquier plano para ampliarlo. Se removieron los nombres de campos y clientes; la ingeniería no fue alterada.",
   "items": [
     {
-      "key": "logging-flow-test-setup",
-      "title": "Montaje de superficie para registros y prueba de flujo",
-      "caption": "Línea de flujo del cabezal al silenciador, con el armado del lubricador y cable fino para registros de fondo."
-    },
-    {
       "key": "flow-test-pumping-config",
       "title": "Configuración de bombeo y tubería para prueba de flujo (P&ID)",
       "caption": "Suministro desde sumidero con doble bomba, medición ultrasónica de flujo y secciones de tubería de aluminio/acero al carbono hacia el silenciador."
@@ -27,11 +22,6 @@
       "key": "weirbox",
       "title": "Caja de vertedero — plano de fabricación",
       "caption": "Caja de vertedero para medición de flujo: bridas de entrada/salida, deflector interno y dimensiones del patín."
-    },
-    {
-      "key": "weir-plate-details",
-      "title": "Detalles de la placa del vertedero",
-      "caption": "Geometría de la placa de vertedero tipo V y ángulo de bisel para una medición precisa del caudal."
     },
     {
       "key": "leveling-weirbox",

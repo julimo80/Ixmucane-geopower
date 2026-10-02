@@ -4,7 +4,7 @@
   "lead": "Estructurado tal como entregamos el trabajo a nuestros clientes: el encargo, el problema geológico, cómo lo modelamos, y qué cambió en el plan de desarrollo del campo.",
   "draftNote": {
     "strong": "Estado mixto.",
-    "text": "LOG 01–02 son marcadores de posición ilustrativos, pendientes de confirmación del cliente. LOG 03 es real, de nuestro propio manuscrito de investigación en preparación (aún no revisado por pares) — ver su nota de fuente abajo."
+    "text": "LOG 01–02 son marcadores de posición ilustrativos, pendientes de confirmación del cliente. LOG 03 es real, de nuestro propio manuscrito de investigación en preparación (aún no revisado por pares). LOG 04–05 son investigación real y publicada de la trayectoria de nuestro propio equipo — ver la nota de fuente de cada entrada."
   },
   "stageLabels": { "brief": "Encargo", "challenge": "Desafío", "method": "Método", "outcome": "Resultado" },
   "draftBadge": "Borrador",
@@ -17,7 +17,8 @@
       "brief": "Validar una formulación actualizada de ecuación de estado contra más de 30 años de historial de pozos y producción, antes de usarla en nuevos escenarios de desarrollo.",
       "challenge": "La topografía escarpada y una fuente de calor magmática somera producen fuertes gradientes laterales de temperatura que los modelos simples subestiman.",
       "method": "Corridas multi-escenario de estado natural y ajuste histórico con la ecuación de estado revisada, verificadas contra un caso de simulación de campo combinado.",
-      "outcome": "Se confirmó que la corrección de la ecuación de estado se mantuvo en los pronósticos de producción; se redujo el rango de riesgo del recurso para el comité de desarrollo del cliente."
+      "outcome": "Se confirmó que la corrección de la ecuación de estado se mantuvo en los pronósticos de producción; se redujo el rango de riesgo del recurso para el comité de desarrollo del cliente.",
+      "source": "Publicación relacionada: Porras, E. & Xicara, J. (2020) — \"A new numerical model of Amatitlán geothermal system, Guatemala\", Proceedings, World Geothermal Congress 2020."
     },
     {
       "log": "LOG 02",
@@ -48,6 +49,30 @@
       ],
       "statsNote": "Producción neta promediada en el tiempo a 25 años, en todo el conjunto (media de 89.3 MWe)",
       "source": "De nuestro propio manuscrito en preparación sobre la evaluación combinada de recursos de Tecuamburro–Infiernitos — aún no revisado por pares."
+    },
+    {
+      "log": "LOG 04",
+      "draft": false,
+      "badge": "Investigación publicada — Enrique Porras",
+      "title": "Momotombo: tres décadas de desempeño del yacimiento y estrategia de reinyección",
+      "loc": "Campo Geotérmico Momotombo, Nicaragua · En producción desde 1983, 77 MWe instalados",
+      "brief": "Construir y recalibrar continuamente el modelo numérico tridimensional de yacimiento detrás de uno de los campos geotérmicos de mayor producción continua en Centroamérica, a lo largo de más de tres décadas de explotación.",
+      "challenge": "Un campo en producción continua desde 1983 necesita que su modelo de yacimiento sea recalibrado contra nuevos datos de presión, trazadores y producción a medida que el recurso mismo evoluciona — no una construcción única, sino un modelo mantenido vigente durante décadas.",
+      "method": "Construcción y calibración de modelo numérico tridimensional de yacimiento; diseño de esquema de reinyección basado en monitoreo de presión de yacimiento y análisis de pruebas de trazadores; revisión del historial de producción a los 23, 25 y 27 años de explotación.",
+      "outcome": "Los modelos conceptuales y numéricos actualizados guiaron la planificación de desarrollo del campo durante múltiples décadas; la estrategia de reinyección se definió directamente con datos de trazadores y monitoreo de presión, no por suposición.",
+      "source": "Porras, E. et al. — \"Numerical modeling of the Momotombo geothermal system, Nicaragua\", Proceedings, World Geothermal Congress 2005, y \"Reinjection scheme in Momotombo, Nicaragua, on the basis of reservoir pressure monitoring, tracer test analysis and numerical modeling study\", Geothermal Resources Council 2007."
+    },
+    {
+      "log": "LOG 05",
+      "draft": false,
+      "badge": "Investigación publicada — Geothermal Institute, Auckland",
+      "title": "Salton Sea: un modelo natural 3D para uno de los mayores recursos geotérmicos del mundo",
+      "loc": "Campo Geotérmico Salton Sea, California, EE. UU. · Potencial de recurso estimado de ~3 GW",
+      "brief": "Construir el primer modelo conceptual 3D y de estado natural disponible públicamente de un campo que, pese a su escala, solo ha sido parcialmente explotado — limitado por una salmuera de salinidad excepcionalmente alta y por la cobertura parcial del propio Mar de Salton.",
+      "challenge": "No existía un modelo numérico público para un recurso de esta magnitud, justo cuando una costa en retroceso, los objetivos de energía renovable de California y los nuevos métodos de extracción directa de litio han renovado el interés en desarrollarlo aún más.",
+      "method": "Modelo conceptual 3D construido en Leapfrog Geothermal a partir de datos geológicos, geofísicos y geoquímicos de fuente abierta; modelo de estado natural construido y calibrado en Waiwera y TOUGH2 contra datos públicos de temperatura de pozos y manifestaciones superficiales; posteriormente refinado con una ecuación de estado cloruro-NCG-agua que incluye litio como trazador pasivo, y cuantificación de incertidumbre sobre porosidad, permeabilidad y flujo ascendente.",
+      "outcome": "Un modelo de estado natural calibrado, capaz de pronosticar la concentración de litio en los fluidos producidos bajo extracción directa de litio, y de evaluar cómo múltiples desarrolladores que comparten un mismo recurso afectan la producción de los demás — la misma pregunta de recurso compartido que plantea nuestro propio trabajo en Tecuamburro–Infiernitos.",
+      "source": "Araya, N. & O'Sullivan, J. (2022) — Geothermal Resources Council Transactions; Renaud, T., Croucher, A., Dekkers, K., Gravatt, M., O'Sullivan, M., Popineau, J., Riffault, J., Tonkin, R. & O'Sullivan, J. (2025) — Proceedings, 50th Stanford Geothermal Workshop, SGP-TR-229."
     }
   ]
 }

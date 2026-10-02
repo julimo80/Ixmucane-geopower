@@ -77,7 +77,7 @@ const figureImages = {
 
       <div class="method-grid">
         {methodology.items.map((item) => (
-          <div class:list={['method-card', item.key === 'gbop' && 'method-card-sm']}>
+          <div class:list={['method-card', item.key === 'gbop' && 'method-card-sm', item.key === 'geomodel' && 'method-card-75']}>
             <div class="figure">
               {item.isGif ? (
                 <img src="/images/AZ-18_well.gif" alt={item.alt} loading="lazy" />
@@ -85,7 +85,7 @@ const figureImages = {
                 <Image
                   src={figureImages[item.key as keyof typeof figureImages]}
                   alt={item.alt}
-                  width={item.key === 'gbop' ? 900 : 1800}
+                  width={item.key === 'gbop' ? 900 : item.key === 'geomodel' ? 1350 : 1800}
                 />
               )}
             </div>

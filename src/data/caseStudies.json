@@ -4,7 +4,7 @@
   "lead": "Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.",
   "draftNote": {
     "strong": "Mixed status.",
-    "text": "LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed) — see its source note below."
+    "text": "LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed). LOG 04–05 are real, published research from our team's own careers — see each entry's source note."
   },
   "stageLabels": { "brief": "Brief", "challenge": "Challenge", "method": "Method", "outcome": "Outcome" },
   "draftBadge": "Draft",
@@ -17,7 +17,8 @@
       "brief": "Validate an updated equation-of-state formulation against 30+ years of well and production history before it was used for new development scenarios.",
       "challenge": "Steep topography and a shallow magmatic heat source produce strong lateral temperature gradients that simple models under-predict.",
       "method": "Multi-scenario natural-state and history-matched runs across the revised EOS, cross-checked against a combined-field simulation case.",
-      "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee."
+      "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee.",
+      "source": "Related publication: Porras, E. & Xicara, J. (2020) — \"A new numerical model of Amatitlán geothermal system, Guatemala\", Proceedings, World Geothermal Congress 2020."
     },
     {
       "log": "LOG 02",
@@ -48,6 +49,30 @@
       ],
       "statsNote": "25-year time-averaged net output across the ensemble (mean 89.3 MWe)",
       "source": "From our own in-preparation manuscript on Tecuamburro–Infiernitos combined resource assessment — not yet peer-reviewed."
+    },
+    {
+      "log": "LOG 04",
+      "draft": false,
+      "badge": "Published research — Enrique Porras",
+      "title": "Momotombo: three decades of reservoir performance and reinjection strategy",
+      "loc": "Momotombo Geothermal Field, Nicaragua · Producing since 1983, 77 MWe installed",
+      "brief": "Build and continually re-calibrate the three-dimensional numerical reservoir model behind one of Central America's longest-producing geothermal fields, across more than three decades of exploitation.",
+      "challenge": "A field in continuous production since 1983 needs its reservoir model re-calibrated against new pressure, tracer and production data as the resource itself evolves — not a one-off build, but a model kept honest for decades.",
+      "method": "Three-dimensional numerical reservoir model construction and calibration; reinjection scheme design based on reservoir-pressure monitoring and tracer-test analysis; production-history review at 23, 25 and 27 years of exploitation.",
+      "outcome": "Updated conceptual and numerical models carried the field's development planning through multiple decades; reinjection strategy informed directly by tracer and pressure-monitoring data rather than assumed.",
+      "source": "Porras, E. et al. — \"Numerical modeling of the Momotombo geothermal system, Nicaragua\", Proceedings, World Geothermal Congress 2005, and \"Reinjection scheme in Momotombo, Nicaragua, on the basis of reservoir pressure monitoring, tracer test analysis and numerical modeling study\", Geothermal Resources Council 2007."
+    },
+    {
+      "log": "LOG 05",
+      "draft": false,
+      "badge": "Published research — Geothermal Institute, Auckland",
+      "title": "Salton Sea: a 3D natural-state model for one of the world's largest geothermal resources",
+      "loc": "Salton Sea Geothermal Field, California, USA · ~3 GW estimated resource potential",
+      "brief": "Build the first publicly available integrated 3D conceptual and natural-state model of a field that, despite its scale, has only been partially exploited — held back by uniquely high-salinity brine and partial coverage by the Salton Sea itself.",
+      "challenge": "No public numerical model existed for a resource this size, at a moment when a receding shoreline, California's renewable-energy targets and new direct lithium-extraction methods have all renewed interest in developing it further.",
+      "method": "3D conceptual model built in Leapfrog Geothermal from open-source geology, geophysics and geochemistry data; natural-state model built and calibrated in Waiwera and TOUGH2 against public well-temperature data and surface manifestations; later refined with a chloride-NCG-water equation of state carrying lithium as a passive tracer, and uncertainty-quantified against porosity, permeability and upflow.",
+      "outcome": "A calibrated natural-state model capable of forecasting lithium concentration in produced fluids under direct lithium extraction, and of testing how multiple developers sharing one resource affect each other's production — the same shared-resource question our own Tecuamburro–Infiernitos work asks.",
+      "source": "Araya, N. & O'Sullivan, J. (2022) — Geothermal Resources Council Transactions; Renaud, T., Croucher, A., Dekkers, K., Gravatt, M., O'Sullivan, M., Popineau, J., Riffault, J., Tonkin, R. & O'Sullivan, J. (2025) — Proceedings, 50th Stanford Geothermal Workshop, SGP-TR-229."
     }
   ]
 }

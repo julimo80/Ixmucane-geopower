@@ -1,47 +1,47 @@
 {
   "eyebrow": "En el campo",
   "heading": "Trabajo de campo real, no renders.",
-  "lead": "Pruebas de flujo, trabajo de pozos y revisiones de planta en las que nuestro equipo ha estado presente — leyendas provisionales pendientes de confirmar campo, cliente y fecha de cada una.",
+  "lead": "Pruebas de flujo, trabajo de pozos y revisiones de planta en las que nuestro equipo ha estado presente — en Guatemala, Kenia y Estados Unidos.",
   "photos": [
     {
       "key": "zebras",
-      "caption": "Fauna silvestre junto a un campo geotérmico",
-      "note": "[Provisional] confirmar campo, país y año"
+      "caption": "Fauna silvestre junto al campo geotérmico",
+      "note": "Naivasha, cerca de Hell Gate — Olkaria, Kenia, 2017"
     },
     {
       "key": "drilling-rig-blue-sky",
       "caption": "Torre de perforación en sitio",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Olkaria IV, pozo de reposición (make-up well) — Kenia, 2016"
     },
     {
       "key": "rig-steam-nevada",
       "caption": "Piso de perforación junto a un pozo en flujo",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "San Emidio, Nevada, EE. UU. — pozo de reposición (make-up well), 2021"
     },
     {
       "key": "wellhead-volcano",
       "caption": "Cabezal de pozo con el complejo volcánico anfitrión de fondo",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Olkaria IV — operación de registro PTS, Kenia, 2020"
     },
     {
       "key": "wellhead-green-hills",
       "caption": "Árbol de válvulas del cabezal, campo de altura",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Zunil II — operación de registro PT, Guatemala, 2018"
     },
     {
       "key": "steam-plume-backlit",
       "caption": "Prueba de flujo — vapor venteando por el silenciador",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Campo North Valley — pozo de reposición (make-up well), 2020"
     },
     {
       "key": "technician-on-lift",
       "caption": "Trabajo en válvulas del cabezal, con acceso elevado",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Olkaria IV — pozo de reposición (make-up well), operaciones de registro PTS, Kenia, 2021"
     },
     {
       "key": "pipeline-amatitlan",
       "caption": "Tubería de recolección del campo de vapor",
-      "note": "[Provisional] confirmar campo, nombre del pozo y año"
+      "note": "Amatitlán — operaciones de registro PTS, Guatemala"
     }
   ]
 }

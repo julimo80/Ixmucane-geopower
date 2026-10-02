@@ -4,11 +4,6 @@
   "lead": "Real fabrication drawings from flow-test and logging programs we've run — click any drawing to enlarge. Identifying field and client names have been removed; the engineering is unchanged.",
   "items": [
     {
-      "key": "logging-flow-test-setup",
-      "title": "Logging and flow-test surface setup",
-      "caption": "Flow line from wellhead to muffler, with the lubricator/slickline rig-up for downhole logging alongside it."
-    },
-    {
       "key": "flow-test-pumping-config",
       "title": "Flow-test pumping & pipeline configuration (P&ID)",
       "caption": "Dual-pump sump supply, ultrasonic flow metering and aluminium/carbon-steel pipeline sections feeding the muffler."
@@ -27,11 +22,6 @@
       "key": "weirbox",
       "title": "Weir box — fabrication drawing",
       "caption": "Flow-measurement weir box: inlet/outlet flanges, internal baffle and skid dimensions."
-    },
-    {
-      "key": "weir-plate-details",
-      "title": "Weir plate details",
-      "caption": "V-notch weir plate geometry and bevel angle for accurate flow-rate measurement."
     },
     {
       "key": "leveling-weirbox",
