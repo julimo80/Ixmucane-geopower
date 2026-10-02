@@ -1,14 +1,22 @@
 ---
+import { Image } from 'astro:assets';
 import { loadData } from '../i18n/data';
+import ixmucaneImg from '../assets/field/ixmucane-illustration.jpg';
 const data = loadData(Astro.currentLocale ?? 'en', 'brandOrigin');
 ---
 <section id="about-name">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">{data.eyebrow}</span>
-      <h2>{data.heading}</h2>
-      <p>{data.p1}</p>
-      <p>{data.p2}</p>
+    <div class="brand-origin-grid">
+      <figure class="fav-card brand-origin-fig">
+        <Image src={ixmucaneImg} alt={data.imgAlt} width={489} />
+        <figcaption class="cap"><span>{data.imgCap}</span></figcaption>
+      </figure>
+      <div class="section-head">
+        <span class="eyebrow">{data.eyebrow}</span>
+        <h2>{data.heading}</h2>
+        <p>{data.p1}</p>
+        <p>{data.p2}</p>
+      </div>
     </div>
   </div>
 </section>

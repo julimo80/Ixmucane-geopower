@@ -319,6 +319,12 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .section-head h2{ font-size:clamp(26px,3.4vw,36px); margin-top:10px; }
 .section-head p{ margin-top:14px; color:var(--text-dim); font-size:15.5px; }
 
+/* BRAND ORIGIN */
+.brand-origin-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:40px; align-items:start; }
+@media (max-width:760px){ .brand-origin-grid{ grid-template-columns:1fr; } }
+.brand-origin-fig{ max-width:320px; margin:0 auto; }
+@media (max-width:760px){ .brand-origin-fig{ max-width:260px; } }
+
 /* SERVICES */
 .svc-flagship{
   margin-top:36px;
