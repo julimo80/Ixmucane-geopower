@@ -700,8 +700,7 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .contact-link:hover{ border-color:var(--accent); color:#fff; }
 .contact-link svg{ width:15px; height:15px; fill:currentColor; }
 .contact-location{
-  margin-top:16px; font-family:'IBM Plex Mono', monospace; font-size:12px;
-  letter-spacing:0.06em; text-transform:uppercase; color:#B7C3BC;
+  margin-top:14px; font-size:15px; line-height:1.55; max-width:52ch; color:#B7C3BC;
 }
 footer{
   padding-block:22px;
