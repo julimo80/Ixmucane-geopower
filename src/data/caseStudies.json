@@ -3,22 +3,23 @@
   "heading": "Selected reservoir modelling engagements.",
   "lead": "Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.",
   "draftNote": {
-    "strong": "Mixed status.",
-    "text": "LOG 01 is an illustrative placeholder pending client confirmation. LOG 02–05 are real — see each entry's badge and source note for its current status."
+    "strong": "Real work.",
+    "text": "All entries below are real — see each entry's badge and source note for its current status."
   },
   "stageLabels": { "brief": "Brief", "challenge": "Challenge", "method": "Method", "outcome": "Outcome" },
   "draftBadge": "Draft",
   "items": [
     {
       "log": "LOG 01",
-      "draft": true,
-      "title": "Natural-state and production-history calibration, high-enthalpy volcanic field",
-      "loc": "Central America · Andesitic stratovolcano-hosted system",
-      "brief": "Validate an updated equation-of-state formulation against 30+ years of well and production history before it was used for new development scenarios.",
-      "challenge": "Steep topography and a shallow magmatic heat source produce strong lateral temperature gradients that simple models under-predict.",
-      "method": "Multi-scenario natural-state and history-matched runs across the revised EOS, cross-checked against a combined-field simulation case.",
-      "outcome": "Confirmed EOS fix carried through to production forecasts; resource risk range tightened for the client's development committee.",
-      "source": "Related publication: Porras, E. & Xicara, J. (2020) — \"A new numerical model of Amatitlán geothermal system, Guatemala\", Proceedings, World Geothermal Congress 2020."
+      "draft": false,
+      "badge": "Published research — Enrique Porras & Julian Xicara",
+      "title": "Amatitlán: a dual-porosity model under active calcite scaling",
+      "loc": "Amatitlán Geothermal Field, Guatemala · North slope of Pacaya volcano, ~24 MWe installed since February 2007",
+      "brief": "Build an updated three-dimensional numerical model of the Amatitlán geothermal field, history-matched against nearly 12 years of production and injection data, to predict future well output, injection effects and overall reservoir decline.",
+      "challenge": "A shallow, vapour-mobile steam cap sits above a deeper two-phase reservoir fed by upflow beneath the active Pacaya volcano, and the field's best-producing well suffers from calcite scaling that a standard single-porosity model can't reproduce — any forecast has to capture both the reservoir physics and the scaling-driven decline to be useful.",
+      "method": "Three-dimensional AUTOUGH2 model (11,240 grid blocks, built and processed with TIM and PyTOUGH) matched to natural-state pressure and temperature data, then history-matched well-by-well against flow rate, enthalpy and pressure-transient data from nearly 12 years of exploitation using a dual-porosity formulation; calcite-scaling effects on the field's best-producing well captured with the DELT generator type (Yeh et al., 2012).",
+      "outcome": "A model capable of predicting well-by-well production decline, injection effects and overall reservoir depletion fifteen years forward; scenarios that account for wellbore and formation scaling show roughly 2% lower thermal output than scenarios that ignore it, with an overall decline of about 0.90 MWt per year.",
+      "source": "Porras, E.A. & Xicara, J. (2020) — \"A New Numerical Model of Amatitlán Geothermal System, Guatemala\", Proceedings, 42nd New Zealand Geothermal Workshop, Waitangi, New Zealand."
     },
     {
       "log": "LOG 02",

@@ -569,11 +569,11 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
   margin-top:40px; padding-top:32px; border-top:1px solid var(--border);
   display:flex; flex-direction:column; align-items:center; text-align:center; gap:18px;
 }
-.tooling-logos{ display:flex; align-items:center; justify-content:center; gap:clamp(28px,5vw,56px); flex-wrap:wrap; }
-.tooling-logo{ display:flex; flex-direction:column; align-items:center; gap:8px; }
-.tooling-logo svg{ width:38px; height:38px; fill:var(--text-dim); transition:fill .15s ease; }
+.tooling-logos{ display:flex; align-items:center; justify-content:center; gap:clamp(36px,6vw,72px); flex-wrap:wrap; }
+.tooling-logo{ display:flex; flex-direction:column; align-items:center; gap:10px; }
+.tooling-logo svg{ width:60px; height:60px; fill:var(--text-dim); transition:fill .15s ease; }
 .tooling-logo:hover svg{ fill:var(--text); }
-.tooling-logo img{ width:38px; height:38px; display:block; }
+.tooling-logo img{ width:60px; height:60px; display:block; }
 .tooling-logo span{
   font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:0.05em;
   text-transform:uppercase; color:#9BAAA1;
@@ -690,6 +690,16 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .contact h2{ color:var(--rock-deep-text); }
 .contact .section-head p{ color:#B7C3BC; }
 .contact .btn-primary{ margin-top:26px; }
+.contact-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+.contact-link{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:'IBM Plex Mono', monospace; font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em;
+  padding:11px 18px; border-radius:3px; border:1px solid rgba(255,255,255,0.18);
+  color:#B7C3BC; text-decoration:none;
+  transition:border-color .15s ease, color .15s ease;
+}
+.contact-link:hover{ border-color:var(--accent); color:#fff; }
+.contact-link svg{ width:15px; height:15px; fill:currentColor; }
 .contact-location{
   margin-top:16px; font-family:'IBM Plex Mono', monospace; font-size:12px;
   letter-spacing:0.06em; text-transform:uppercase; color:#B7C3BC;
