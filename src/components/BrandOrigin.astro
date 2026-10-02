@@ -1,0 +1,14 @@
+---
+import { loadData } from '../i18n/data';
+const data = loadData(Astro.currentLocale ?? 'en', 'brandOrigin');
+---
+<section id="about-name">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">{data.eyebrow}</span>
+      <h2>{data.heading}</h2>
+      <p>{data.p1}</p>
+      <p>{data.p2}</p>
+    </div>
+  </div>
+</section>
