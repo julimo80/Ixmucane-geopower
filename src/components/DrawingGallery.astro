@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import { loadData } from '../i18n/data';
+
+const drawings = loadData(Astro.currentLocale ?? 'en', 'drawings');
+
+const images = import.meta.glob('../assets/drawings/*.png', { eager: true });
+function getImage(key: string) {
+  const mod = images[`../assets/drawings/${key}.png`] as { default: ImageMetadata } | undefined;
+  return mod?.default;
+}
+---
+<div class="drawing-gallery">
+  <div class="section-head">
+    <span class="eyebrow">{drawings.eyebrow}</span>
+    <h3>{drawings.heading}</h3>
+    <p>{drawings.lead}</p>
+  </div>
+
+  <div class="drawing-grid">
+    {drawings.items.map((item) => {
+      const img = getImage(item.key);
+      if (!img) return null;
+      return (
+        <>
+          <a href={`#drawing-${item.key}`} class="drawing-thumb" aria-label={`Enlarge: ${item.title}`}>
+            <Image src={img} alt={item.title} width={700} />
+            <span class="drawing-thumb-cap">{item.title}</span>
+          </a>
+          <div id={`drawing-${item.key}`} class="drawing-lightbox">
+            <a href="#" class="drawing-lightbox-backdrop" aria-label="Close"></a>
+            <figure>
+              <Image src={img} alt={item.title} width={1800} />
+              <figcaption>
+                <strong>{item.title}</strong>
+                <span>{item.caption}</span>
+              </figcaption>
+              <a href="#" class="drawing-lightbox-close" aria-label="Close">&times;</a>
+            </figure>
+          </div>
+        </>
+      );
+    })}
+  </div>
+</div>

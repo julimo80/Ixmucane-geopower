@@ -1,0 +1,68 @@
+{
+  "eyebrow": "Interactive — real flash-separation data",
+  "heading": "From the flow line to the stack: a real muffler sizing calculation",
+  "lead": "Hover or tap any stage for the full state point. Two-phase fluid flashes further as pressure drops toward atmospheric, then the muffler mechanically splits it into two pure streams — mass is conserved end to end.",
+  "stages": [
+    {
+      "key": "inlet",
+      "stage": "Stage 1 — flow line",
+      "label": "Wellhead flow line",
+      "pressure": "15 bar-abs",
+      "temperature": "198.29 °C",
+      "mass": "400 t/h",
+      "detail": [
+        { "label": "Enthalpy, liquid", "value": "844.72 kJ/kg" },
+        { "label": "Enthalpy, steam", "value": "2791.01 kJ/kg" },
+        { "label": "Total enthalpy", "value": "1200 kJ/kg" },
+        { "label": "Brine fraction", "value": "0.8174" },
+        { "label": "Steam fraction", "value": "0.1825" }
+      ]
+    },
+    {
+      "key": "flash",
+      "stage": "Stage 2 — after flash",
+      "label": "Muffler body, 36\" inlet",
+      "pressure": "1.5 bar-abs",
+      "temperature": "111.35 °C",
+      "mass": "400 t/h",
+      "detail": [
+        { "label": "Enthalpy, liquid", "value": "467.08 kJ/kg" },
+        { "label": "Enthalpy, steam", "value": "2693.11 kJ/kg" },
+        { "label": "Total enthalpy", "value": "1200 kJ/kg" },
+        { "label": "Brine fraction", "value": "0.6707" },
+        { "label": "Steam fraction", "value": "0.3292" }
+      ]
+    }
+  ],
+  "split": {
+    "steamPct": 34.7,
+    "brinePct": 65.3,
+    "steam": {
+      "stage": "Stage 3 — steam stack",
+      "label": "Steam → stack",
+      "pressure": "1.0 bar-abs",
+      "temperature": "99.60 °C",
+      "mass": "138.65 t/h",
+      "detail": [
+        { "label": "Enthalpy", "value": "2674.95 kJ/kg" },
+        { "label": "Density", "value": "0.5903 kg/m³" },
+        { "label": "Velocity", "value": "4.38 m/s" },
+        { "label": "Volumetric flow", "value": "234,892 m³/hr" }
+      ]
+    },
+    "brine": {
+      "stage": "Stage 3 — muffler drain",
+      "label": "Brine → drain",
+      "pressure": "1.0 bar-abs",
+      "temperature": "99.60 °C",
+      "mass": "261.34 t/h",
+      "detail": [
+        { "label": "Enthalpy", "value": "417.43 kJ/kg" },
+        { "label": "Pipe diameter", "value": "12\"" },
+        { "label": "Velocity", "value": "1.03 m/s" },
+        { "label": "Volumetric flow", "value": "272.6 m³/h" }
+      ]
+    }
+  },
+  "note": "From our own muffler thermodynamic sizing work — site and client identifiers removed; the physics and all numeric values are unchanged."
+}

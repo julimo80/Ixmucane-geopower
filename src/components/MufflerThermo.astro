@@ -1,0 +1,74 @@
+---
+import { loadData } from '../i18n/data';
+
+const thermo = loadData(Astro.currentLocale ?? 'en', 'mufflerThermo');
+const [inletStage, flashStage] = thermo.stages;
+const { steam, brine, steamPct, brinePct } = thermo.split;
+---
+<div class="thermo-viz">
+  <div class="section-head">
+    <span class="eyebrow">{thermo.eyebrow}</span>
+    <h3>{thermo.heading}</h3>
+    <p>{thermo.lead}</p>
+  </div>
+
+  <div class="thermo-flow">
+    {[inletStage, flashStage].map((s) => (
+      <div class="thermo-node" tabindex="0">
+        <span class="thermo-stage">{s.stage}</span>
+        <h4>{s.label}</h4>
+        <div class="thermo-headline">
+          <span>{s.pressure}</span>
+          <span>{s.temperature}</span>
+          <span>{s.mass}</span>
+        </div>
+        <div class="thermo-detail">
+          {s.detail.map((d) => (
+            <div class="thermo-detail-row"><span>{d.label}</span><span>{d.value}</span></div>
+          ))}
+        </div>
+      </div>
+    ))}
+    <div class="thermo-arrow" aria-hidden="true">&rarr;</div>
+    <div class="thermo-split">
+      <div class="thermo-node thermo-steam" tabindex="0">
+        <span class="thermo-stage">{steam.stage}</span>
+        <h4>{steam.label}</h4>
+        <div class="thermo-headline">
+          <span>{steam.pressure}</span>
+          <span>{steam.temperature}</span>
+          <span>{steam.mass}</span>
+        </div>
+        <div class="thermo-detail">
+          {steam.detail.map((d) => (
+            <div class="thermo-detail-row"><span>{d.label}</span><span>{d.value}</span></div>
+          ))}
+        </div>
+      </div>
+      <div class="thermo-node thermo-brine" tabindex="0">
+        <span class="thermo-stage">{brine.stage}</span>
+        <h4>{brine.label}</h4>
+        <div class="thermo-headline">
+          <span>{brine.pressure}</span>
+          <span>{brine.temperature}</span>
+          <span>{brine.mass}</span>
+        </div>
+        <div class="thermo-detail">
+          {brine.detail.map((d) => (
+            <div class="thermo-detail-row"><span>{d.label}</span><span>{d.value}</span></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="thermo-bar" role="img" aria-label={`${steamPct}% steam, ${brinePct}% brine by mass`}>
+    <div class="thermo-bar-seg thermo-bar-steam" style={`width:${steamPct}%`}>{steamPct}%</div>
+    <div class="thermo-bar-seg thermo-bar-brine" style={`width:${brinePct}%`}>{brinePct}%</div>
+  </div>
+  <div class="thermo-legend">
+    <span><i class="thermo-swatch thermo-swatch-steam"></i>{steam.label}</span>
+    <span><i class="thermo-swatch thermo-swatch-brine"></i>{brine.label}</span>
+  </div>
+  <p class="thermo-note">{thermo.note}</p>
+</div>

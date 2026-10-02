@@ -397,6 +397,119 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .svc-item-featured p{ margin-top:10px; color:var(--text-dim); font-size:14.5px; max-width:52ch; }
 .svc-item-featured .goto{ margin-top:10px; display:inline-block; font-family:'IBM Plex Mono'; font-size:11.5px; color:var(--accent); text-decoration:none; }
 .svc-item-featured .goto:hover{ text-decoration:underline; }
+.svc-expansion{
+  grid-column: 1 / -1;
+  padding-block:32px 8px;
+  border-top:1px solid var(--border);
+  margin-top:8px;
+}
+
+/* DRAWING GALLERY (lightbox, pure CSS) */
+.drawing-gallery .section-head h3{ font-size:20px; margin-top:8px; }
+.drawing-gallery .section-head p{ margin-top:10px; color:var(--text-dim); font-size:14px; max-width:68ch; }
+.drawing-grid{
+  margin-top:24px; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:16px;
+}
+.drawing-thumb{
+  display:block; text-decoration:none; background:var(--surface); border:1px solid var(--border);
+  border-radius:6px; overflow:hidden; box-shadow:var(--shadow); transition:border-color .15s ease;
+}
+.drawing-thumb:hover{ border-color:var(--accent); }
+.drawing-thumb img{ display:block; width:100%; height:160px; object-fit:cover; background:#fff; }
+.drawing-thumb-cap{
+  display:block; padding:10px 12px; font-size:12.5px; color:var(--text); font-family:'IBM Plex Sans';
+}
+.drawing-lightbox{
+  position:fixed; inset:0; z-index:100;
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none;
+  transition:opacity .2s ease;
+}
+.drawing-lightbox:target{ opacity:1; pointer-events:auto; }
+.drawing-lightbox-backdrop{ position:absolute; inset:0; background:rgba(8,12,10,0.82); cursor:zoom-out; }
+.drawing-lightbox figure{
+  position:relative; z-index:1; max-width:min(92vw, 1100px); max-height:90vh;
+  margin:16px; background:var(--surface); border-radius:8px; overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+  display:flex; flex-direction:column;
+}
+.drawing-lightbox img{ display:block; width:100%; height:auto; max-height:72vh; object-fit:contain; background:#fff; }
+.drawing-lightbox figcaption{ padding:14px 18px; }
+.drawing-lightbox figcaption strong{ display:block; font-size:14.5px; color:var(--text); }
+.drawing-lightbox figcaption span{ display:block; margin-top:4px; font-size:12.5px; color:var(--text-dim); }
+.drawing-lightbox-close{
+  position:absolute; top:10px; right:14px; z-index:2;
+  width:32px; height:32px; border-radius:50%; background:rgba(0,0,0,0.55); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-size:20px; text-decoration:none; line-height:1;
+}
+.drawing-lightbox-close:hover{ background:rgba(0,0,0,0.75); }
+
+/* MUFFLER THERMO VIZ */
+.thermo-viz{
+  margin-top:48px; padding-top:40px; border-top:1px solid var(--border);
+  --thermo-steam:#eb6834; --thermo-brine:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .thermo-viz{ --thermo-steam:#d95926; --thermo-brine:#3987e5; }
+}
+:root[data-theme="dark"] .thermo-viz{ --thermo-steam:#d95926; --thermo-brine:#3987e5; }
+.thermo-viz .section-head h3{ font-size:20px; margin-top:8px; }
+.thermo-viz .section-head p{ margin-top:10px; color:var(--text-dim); font-size:14px; max-width:68ch; }
+.thermo-flow{ margin-top:28px; display:flex; align-items:stretch; gap:16px; flex-wrap:wrap; }
+.thermo-node{
+  flex:1; min-width:220px;
+  background:var(--surface); border:1px solid var(--border); border-radius:6px;
+  padding:16px; position:relative;
+}
+.thermo-stage{
+  font-family:'IBM Plex Mono'; font-size:10px; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-dim);
+}
+.thermo-node h4{ margin-top:6px; font-size:14.5px; font-family:'IBM Plex Sans'; font-weight:600; color:var(--text); }
+.thermo-headline{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.thermo-headline span{
+  font-family:'IBM Plex Mono'; font-size:11.5px; color:var(--text);
+  background:var(--surface-2); border-radius:4px; padding:3px 8px;
+}
+.thermo-detail{
+  max-height:0; opacity:0; overflow:hidden;
+  transition:max-height .25s ease, opacity .2s ease, margin-top .25s ease;
+}
+.thermo-node:hover .thermo-detail, .thermo-node:focus-within .thermo-detail, .thermo-node:focus .thermo-detail{
+  max-height:200px; opacity:1; margin-top:12px;
+}
+.thermo-detail-row{
+  display:flex; justify-content:space-between; gap:10px;
+  font-size:12px; color:var(--text-dim); padding:3px 0; border-top:1px dashed var(--border);
+}
+.thermo-detail-row:first-child{ border-top:none; }
+.thermo-arrow{
+  flex:none; display:flex; align-items:center; justify-content:center;
+  width:28px; color:var(--text-dim); font-size:18px;
+}
+@media (max-width:860px){
+  .thermo-flow{ flex-direction:column; }
+  .thermo-arrow{ width:100%; height:20px; transform:rotate(90deg); }
+}
+.thermo-split{ flex:1; min-width:220px; display:flex; flex-direction:column; gap:16px; }
+.thermo-node.thermo-steam{ border-color:color-mix(in srgb, var(--thermo-steam) 45%, var(--border)); }
+.thermo-node.thermo-brine{ border-color:color-mix(in srgb, var(--thermo-brine) 45%, var(--border)); }
+.thermo-node.thermo-steam .thermo-stage{ color:var(--thermo-steam); }
+.thermo-node.thermo-brine .thermo-stage{ color:var(--thermo-brine); }
+.thermo-bar{
+  margin-top:24px; display:flex; height:30px; border-radius:5px; overflow:hidden; border:1px solid var(--border);
+}
+.thermo-bar-seg{
+  display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono'; font-size:11.5px; font-weight:500; color:#fff;
+}
+.thermo-bar-steam{ background:var(--thermo-steam); }
+.thermo-bar-brine{ background:var(--thermo-brine); }
+.thermo-legend{ margin-top:10px; display:flex; gap:18px; flex-wrap:wrap; }
+.thermo-legend span{ display:flex; align-items:center; gap:6px; font-size:12px; color:var(--text-dim); }
+.thermo-swatch{ width:10px; height:10px; border-radius:2px; display:inline-block; }
+.thermo-swatch-steam{ background:var(--thermo-steam); }
+.thermo-swatch-brine{ background:var(--thermo-brine); }
+.thermo-note{ margin-top:16px; font-size:11.5px; color:var(--text-dim); font-style:italic; }
 
 /* TECH */
 .pipeline-block{ margin-top:34px; padding-bottom:36px; border-bottom:1px solid var(--border); }

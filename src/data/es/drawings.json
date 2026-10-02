@@ -1,0 +1,47 @@
+{
+  "eyebrow": "De nuestros propios diseños de equipos",
+  "heading": "Equipo de pruebas de pozos, diseñado y construido por nosotros.",
+  "lead": "Planos reales de fabricación de programas de pruebas de flujo y registros que hemos ejecutado — haga clic en cualquier plano para ampliarlo. Se removieron los nombres de campos y clientes; la ingeniería no fue alterada.",
+  "items": [
+    {
+      "key": "logging-flow-test-setup",
+      "title": "Montaje de superficie para registros y prueba de flujo",
+      "caption": "Línea de flujo del cabezal al silenciador, con el armado del lubricador y cable fino para registros de fondo."
+    },
+    {
+      "key": "flow-test-pumping-config",
+      "title": "Configuración de bombeo y tubería para prueba de flujo (P&ID)",
+      "caption": "Suministro desde sumidero con doble bomba, medición ultrasónica de flujo y secciones de tubería de aluminio/acero al carbono hacia el silenciador."
+    },
+    {
+      "key": "muffler-views",
+      "title": "Silenciador — vistas de fabricación",
+      "caption": "Cuerpo de silenciador de 10' de diámetro x 18': detalles de brida de entrada, labio interno y placas de anclaje de cables."
+    },
+    {
+      "key": "muffler-thermo-sizing",
+      "title": "Silenciador — dimensionamiento termodinámico",
+      "caption": "Cálculo de flasheo y separación detrás del dimensionamiento del silenciador — ver el desglose interactivo abajo."
+    },
+    {
+      "key": "weirbox",
+      "title": "Caja de vertedero — plano de fabricación",
+      "caption": "Caja de vertedero para medición de flujo: bridas de entrada/salida, deflector interno y dimensiones del patín."
+    },
+    {
+      "key": "weir-plate-details",
+      "title": "Detalles de la placa del vertedero",
+      "caption": "Geometría de la placa de vertedero tipo V y ángulo de bisel para una medición precisa del caudal."
+    },
+    {
+      "key": "leveling-weirbox",
+      "title": "Nivelación de la caja de vertedero",
+      "caption": "Procedimiento de campo para nivelar una caja de vertedero en sitio usando mirilla de nivel y traslado de nivel con manguera de agua."
+    },
+    {
+      "key": "fittings-and-sizes",
+      "title": "Accesorios, bridas e isométrico de caja de vertedero",
+      "caption": "Dimensiones de brida y viga de ala ancha junto con un isométrico de la caja de vertedero para referencia rápida en campo."
+    }
+  ]
+}

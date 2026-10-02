@@ -1,6 +1,8 @@
 ---
 import { loadData } from '../i18n/data';
 import FavorabilityMap from './FavorabilityMap.astro';
+import DrawingGallery from './DrawingGallery.astro';
+import MufflerThermo from './MufflerThermo.astro';
 
 const locale = Astro.currentLocale ?? 'en';
 const flagship = loadData(locale, 'flagship');
@@ -46,14 +48,22 @@ const servicesPage = loadData(locale, 'servicesPage');
             </div>
           </div>
         ) : (
-          <div class="svc-item">
-            <span class="idx">{s.idx}</span>
-            <div>
-              <h4>{s.title}</h4>
-              <p>{s.description}</p>
-              {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+          <>
+            <div class="svc-item">
+              <span class="idx">{s.idx}</span>
+              <div>
+                <h4>{s.title}</h4>
+                <p>{s.description}</p>
+                {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+              </div>
             </div>
-          </div>
+            {s.gallery && (
+              <div class="svc-expansion">
+                <DrawingGallery />
+                <MufflerThermo />
+              </div>
+            )}
+          </>
         )
       ))}
     </div>
