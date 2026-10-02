@@ -54,6 +54,12 @@
     "idx": "12",
     "title": "Modelado de pozos (wellbore modelling)",
     "description": "Simulación transitoria multi-alimentación del pozo — flujo bifásico, contraflujo, arranque y cierre dentro del pozo mismo — construida sobre un simulador transitorio de pozos desarrollado en la Universidad de Auckland.",
-    "goto": { "label": "Conozca a nuestro equipo", "href": "/es/team" }
+    "goto": { "label": "Conozca a nuestro equipo", "href": "/es/team" },
+    "image": {
+      "file": "AZ-18_well.gif",
+      "alt": "Simulación transitoria animada del pozo AZ-18, mostrando los perfiles simulados de temperatura, presión y entalpía líquida convergiendo hacia los datos de campo medidos a medida que el solver itera, junto con la malla radial del pozo",
+      "fig": "Fig. — Simulación transitoria de pozo vs. datos de campo, pozo AZ-18",
+      "note": "Resultado del simulador transitorio de pozos"
+    }
   }
 ]

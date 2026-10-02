@@ -79,11 +79,15 @@ const figureImages = {
         {methodology.items.map((item) => (
           <div class:list={['method-card', item.key === 'gbop' && 'method-card-sm']}>
             <div class="figure">
-              <Image
-                src={figureImages[item.key as keyof typeof figureImages]}
-                alt={item.alt}
-                width={item.key === 'gbop' ? 900 : 1800}
-              />
+              {item.isGif ? (
+                <img src="/images/AZ-18_well.gif" alt={item.alt} loading="lazy" />
+              ) : (
+                <Image
+                  src={figureImages[item.key as keyof typeof figureImages]}
+                  alt={item.alt}
+                  width={item.key === 'gbop' ? 900 : 1800}
+                />
+              )}
             </div>
             <p class="figcap">{item.figcap}</p>
             <h3>{item.title}</h3>

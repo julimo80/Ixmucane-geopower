@@ -60,7 +60,7 @@
   "methodology": {
     "eyebrow": "De nuestra propia investigación",
     "heading": "Figuras reales de nuestro artículo en preparación sobre evaluación de recursos",
-    "lead": "Tomado directamente de nuestro manuscrito sobre la evaluación combinada de recursos de Tecuamburro–Infiernitos (en preparación, aún no revisado por pares) — el paso de modelo digital a modelo de yacimiento y el margen de seguridad en el dimensionamiento de bombas detrás del caso de estudio a continuación.",
+    "lead": "Figuras reales de nuestro propio trabajo — el paso de modelo digital a modelo de yacimiento y el margen de seguridad en el dimensionamiento de bombas, de nuestro manuscrito en preparación sobre Tecuamburro–Infiernitos (aún no revisado por pares), y una simulación transitoria de pozo de nuestro servicio de modelado de pozos.",
     "items": [
       {
         "key": "geomodel",
@@ -82,6 +82,14 @@
         "description": "Para fluido geotérmico con CO2, el gas disuelto sale de solución antes de que el fluido alcance su propio punto de ebullición — un umbral NPSH de solo agua deja la bomba subprotegida. Dimensionamos según el GBOP (presión de saturación más la presión parcial de los gases no condensables propios del fluido) más un margen de seguridad fijo, evaluado automáticamente para cada pozo candidato, y luego lo comparamos contra un catálogo real de bombas de proveedores — de eje largo o electrosumergibles, hasta 30 etapas — para obtener una especificación construible y su potencia parásita de eje.",
         "figcap": "Fig. — Terminación de bomba electrosumergible (ESP), dimensionada según el umbral GBOP.",
         "alt": "Esquema de terminación de bomba electrosumergible con los umbrales de presión de salida de gas y NPSH de solo agua frente a la profundidad de asentamiento de la bomba"
+      },
+      {
+        "key": "wellbore",
+        "title": "Resolviendo el pozo como un problema transitorio",
+        "description": "La mayoría de los modelos de pozo tratan el pozo como una tubería en cuasi-estado estacionario y resuelven el yacimiento por separado. Nuestro servicio de modelado de pozos usa una formulación genuinamente transitoria y multi-alimentación — desarrollada con nuestro asesor académico Ryan Tonkin en la Universidad de Auckland — que resuelve el flujo bifásico, el contraflujo entre zonas de alimentación, y el comportamiento de arranque/cierre a medida que evolucionan en el tiempo, y luego compara el resultado directamente contra los registros medidos de temperatura, presión y entalpía de fondo de pozo, en lugar de una sola fotografía de estado estacionario.",
+        "figcap": "Fig. — Simulación transitoria de pozo vs. datos de campo, pozo AZ-18.",
+        "alt": "Simulación transitoria animada del pozo AZ-18, mostrando los perfiles simulados de temperatura, presión y entalpía líquida convergiendo hacia los datos de campo medidos a medida que el solver itera, junto con la malla radial del pozo",
+        "isGif": true
       }
     ]
   }

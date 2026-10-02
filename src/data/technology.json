@@ -60,7 +60,7 @@
   "methodology": {
     "eyebrow": "From our own research",
     "heading": "Real figures from our in-preparation resource assessment paper",
-    "lead": "Drawn directly from our Tecuamburro–Infiernitos combined resource assessment manuscript (in preparation, not yet peer-reviewed) — the digital-to-reservoir modelling step and the pump-sizing safety margin behind the case study below.",
+    "lead": "Real figures from our own work — the digital-to-reservoir modelling step and the pump-sizing safety margin from our in-preparation Tecuamburro–Infiernitos manuscript (not yet peer-reviewed), and a transient wellbore simulation from our wellbore-modelling service.",
     "items": [
       {
         "key": "geomodel",
@@ -82,6 +82,14 @@
         "description": "For CO2-bearing geothermal fluid, dissolved gas comes out of solution before the fluid reaches its own boiling point — a water-only NPSH threshold under-protects the pump. We size to GBOP (saturation pressure plus the fluid's own NCG partial pressure) plus a fixed safety margin, evaluated automatically for every candidate well, then matched against a real vendor pump catalogue — line-shaft or electric submersible, up to 30 stages — for a buildable specification and its parasitic shaft power.",
         "figcap": "Fig. — Electric submersible pump (ESP) completion, sized against the GBOP threshold.",
         "alt": "Electric submersible pump completion schematic with gas-breakout pressure and water-only NPSH thresholds vs. pump setting depth"
+      },
+      {
+        "key": "wellbore",
+        "title": "Solving the wellbore as a transient problem",
+        "description": "Most wellbore models treat the well as a quasi-steady-state pipe and solve the reservoir separately. Our wellbore modelling service uses a genuinely transient, multi-feed formulation — developed with our academic advisor Ryan Tonkin at the University of Auckland — that solves two-phase flow, counter-flow between feedzones, and start-up/shut-in behaviour as they evolve in time, then matches the result directly against measured downhole temperature, pressure and enthalpy logs rather than a single steady-state snapshot.",
+        "figcap": "Fig. — Transient wellbore simulation vs. field data, well AZ-18.",
+        "alt": "Animated transient wellbore simulation for well AZ-18, showing simulated temperature, pressure and liquid-enthalpy profiles converging toward measured field data as the solver iterates, alongside the well's radial mesh",
+        "isGif": true
       }
     ]
   }

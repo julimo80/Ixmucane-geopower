@@ -29,14 +29,32 @@ const servicesPage = loadData(locale, 'servicesPage');
 
     <div class="svc-grid">
       {services.map((s) => (
-        <div class="svc-item">
-          <span class="idx">{s.idx}</span>
-          <div>
-            <h4>{s.title}</h4>
-            <p>{s.description}</p>
-            {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+        s.image ? (
+          <div class="svc-item-featured">
+            <div>
+              <span class="idx">{s.idx}</span>
+              <h3>{s.title}</h3>
+              <p>{s.description}</p>
+              {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+            </div>
+            <div class="fav-card">
+              <img src={`/images/${s.image.file}`} alt={s.image.alt} loading="lazy" />
+              <div class="cap">
+                <span>{s.image.fig}</span>
+                <span>{s.image.note}</span>
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div class="svc-item">
+            <span class="idx">{s.idx}</span>
+            <div>
+              <h4>{s.title}</h4>
+              <p>{s.description}</p>
+              {s.goto && <a class="goto" href={s.goto.href}>{s.goto.label} &rarr;</a>}
+            </div>
+          </div>
+        )
       ))}
     </div>
   </div>
