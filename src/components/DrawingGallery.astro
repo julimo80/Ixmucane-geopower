@@ -24,13 +24,13 @@ function getImage(key: string) {
       return (
         <>
           <a href={`#drawing-${item.key}`} class="drawing-thumb" aria-label={`Enlarge: ${item.title}`}>
-            <Image src={img} alt={item.title} width={700} />
+            <Image src={img} alt={item.title} width={900} />
             <span class="drawing-thumb-cap">{item.title}</span>
           </a>
           <div id={`drawing-${item.key}`} class="drawing-lightbox">
             <a href="#drawing-gallery" class="drawing-lightbox-backdrop" aria-label="Close"></a>
             <figure>
-              <Image src={img} alt={item.title} width={1800} />
+              <Image src={img} alt={item.title} width={2200} />
               <figcaption>
                 <strong>{item.title}</strong>
                 <span>{item.caption}</span>

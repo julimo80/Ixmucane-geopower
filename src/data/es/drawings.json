@@ -19,19 +19,9 @@
       "caption": "Cálculo de flasheo y separación detrás del dimensionamiento del silenciador — ver el desglose interactivo abajo."
     },
     {
-      "key": "weirbox",
-      "title": "Caja de vertedero — plano de ingeniería",
-      "caption": "Caja de vertedero para medición de flujo: bridas de entrada/salida, deflector interno y dimensiones del patín."
-    },
-    {
-      "key": "leveling-weirbox",
-      "title": "Nivelación de la caja de vertedero",
-      "caption": "Procedimiento de campo para nivelar una caja de vertedero en sitio usando mirilla de nivel y traslado de nivel con manguera de agua."
-    },
-    {
-      "key": "fittings-and-sizes",
-      "title": "Accesorios, bridas e isométrico de caja de vertedero",
-      "caption": "Dimensiones de brida y viga de ala ancha junto con un isométrico de la caja de vertedero para referencia rápida en campo."
+      "key": "muffler-container-design",
+      "title": "Silenciador — ensamblaje del contenedor, diseño inicial",
+      "caption": "Disposición en etapa temprana del contenedor inferior del silenciador, los ensambles de deflectores y el ensamble interno de tubería de expansión — placas de piso, pared y esquina dimensionadas antes de la fabricación."
     }
   ]
 }

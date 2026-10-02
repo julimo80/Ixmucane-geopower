@@ -408,14 +408,14 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .drawing-gallery .section-head h3{ font-size:20px; margin-top:8px; }
 .drawing-gallery .section-head p{ margin-top:10px; color:var(--text-dim); font-size:14px; max-width:68ch; }
 .drawing-grid{
-  margin-top:24px; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:16px;
+  margin-top:24px; display:grid; grid-template-columns:repeat(auto-fill, minmax(340px,1fr)); gap:22px;
 }
 .drawing-thumb{
   display:block; text-decoration:none; background:var(--surface); border:1px solid var(--border);
   border-radius:6px; overflow:hidden; box-shadow:var(--shadow); transition:border-color .15s ease;
 }
 .drawing-thumb:hover{ border-color:var(--accent); }
-.drawing-thumb img{ display:block; width:100%; height:160px; object-fit:cover; background:#fff; }
+.drawing-thumb img{ display:block; width:100%; height:260px; object-fit:cover; background:#fff; }
 .drawing-thumb-cap{
   display:block; padding:10px 12px; font-size:12.5px; color:var(--text); font-family:'IBM Plex Sans';
 }
@@ -428,12 +428,12 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .drawing-lightbox:target{ opacity:1; pointer-events:auto; }
 .drawing-lightbox-backdrop{ position:absolute; inset:0; background:rgba(8,12,10,0.82); cursor:zoom-out; }
 .drawing-lightbox figure{
-  position:relative; z-index:1; max-width:min(92vw, 1100px); max-height:90vh;
+  position:relative; z-index:1; max-width:min(95vw, 1500px); max-height:92vh;
   margin:16px; background:var(--surface); border-radius:8px; overflow:hidden;
   box-shadow:0 20px 60px rgba(0,0,0,0.4);
   display:flex; flex-direction:column;
 }
-.drawing-lightbox img{ display:block; width:100%; height:auto; max-height:72vh; object-fit:contain; background:#fff; }
+.drawing-lightbox img{ display:block; width:100%; height:auto; max-height:80vh; object-fit:contain; background:#fff; }
 .drawing-lightbox figcaption{ padding:14px 18px; }
 .drawing-lightbox figcaption strong{ display:block; font-size:14.5px; color:var(--text); }
 .drawing-lightbox figcaption span{ display:block; margin-top:4px; font-size:12.5px; color:var(--text-dim); }

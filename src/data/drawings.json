@@ -19,19 +19,9 @@
       "caption": "Flash and separation calculation behind the muffler sizing — see the interactive breakdown below."
     },
     {
-      "key": "weirbox",
-      "title": "Weir box — engineering drawing",
-      "caption": "Flow-measurement weir box: inlet/outlet flanges, internal baffle and skid dimensions."
-    },
-    {
-      "key": "leveling-weirbox",
-      "title": "Levelling the weir box",
-      "caption": "Field procedure for levelling a weir box on site using a site glass and water-hose level transfer."
-    },
-    {
-      "key": "fittings-and-sizes",
-      "title": "Fittings, flanges & weir-box isometric",
-      "caption": "Flange and wide-flange beam dimensions alongside a weir-box isometric for quick field reference."
+      "key": "muffler-container-design",
+      "title": "Muffler — container assembly, initial design",
+      "caption": "Early-stage layout of the muffler's lower container, baffle assemblies and internal expansion-pipe assembly — floor, wall and corner-trim plates sized before fabrication."
     }
   ]
 }
