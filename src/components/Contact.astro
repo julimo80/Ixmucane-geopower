@@ -1,9 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import { loadData } from '../i18n/data';
+import contactBg from '../assets/field/contact-bg-rig.jpg';
 const site = loadData(Astro.currentLocale ?? 'en', 'site');
 const { contact } = site;
 ---
 <section id="contact" class="contact" style="border-bottom:none;">
+  <Image src={contactBg} alt="" class="contact-bg" width={1900} loading="lazy" />
+  <div class="contact-overlay"></div>
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow" style="color:var(--accent);">{contact.eyebrow}</span>
