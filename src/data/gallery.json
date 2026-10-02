@@ -42,6 +42,21 @@
       "key": "pipeline-amatitlan",
       "caption": "Steamfield gathering pipework",
       "note": "Amatitlán — PTS logging operations, Guatemala"
+    },
+    {
+      "key": "chemical-batch-staging",
+      "caption": "Chemical batch staged for an injection-well clean-out",
+      "note": "Zunil, Guatemala — injection well chemical clean-out"
+    },
+    {
+      "key": "chemical-handling",
+      "caption": "Preparing the chemical treatment, full PPE",
+      "note": "Zunil, Guatemala — injection well chemical clean-out"
+    },
+    {
+      "key": "chemical-cleanout-crew",
+      "caption": "Crew connecting treatment lines at the wellhead",
+      "note": "Zunil, Guatemala — injection well chemical clean-out"
     }
   ]
 }
