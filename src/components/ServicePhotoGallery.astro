@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import { loadData } from '../i18n/data';
+
+interface Props { dataKey: string; }
+const { dataKey } = Astro.props;
+const gallery = loadData(Astro.currentLocale ?? 'en', dataKey);
+
+const images = import.meta.glob('../assets/field/*.jpg', { eager: true });
+function getImage(key: string) {
+  const mod = images[`../assets/field/${key}.jpg`] as { default: ImageMetadata } | undefined;
+  return mod?.default;
+}
+---
+<div class="svc-photo-gallery">
+  <div class="section-head">
+    <span class="eyebrow">{gallery.eyebrow}</span>
+    <h3>{gallery.heading}</h3>
+    <p>{gallery.lead}</p>
+  </div>
+  <div class="gallery-grid">
+    {gallery.photos.map((p: { key: string; caption: string; note: string }) => {
+      const img = getImage(p.key);
+      return img ? (
+        <figure class="gallery-item">
+          <Image src={img} alt={p.caption} width={900} />
+          <figcaption>
+            <span>{p.caption}</span>
+            <span class="note">{p.note}</span>
+          </figcaption>
+        </figure>
+      ) : null;
+    })}
+  </div>
+</div>

@@ -403,10 +403,10 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
   border-top:1px solid var(--border);
   margin-top:8px;
 }
+.svc-expansion .section-head h3{ font-size:20px; margin-top:8px; }
+.svc-expansion .section-head p{ margin-top:10px; color:var(--text-dim); font-size:14px; max-width:68ch; }
 
 /* DRAWING GALLERY (lightbox, pure CSS) */
-.drawing-gallery .section-head h3{ font-size:20px; margin-top:8px; }
-.drawing-gallery .section-head p{ margin-top:10px; color:var(--text-dim); font-size:14px; max-width:68ch; }
 .drawing-grid{
   margin-top:24px; display:grid; grid-template-columns:repeat(auto-fill, minmax(340px,1fr)); gap:22px;
 }

@@ -3,6 +3,7 @@ import { loadData } from '../i18n/data';
 import FavorabilityMap from './FavorabilityMap.astro';
 import DrawingGallery from './DrawingGallery.astro';
 import MufflerThermo from './MufflerThermo.astro';
+import ServicePhotoGallery from './ServicePhotoGallery.astro';
 
 const locale = Astro.currentLocale ?? 'en';
 const flagship = loadData(locale, 'flagship');
@@ -61,6 +62,11 @@ const servicesPage = loadData(locale, 'servicesPage');
               <div class="svc-expansion">
                 <DrawingGallery />
                 <MufflerThermo />
+              </div>
+            )}
+            {s.photoGallery && (
+              <div class="svc-expansion">
+                <ServicePhotoGallery dataKey={s.photoGallery} />
               </div>
             )}
           </>

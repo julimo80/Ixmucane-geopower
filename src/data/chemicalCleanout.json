@@ -1,0 +1,27 @@
+{
+  "eyebrow": "From our own field work",
+  "heading": "An injection-well clean-out, start to finish.",
+  "lead": "Low-cost caustic treatment programs to remove silica and other scale from reinjection wells, restoring injectivity without a workover rig. Identifying field and client names have been removed; the work itself is unchanged.",
+  "photos": [
+    {
+      "key": "chemical-batch-staging",
+      "caption": "Chemical batch staged for an injection-well clean-out",
+      "note": "Zunil, Guatemala"
+    },
+    {
+      "key": "chemical-batch-manifold",
+      "caption": "Six totes, one manifold — dosing a full injection-well treatment",
+      "note": "Zunil, Guatemala"
+    },
+    {
+      "key": "chemical-handling",
+      "caption": "Preparing the chemical treatment, full PPE",
+      "note": "Zunil, Guatemala"
+    },
+    {
+      "key": "chemical-cleanout-crew",
+      "caption": "Crew connecting treatment lines at the wellhead",
+      "note": "Zunil, Guatemala"
+    }
+  ]
+}

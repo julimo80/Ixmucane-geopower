@@ -42,26 +42,6 @@
       "key": "pipeline-amatitlan",
       "caption": "Tubería de recolección del campo de vapor",
       "note": "Amatitlán — operaciones de registro PTS, Guatemala"
-    },
-    {
-      "key": "chemical-batch-staging",
-      "caption": "Lote de químico preparado para una limpieza de pozo inyector",
-      "note": "Zunil, Guatemala — limpieza química de pozo inyector"
-    },
-    {
-      "key": "chemical-batch-manifold",
-      "caption": "Seis totes, un solo manifold — dosificando el tratamiento completo del pozo inyector",
-      "note": "Zunil, Guatemala — limpieza química de pozo inyector"
-    },
-    {
-      "key": "chemical-handling",
-      "caption": "Preparación del tratamiento químico, con EPP completo",
-      "note": "Zunil, Guatemala — limpieza química de pozo inyector"
-    },
-    {
-      "key": "chemical-cleanout-crew",
-      "caption": "Cuadrilla conectando las líneas de tratamiento en el cabezal",
-      "note": "Zunil, Guatemala — limpieza química de pozo inyector"
     }
   ]
 }
