@@ -28,6 +28,7 @@
       }
     ]
   },
+  "toolingLabel": "Construido sobre",
   "eqPanel": {
     "eyebrow": "Ecuaciones Gobernantes",
     "heading": "Lo que el simulador realmente resuelve",

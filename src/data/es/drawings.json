@@ -1,7 +1,7 @@
 {
-  "eyebrow": "De nuestros propios diseños de equipos",
-  "heading": "Equipo de pruebas de pozos, diseñado y construido por nosotros.",
-  "lead": "Planos reales de fabricación de programas de pruebas de flujo y registros que hemos ejecutado — haga clic en cualquier plano para ampliarlo. Se removieron los nombres de campos y clientes; la ingeniería no fue alterada.",
+  "eyebrow": "De nuestro propio trabajo de ingeniería",
+  "heading": "Equipo de pruebas de pozos, diseñado por nosotros.",
+  "lead": "Planos de ingeniería de programas de pruebas de flujo y registros que hemos ejecutado — diseñados en CAD y validados con CFD antes de construirse. Haga clic en cualquier plano para ampliarlo. Se removieron los nombres de campos y clientes; la ingeniería no fue alterada.",
   "items": [
     {
       "key": "flow-test-pumping-config",
@@ -10,7 +10,7 @@
     },
     {
       "key": "muffler-views",
-      "title": "Silenciador — vistas de fabricación",
+      "title": "Silenciador — plano de ingeniería",
       "caption": "Cuerpo de silenciador de 10' de diámetro x 18': detalles de brida de entrada, labio interno y placas de anclaje de cables."
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "key": "weirbox",
-      "title": "Caja de vertedero — plano de fabricación",
+      "title": "Caja de vertedero — plano de ingeniería",
       "caption": "Caja de vertedero para medición de flujo: bridas de entrada/salida, deflector interno y dimensiones del patín."
     },
     {

@@ -1,7 +1,7 @@
 {
-  "eyebrow": "From our own equipment designs",
-  "heading": "Well-test equipment, drawn and built by us.",
-  "lead": "Real fabrication drawings from flow-test and logging programs we've run — click any drawing to enlarge. Identifying field and client names have been removed; the engineering is unchanged.",
+  "eyebrow": "From our own engineering work",
+  "heading": "Well-test equipment, engineered by us.",
+  "lead": "Engineering drawings from flow-test and logging programs we've run — designed in CAD and validated with CFD before build. Click any drawing to enlarge. Identifying field and client names have been removed; the engineering is unchanged.",
   "items": [
     {
       "key": "flow-test-pumping-config",
@@ -10,7 +10,7 @@
     },
     {
       "key": "muffler-views",
-      "title": "Muffler — fabrication views",
+      "title": "Muffler — engineering drawing",
       "caption": "10' diameter x 18' muffler body: inlet flange, internal lip and wire-guy plate details."
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "key": "weirbox",
-      "title": "Weir box — fabrication drawing",
+      "title": "Weir box — engineering drawing",
       "caption": "Flow-measurement weir box: inlet/outlet flanges, internal baffle and skid dimensions."
     },
     {

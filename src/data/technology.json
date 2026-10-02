@@ -28,6 +28,7 @@
       }
     ]
   },
+  "toolingLabel": "Built on",
   "eqPanel": {
     "eyebrow": "Governing Equations",
     "heading": "What the simulator actually solves",

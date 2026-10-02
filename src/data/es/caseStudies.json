@@ -4,7 +4,7 @@
   "lead": "Estructurado tal como entregamos el trabajo a nuestros clientes: el encargo, el problema geológico, cómo lo modelamos, y qué cambió en el plan de desarrollo del campo.",
   "draftNote": {
     "strong": "Estado mixto.",
-    "text": "LOG 01–02 son marcadores de posición ilustrativos, pendientes de confirmación del cliente. LOG 03 es real, de nuestro propio manuscrito de investigación en preparación (aún no revisado por pares). LOG 04–05 son investigación real y publicada de la trayectoria de nuestro propio equipo — ver la nota de fuente de cada entrada."
+    "text": "LOG 01 es un marcador de posición ilustrativo, pendiente de confirmación del cliente. LOG 02–05 son reales — ver la insignia y la nota de fuente de cada entrada para su estado actual."
   },
   "stageLabels": { "brief": "Encargo", "challenge": "Desafío", "method": "Método", "outcome": "Resultado" },
   "draftBadge": "Borrador",
@@ -22,13 +22,15 @@
     },
     {
       "log": "LOG 02",
-      "draft": true,
-      "title": "Modelo de estado natural para un nuevo prospecto de exploración",
-      "loc": "Campo no revelado · Exploración en etapa temprana",
-      "brief": "Construir un modelo de estado natural a partir de datos de exploración escasos, para apoyar una decisión de ubicación de pozos antes del primer pozo profundo.",
-      "challenge": "El control limitado de pozos implicó que la estructura de permeabilidad tuviera que inferirse principalmente a partir de geoquímica superficial y estudios de resistividad.",
-      "method": "Conjunto (ensemble) de estructuras de permeabilidad plausibles corridas en paralelo, clasificadas contra las temperaturas y química de las manifestaciones superficiales.",
-      "outcome": "Se redujeron las ubicaciones candidatas de plataformas de pozos de cinco a dos, con un rango de confianza explícito sobre la temperatura objetivo del yacimiento."
+      "draft": false,
+      "badge": "En curso — investigación propia",
+      "title": "Desert Queen: modelado de estado natural de un sistema ciego en Nevada",
+      "loc": "Prospecto Geotérmico Desert Queen, Condado de Churchill, Nevada · Sistema ciego, sin expresión superficial",
+      "brief": "Construir un modelo numérico de estado natural de un sistema geotérmico ciego clásico de la Gran Cuenca (Great Basin), fundamentado en décadas de datos públicos de exploración y un modelo conceptual con control estructural, antes del mismo flujo de trabajo de cuantificación de incertidumbre y evaluación de recursos usado en Tecuamburro–Infiernitos.",
+      "challenge": "En Desert Queen no existe fumarola, manantial termal ni expresión superficial alguna — el sistema se descubrió enteramente mediante perforación de gradiente de temperatura, estudios de temperatura a 2 m de profundidad y geofísica, por lo que el modelo de estado natural debe ganarse su ajuste solo contra datos del subsuelo, siendo la geometría de ascenso/descenso de flujo la principal incógnita.",
+      "method": "Modelo estructural y conceptual construido a partir del historial público de exploración (Phillips Petroleum, el Great Basin Center for Geothermal Energy, Magma Energy, y el propio mapeo geológico, gravimetría, magnetometría, magnetotelúrica, estudio de temperatura a 2 m y pozos de gradiente de temperatura de Cyrq Energy/Raser Power Systems) más el análisis de \"play fairway\" geotérmico de Dellerman (2021), que ahora se está llevando a un modelo numérico de estado natural calibrado.",
+      "outcome": "En curso. El modelo conceptual ubica el ascenso de flujo donde la zona de falla Desert Queen termina hacia el suroeste y se traslapa (\"step-over\") con la falla Power Line, con ~140 °C medidos en el pozo de gradiente de temperatura más caliente y una estimación por geotermómetro de sílice cercana a 168 °C (335 °F) para la temperatura del yacimiento. El modelo de estado natural que se está construyendo pondrá a prueba numéricamente ese panorama antes de iniciar la cuantificación de incertidumbre y la evaluación de recursos.",
+      "source": "Historial público de exploración resumido de Dellerman, N.P. (2021) — \"Application of Geothermal Play Fairway Analysis to the Desert Queen Geothermal Prospect, Northern Hot Springs Mountains, Churchill County, Nevada\", tesis de maestría, Universidad de Nevada, Reno (asesor J.E. Faulds), y los informes geológicos de la Unidad Desert Queen de Cyrq Energy/Raser Power Systems."
     },
     {
       "log": "LOG 03",

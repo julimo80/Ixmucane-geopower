@@ -4,7 +4,7 @@
   "lead": "Structured the way we hand work back to clients: the brief, the geological problem, how we modelled it, and what it changed about the field's development plan.",
   "draftNote": {
     "strong": "Mixed status.",
-    "text": "LOG 01–02 are illustrative placeholders pending client confirmation. LOG 03 is real, from our own in-preparation research manuscript (not yet peer-reviewed). LOG 04–05 are real, published research from our team's own careers — see each entry's source note."
+    "text": "LOG 01 is an illustrative placeholder pending client confirmation. LOG 02–05 are real — see each entry's badge and source note for its current status."
   },
   "stageLabels": { "brief": "Brief", "challenge": "Challenge", "method": "Method", "outcome": "Outcome" },
   "draftBadge": "Draft",
@@ -22,13 +22,15 @@
     },
     {
       "log": "LOG 02",
-      "draft": true,
-      "title": "Natural-state model for a new exploration prospect",
-      "loc": "Undisclosed field · Early-stage exploration",
-      "brief": "Build a natural-state model from sparse exploration data to support a well-siting decision ahead of the first deep well.",
-      "challenge": "Limited well control meant permeability structure had to be inferred largely from surface geochemistry and resistivity surveys.",
-      "method": "Ensemble of plausible permeability structures run in parallel, ranked against surface manifestation temperatures and chemistry.",
-      "outcome": "Narrowed the candidate well-pad locations from five to two, with an explicit confidence range on target reservoir temperature."
+      "draft": false,
+      "badge": "In progress — own research",
+      "title": "Desert Queen: natural-state modelling of a blind Nevada system",
+      "loc": "Desert Queen Geothermal Prospect, Churchill County, Nevada · Blind system, no surface expression",
+      "brief": "Build a natural-state numerical model of a classic blind Great Basin geothermal system, informed by decades of public exploration data and a structurally-controlled conceptual model, ahead of the same uncertainty quantification and resource-assessment workflow used at Tecuamburro–Infiernitos.",
+      "challenge": "No fumarole, hot spring or surface expression exists at Desert Queen — the system was found entirely through temperature-gradient drilling, 2 m soil-temperature surveys and geophysics, so the natural-state model has to earn its match against subsurface data alone, with the up/outflow geometry itself as the main open question.",
+      "method": "Structural and conceptual model built from public exploration history (Phillips Petroleum, the Great Basin Center for Geothermal Energy, Magma Energy, and Cyrq Energy/Raser Power Systems' own geologic mapping, gravity, magnetics, magnetotellurics, 2 m temperature survey and temperature-gradient wells) plus Dellerman's (2021) geothermal play-fairway analysis, now being carried into a calibrated numerical natural-state model.",
+      "outcome": "In progress. The conceptual model places upflow where the Desert Queen fault zone terminates to the south-southwest and steps over to the Power Line fault, with ~140 °C measured at the hottest temperature-gradient well and a silica-geothermometer estimate near 168 °C (335 °F) for reservoir temperature. The natural-state model currently being built will test that picture numerically before UQ and resource assessment begin.",
+      "source": "Public exploration history summarised from Dellerman, N.P. (2021) — \"Application of Geothermal Play Fairway Analysis to the Desert Queen Geothermal Prospect, Northern Hot Springs Mountains, Churchill County, Nevada\", MS thesis, University of Nevada, Reno (advisor J.E. Faulds), and Cyrq Energy/Raser Power Systems' Desert Queen Unit geologic reporting."
     },
     {
       "log": "LOG 03",
