@@ -1,7 +1,7 @@
 {
   "eyebrow": "Field testing",
   "heading": "We're on site for it, not just modelling it after the fact.",
-  "lead": "Unstaged clips from flow tests and well work our team has run — muted, looping. [Placeholder] confirm field names before publishing.",
+  "lead": "Unstaged clips from flow tests and well work our team has run — muted, looping.",
   "clips": [
     { "key": "reel-1-plume", "file": "reel-1-plume.mp4", "alt": "Steam venting through a well silencer during a flow test" },
     { "key": "reel-2-rig", "file": "reel-2-rig.mp4", "alt": "Steam plume with a drilling rig on location behind it" },
