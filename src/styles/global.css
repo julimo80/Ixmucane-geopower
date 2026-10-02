@@ -689,8 +689,7 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 }
 .contact h2{ color:var(--rock-deep-text); }
 .contact .section-head p{ color:#B7C3BC; }
-.contact .btn-primary{ margin-top:26px; }
-.contact-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+.contact-links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
 .contact-link{
   display:inline-flex; align-items:center; gap:8px;
   font-family:'IBM Plex Mono', monospace; font-size:12.5px; text-transform:uppercase; letter-spacing:0.06em;
