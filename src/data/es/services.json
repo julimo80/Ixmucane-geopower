@@ -33,27 +33,6 @@
   },
   {
     "idx": "08",
-    "title": "Registros de pozos — PTS y ABI",
-    "description": "Servicios de registro de presión-temperatura-spinner (PTS) e imágenes acústicas de pozo (ABI) para caracterizar zonas de alimentación y confirmar la integridad del pozo."
-  },
-  {
-    "idx": "09",
-    "title": "Sistemas de monitoreo de presión de fondo de pozo",
-    "description": "Diseño e instalación de sistemas de monitoreo continuo de presión de fondo del yacimiento, dando una lectura directa y temprana de la respuesta del yacimiento en lugar de inferirla solo a partir de datos de superficie."
-  },
-  {
-    "idx": "10",
-    "title": "Sistemas de inhibición de calcita",
-    "description": "Diseño e instalación de sistemas de inhibición de calcita (CaCO3) en pozos productores, previniendo la caída de producción por incrustaciones antes de que ocurra, en lugar de tratarla después del hecho."
-  },
-  {
-    "idx": "11",
-    "title": "Limpiezas químicas de pozos inyectores",
-    "description": "Programas de tratamiento cáustico de bajo costo para remover sílice y otras incrustaciones de pozos de reinyección, restaurando la inyectividad sin necesidad de un taladro de reacondicionamiento.",
-    "photoGallery": "chemicalCleanout"
-  },
-  {
-    "idx": "12",
     "title": "Modelado de pozos (wellbore modelling)",
     "description": "Simulación transitoria multi-alimentación del pozo — flujo bifásico, contraflujo, arranque y cierre dentro del pozo mismo — construida sobre un simulador transitorio de pozos desarrollado en la Universidad de Auckland.",
     "goto": { "label": "Conozca a nuestro equipo", "href": "/es/team" },
@@ -63,5 +42,26 @@
       "fig": "Fig. — Simulación transitoria de pozo vs. datos de campo, pozo AZ-18",
       "note": "Resultado del simulador transitorio de pozos"
     }
+  },
+  {
+    "idx": "09",
+    "title": "Registros de pozos — PTS y ABI",
+    "description": "Servicios de registro de presión-temperatura-spinner (PTS) e imágenes acústicas de pozo (ABI) para caracterizar zonas de alimentación y confirmar la integridad del pozo."
+  },
+  {
+    "idx": "10",
+    "title": "Sistemas de monitoreo de presión de fondo de pozo",
+    "description": "Diseño e instalación de sistemas de monitoreo continuo de presión de fondo del yacimiento, dando una lectura directa y temprana de la respuesta del yacimiento en lugar de inferirla solo a partir de datos de superficie."
+  },
+  {
+    "idx": "11",
+    "title": "Sistemas de inhibición de calcita",
+    "description": "Diseño e instalación de sistemas de inhibición de calcita (CaCO3) en pozos productores, previniendo la caída de producción por incrustaciones antes de que ocurra, en lugar de tratarla después del hecho."
+  },
+  {
+    "idx": "12",
+    "title": "Limpiezas químicas de pozos inyectores",
+    "description": "Programas de tratamiento cáustico de bajo costo para remover sílice y otras incrustaciones de pozos de reinyección, restaurando la inyectividad sin necesidad de un taladro de reacondicionamiento.",
+    "photoGallery": "chemicalCleanout"
   }
 ]
