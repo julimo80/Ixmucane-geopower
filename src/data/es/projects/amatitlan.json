@@ -5,5 +5,15 @@
   "lng": -90.6068,
   "tier": 5,
   "status": "En producción",
-  "summary": "25.2 MWe de capacidad instalada — 3 unidades (2×12 MW + 1×1.2 MW), en operación desde 2007"
+  "summary": "25.2 MWe de capacidad instalada — 3 unidades (2×12 MW + 1×1.2 MW), en operación desde 2007",
+  "detail": "Un yacimiento profundo de 285°C Na-Cl con ascenso de flujo concentrado en el área de AMF-2/AMF-6, calentado magmáticamente por el volcán activo Pacaya y controlado estructuralmente por fallas de caldera superpuestas y una intrusión de dacita post-caldera. El campo de pozos opera hoy con 5 pozos de producción activos y 1 inactivo (AMF-1RD, AMF-2, AMF-5, AMF-6, AMF-8) que alimentan la planta, más 2 inyectores activos (AMF-3, AMF-4) que retornan el fluido hacia el norte siguiendo la trayectoria de descarga. La presión del campo cayó con rapidez en 2007-09, justo tras el arranque; el pozo original AMF-1 sufrió después incrustaciones y fallas mecánicas entre 2009 y 2013, AMF-8 perdió productividad en el mismo lapso, y su reemplazo AMF-1RD ha necesitado limpiezas mecánicas y con ácido, de forma recurrente, por incrustación de calcita desde 2013.",
+  "figures": [
+    {
+      "key": "amatitlan-summary-map",
+      "fig": "Fig. — Mapa resumen del recurso de Amatitlán",
+      "note": "Disposición del campo de pozos, estimación del área del yacimiento, fumarolas y fallas mapeadas sobre relieve sombreado",
+      "alt": "Mapa en planta del recurso geotérmico de Amatitlán con ubicaciones de pozos de producción e inyección, red de tuberías, manifestaciones superficiales de fumarolas, zona de alteración superficial, fallas mapeadas y una estimación del área del yacimiento P10/P90, sobre relieve sombreado cerca del Lago de Amatitlán"
+    }
+  ],
+  "source": "Figura y datos del campo de pozos adaptados de materiales internos de revisión del recurso de Amatitlán de Ormat Technologies."
 }

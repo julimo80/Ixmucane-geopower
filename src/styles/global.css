@@ -412,6 +412,12 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
   color:var(--accent);
 }
 .project-panel p{ margin-top:6px; font-size:12.5px; color:var(--text-dim); }
+.project-panel-link{
+  display:inline-block; margin-top:10px;
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:0.05em;
+  color:var(--accent); text-decoration:none;
+}
+.project-panel-link:hover{ text-decoration:underline; }
 
 .svc-grid{
   margin-top:36px;
@@ -688,6 +694,17 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .case-stat-value{ display:block; margin-top:4px; font-family:'IBM Plex Mono', monospace; font-size:15px; font-weight:500; color:var(--text); font-variant-numeric:tabular-nums; }
 .case-stats-note{ margin-top:10px; font-size:12px; color:var(--text-dim); }
 .case-source{ margin-top:14px; font-size:11.5px; color:var(--text-dim); font-style:italic; }
+
+/* PROJECT DETAIL PAGE */
+.back-link{
+  display:inline-block; margin-bottom:20px;
+  font-family:'IBM Plex Mono', monospace; font-size:12px; text-transform:uppercase; letter-spacing:0.05em;
+  color:var(--text-dim); text-decoration:none;
+}
+.back-link:hover{ color:var(--accent); }
+#project-detail .section-head{ max-width:72ch; }
+.project-detail-fig{ margin-top:32px; max-width:900px; }
+.project-detail-fig + .project-detail-fig{ margin-top:24px; }
 
 /* TEAM */
 .people-grid{ margin-top:36px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }

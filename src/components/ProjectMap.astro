@@ -21,7 +21,7 @@ const { mapUi } = flagship;
     ))}
   </div>
 
-  <div class="project-panel" id="project-panel">
+  <div class="project-panel" id="project-panel" data-profile-link={mapUi.profileLink} data-base-path={mapUi.projectsBasePath}>
     <p class="project-panel-hint">{mapUi.hint}</p>
   </div>
 
@@ -47,7 +47,7 @@ const { mapUi } = flagship;
     shadowUrl: markerShadow,
   });
 
-  type Project = { key: string; name: string; lat: number; lng: number; tier: number; status: string; summary: string };
+  type Project = { key: string; name: string; lat: number; lng: number; tier: number; status: string; summary: string; detail?: string };
 
   const dataEl = document.getElementById('project-map-data');
   const mapEl = document.getElementById('project-map');
@@ -63,11 +63,18 @@ const { mapUi } = flagship;
 
     const markers: Record<string, L.Marker> = {};
 
+    const profileLink = panel.dataset.profileLink || 'View full profile';
+    const basePath = panel.dataset.basePath || '/services/projects';
+
     function showProject(p: Project) {
+      const link = p.detail
+        ? `<a class="project-panel-link" href="${basePath}/${p.key}">${profileLink} &rarr;</a>`
+        : '';
       panel.innerHTML = `
         <h4>${p.name}</h4>
         <span class="project-status">${p.status}</span>
         <p>${p.summary}</p>
+        ${link}
       `;
       document.querySelectorAll('.project-pill').forEach((el) => {
         el.classList.toggle('active', el.getAttribute('data-key') === p.key);

@@ -13,6 +13,8 @@
     "legendLower": "Menor",
     "legendHigher": "Mayor favorabilidad",
     "hint": "Haga clic en un proyecto, en el mapa o en la lista, para ver su estado y cifras.",
-    "sourceNote": "Estado y cifras de los campos según fuentes públicas (comunicados de operadores/prensa, actualizaciones académicas del país) a 2026 — no derivados de un análisis propio. Los niveles de favorabilidad (color del punto) son ilustrativos, no el resultado de un modelo computado."
+    "sourceNote": "Estado y cifras de los campos según fuentes públicas (comunicados de operadores/prensa, actualizaciones académicas del país) a 2026 — no derivados de un análisis propio. Los niveles de favorabilidad (color del punto) son ilustrativos, no el resultado de un modelo computado.",
+    "profileLink": "Ver perfil completo",
+    "projectsBasePath": "/es/services/projects"
   }
 }

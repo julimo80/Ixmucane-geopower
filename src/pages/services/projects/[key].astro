@@ -1,0 +1,60 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Nav from '../../../components/Nav.astro';
+import Footer from '../../../components/Footer.astro';
+import { Image } from 'astro:assets';
+import { loadData } from '../../../i18n/data';
+import projectKeys from '../../../data/projectsIndex.json';
+
+export async function getStaticPaths() {
+  const keys = (projectKeys as string[]).filter((key) => {
+    const p = loadData('en', `projects/${key}`) as { detail?: string };
+    return !!p.detail;
+  });
+  return keys.map((key) => ({ params: { key } }));
+}
+
+const { key } = Astro.params;
+const locale = Astro.currentLocale ?? 'en';
+type Figure = { key: string; fig: string; note: string; alt: string };
+type Project = {
+  name: string; status: string; summary: string; detail?: string;
+  figures?: Figure[]; source?: string;
+};
+const project = loadData(locale, `projects/${key}`) as Project;
+
+const figureImages = import.meta.glob('../../../assets/projects/*.png', { eager: true });
+function getFigureImage(fkey: string) {
+  const mod = figureImages[`../../../assets/projects/${fkey}.png`] as { default: ImageMetadata } | undefined;
+  return mod?.default;
+}
+---
+<Base title={`${project.name} — Ixmucané GeoPower`} description={project.summary}>
+  <Nav />
+  <section id="project-detail">
+    <div class="wrap">
+      <a class="back-link" href="/services">&larr; Back to Services</a>
+      <div class="section-head">
+        <span class="eyebrow">{project.status}</span>
+        <h2>{project.name}</h2>
+        <p>{project.detail ?? project.summary}</p>
+      </div>
+
+      {project.figures?.map((f) => {
+        const img = getFigureImage(f.key);
+        return img ? (
+          <div class="fav-card project-detail-fig">
+            <Image src={img} alt={f.alt} width={1700} />
+            <div class="cap">
+              <span>{f.fig}</span>
+              <span>{f.note}</span>
+            </div>
+          </div>
+        ) : null;
+      })}
+
+      {project.source && <p class="field-source">{project.source}</p>}
+    </div>
+  </section>
+  <Footer />
+</Base>

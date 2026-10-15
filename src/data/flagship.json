@@ -13,6 +13,8 @@
     "legendLower": "Lower",
     "legendHigher": "Higher favorability",
     "hint": "Click a project, on the map or in the list, to see its status and figures.",
-    "sourceNote": "Field status and figures from public sources (operator/press releases, academic country updates) as of 2026 — not derived from our own analysis. Favorability tiers (dot colour) are illustrative, not a computed model output."
+    "sourceNote": "Field status and figures from public sources (operator/press releases, academic country updates) as of 2026 — not derived from our own analysis. Favorability tiers (dot colour) are illustrative, not a computed model output.",
+    "profileLink": "View full profile",
+    "projectsBasePath": "/services/projects"
   }
 }

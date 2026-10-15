@@ -5,5 +5,15 @@
   "lng": -91.506,
   "tier": 5,
   "status": "En producción",
-  "summary": "24 MWe de capacidad instalada — planta binaria de Ormat, en operación desde 1999"
+  "summary": "24 MWe de capacidad instalada — planta binaria de Ormat, en operación desde 1999",
+  "detail": "Un yacimiento líquido-dominante de 275–300°C alojado en volcánicas andesítico-dacíticas y un basamento granodiorítico subyacente, con permeabilidad controlada por fracturas y una \"zona de vapor\" de dos fases móvil que se ha expandido en los ~600m superiores a medida que la producción redujo la presión entre 15–25 bar a lo largo de la vida del campo. Las zonas de alimentación se ubican aproximadamente entre 550–1370m de profundidad vertical. INDE inició la exploración del campo en la década de 1970 y perforó trece pozos durante los años 80 y 90 antes de que la planta Ormat de 24 MWe entrara en operación en 1999; Ormat ha operado directamente el campo de pozos y la planta desde una revisión del acuerdo en 2014. Zunil II, un yacimiento separado, se ubica al este de Zunil I, cruzando el Río Samalá.",
+  "figures": [
+    {
+      "key": "zunil-cross-section",
+      "fig": "Fig. — Sección transversal de temperatura en estado natural, Zunil I",
+      "note": "Litología, estado de pozos e isotermas calibradas a través del yacimiento, NNO–SSE",
+      "alt": "Sección geológica transversal del yacimiento Zunil I mostrando litología de granodiorita y secuencia volcánica, trayectorias de pozos coloreadas por uso (revestimiento, producción, inyección, monitoreo), y líneas isotermas de temperatura calibradas desde superficie hasta 500msnm"
+    }
+  ],
+  "source": "Figura adaptada de materiales internos de revisión del recurso de Zunil de Ormat Technologies; historia del campo y parámetros del recurso según la misma fuente."
 }
