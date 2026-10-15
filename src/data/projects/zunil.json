@@ -9,16 +9,10 @@
   "detail": "A 275–300°C liquid-dominated reservoir hosted in andesitic-dacitic volcanics and an underlying granodiorite basement, with fracture-controlled permeability and a vapour-mobile two-phase \"steam zone\" that has expanded in the upper ~600m as production drew pressure down 15–25 bar over the field's life. Feed zones sit between roughly 550–1370m vertical depth. INDE began exploring the field in the 1970s and drilled thirteen wells through the 1980s and 90s before the 24 MWe Ormat plant came online in 1999; Ormat has operated the wellfield and plant directly since a 2014 agreement revision. Zunil II, a separate reservoir, lies east of Zunil I across the Río Samala.",
   "figures": [
     {
-      "key": "zunil-cross-section",
-      "fig": "Fig. — Natural-state temperature cross-section, Zunil I",
-      "note": "Lithology, named wells by status and calibrated isotherms through the reservoir, NNW–SSE",
-      "alt": "Geological cross-section through the Zunil I reservoir showing granodiorite and volcanic-sequence lithology, named well trajectories coloured by use (casing, production, injection, monitor), and calibrated temperature isotherm lines labelled from 100 to 275 degrees Celsius"
-    },
-    {
       "key": "zunil-wellfield-plan",
       "fig": "Fig. — Zunil I wellfield plan",
       "note": "Well pads, gathering pipelines, separator stations and surface steam features over hillshade terrain",
-      "alt": "Plan-view map of the Zunil I wellfield over hillshade terrain, showing named production, injection and monitor wells grouped into pads, red and blue gathering pipelines, separator station pressures, and surface fumarole locations"
+      "alt": "Plan-view map of the Zunil I wellfield over hillshade terrain, showing named production, injection and monitor wells grouped into Pad A, Pad B and Pad C, red and blue gathering pipelines, separator station pressures, and surface fumarole locations"
     }
   ],
   "source": "Figure adapted from Ormat Technologies' internal Zunil resource review materials; field history and resource parameters per the same source."
