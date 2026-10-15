@@ -11,8 +11,14 @@
     {
       "key": "zunil-cross-section",
       "fig": "Fig. — Natural-state temperature cross-section, Zunil I",
-      "note": "Lithology, well status and calibrated isotherms through the reservoir, NNW–SSE",
-      "alt": "Geological cross-section through the Zunil I reservoir showing granodiorite and volcanic-sequence lithology, well trajectories coloured by use (casing, production, injection, monitor), and calibrated temperature isotherm lines from surface to 500masl"
+      "note": "Lithology, named wells by status and calibrated isotherms through the reservoir, NNW–SSE",
+      "alt": "Geological cross-section through the Zunil I reservoir showing granodiorite and volcanic-sequence lithology, named well trajectories coloured by use (casing, production, injection, monitor), and calibrated temperature isotherm lines labelled from 100 to 275 degrees Celsius"
+    },
+    {
+      "key": "zunil-wellfield-plan",
+      "fig": "Fig. — Zunil I wellfield plan",
+      "note": "Well pads, gathering pipelines, separator stations and surface steam features over hillshade terrain",
+      "alt": "Plan-view map of the Zunil I wellfield over hillshade terrain, showing named production, injection and monitor wells grouped into pads, red and blue gathering pipelines, separator station pressures, and surface fumarole locations"
     }
   ],
   "source": "Figure adapted from Ormat Technologies' internal Zunil resource review materials; field history and resource parameters per the same source."

@@ -5,5 +5,15 @@
   "lng": -90.5749,
   "tier": 3,
   "status": "Exploración (delineación de descarga)",
-  "summary": "Extensión de la zona de descarga del campo productor de Amatitlán, centrada en el cráter Los Humitos al noreste de la planta existente — una pluma de descarga de 175–200°C alimentada por el yacimiento más profundo de Amatitlán (~285°C), accesible entre 250–650m de profundidad dentro del cráter, con un objetivo más profundo de ~190°C más adelante. La descarga está controlada estructuralmente por fallas normales de rumbo N/NO y fracturas en anillo del cráter, mapeadas por LiDAR. El trabajo actual se enfoca en confirmar la inyectividad y refinar el modelo estructural con geofísica MT."
+  "summary": "Extensión de la zona de descarga del campo productor de Amatitlán, centrada en el cráter Los Humitos al noreste de la planta existente — una pluma de descarga de 175–200°C alimentada por el yacimiento más profundo de Amatitlán (~285°C), accesible entre 250–650m de profundidad dentro del cráter, con un objetivo más profundo de ~190°C más adelante. La descarga está controlada estructuralmente por fallas normales de rumbo N/NO y fracturas en anillo del cráter, mapeadas por LiDAR. El trabajo actual se enfoca en confirmar la inyectividad y refinar el modelo estructural con geofísica MT.",
+  "detail": "Dos secciones de temperatura calibradas a través del sistema Amatitlán muestran por qué Amatitlán II se trata como un prospecto propio y no como una simple extensión: un gradiente pronunciado hacia el norte de más de 550°F (~290°C) cerca del campo principal hasta 150°F (~65°C) en aproximadamente 1.5km (N–S), y una sección W–E separada que muestra la pluma de descarga somera abombándose hacia la superficie entre dos de sus pozos definitorios. Los pozos existentes confirman que la descarga dirigida al norte es real y no ha mostrado enfriamiento observado desde que la planta principal entró en operación en 2007, pero la posición de tierra que respalda más perforación de delineación aún es pequeña y se está ampliando activamente.",
+  "figures": [
+    {
+      "key": "amatitlan-ii-temp-sections",
+      "fig": "Fig. — Secciones transversales de temperatura de Amatitlán II, N–S y W–E",
+      "note": "Bandas de temperatura calibradas (°F) a través del campo de pozos existente y el objetivo de descarga de Amatitlán II",
+      "alt": "Dos secciones transversales de temperatura apiladas del sistema geotérmico de Amatitlán: una sección norte-sur a través del campo de pozos principal mostrando bandas de temperatura de 550 a 150 grados Fahrenheit con pozos nombrados, y una sección oeste-este a través de la pluma de descarga de Amatitlán II mostrándola abombarse hacia la superficie entre dos pozos"
+    }
+  ],
+  "source": "Figura y parámetros del recurso adaptados de materiales internos del modelo conceptual de Amatitlán II de Ormat Technologies."
 }

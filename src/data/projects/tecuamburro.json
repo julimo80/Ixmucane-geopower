@@ -3,7 +3,23 @@
   "name": "Tecuamburro",
   "lat": 14.22,
   "lng": -90.40,
-  "tier": 3,
-  "status": "Exploration (hydrogeochemical)",
-  "summary": "High-enthalpy volcanic system southeast of Guatemala City. An INDE/Los Alamos exploratory slimhole reached 806m depth in andesitic lavas and pyroclastics, recording a bottomhole temperature of 235°C; gas and fluid geothermometry suggest the reservoir itself may reach up to 300°C. Now under renewed hydrogeochemical study."
+  "tier": 4,
+  "status": "Natural-state model, UQ & resource assessment complete",
+  "summary": "High-enthalpy volcanic system southeast of Guatemala City. One exploratory well reached 806m depth in andesitic lavas and pyroclastics at 235°C; geothermometry suggests the reservoir itself may reach up to 300°C. Now carried well beyond that single data point through our own natural-state calibration, full ensemble uncertainty quantification and automated resource assessment.",
+  "detail": "Built from a single exploratory well and surface geoscience, our natural-state model was pushed through a full uncertainty-quantification ensemble rather than left as one best-fit realisation — the two cross-sections below show the resulting P10–P90 spread on the 250°C, 270°C and 290°C isotherms at Tecuamburro, and the equivalent 160–200°C bands at the neighbouring Infiernitos resource, both studied together as one combined system. An automated resource-assessment algorithm then sited production and injection wells directly against that ensemble, shown here for one representative sample run. This is the same methodology behind our Tecuamburro–Infiernitos manuscript currently in preparation, and the source of the calibrated permeability cross-sections shown on our Technology page.",
+  "figures": [
+    {
+      "key": "tecuamburro-cross-section-a",
+      "fig": "Fig. A–A′ — Tecuamburro ensemble isotherms and RA well placement",
+      "note": "250°C / 270°C / 290°C ensemble P50 isotherms with P10–P90 spread, sample resource-assessment wells overlaid",
+      "alt": "Geological cross-section A-A' through Tecuamburro showing lithological units, faults, and ensemble uncertainty-quantification bands (P10-P90 spread) for the 250, 270 and 290 degree Celsius isotherms, with sample production and injection well feedzones from an automated resource assessment run"
+    },
+    {
+      "key": "tecuamburro-cross-section-b",
+      "fig": "Fig. B–B′ — Infiernitos ensemble isotherms and RA well placement",
+      "note": "160°C / 180°C / 200°C ensemble P50 isotherms with P10–P90 spread, same sample run",
+      "alt": "Geological cross-section B-B' through the neighbouring Infiernitos resource showing lithological units, faults, and ensemble uncertainty-quantification bands (P10-P90 spread) for the 160, 180 and 200 degree Celsius isotherms, with sample production and injection well feedzones from the same automated resource assessment run"
+    }
+  ],
+  "source": "Figures from our own in-preparation Tecuamburro–Infiernitos resource assessment manuscript."
 }

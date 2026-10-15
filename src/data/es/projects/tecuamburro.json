@@ -3,7 +3,23 @@
   "name": "Tecuamburro",
   "lat": 14.22,
   "lng": -90.40,
-  "tier": 3,
-  "status": "Exploración (hidrogeoquímica)",
-  "summary": "Sistema volcánico de alta entalpía al sureste de la Ciudad de Guatemala. Un pozo slimhole exploratorio de INDE/Los Alamos alcanzó 806m de profundidad en lavas andesíticas y piroclastos, registrando una temperatura de fondo de 235°C; la geotermometría de gases y fluidos sugiere que el yacimiento podría alcanzar hasta 300°C. Actualmente bajo estudio hidrogeoquímico renovado."
+  "tier": 4,
+  "status": "Modelo de estado natural, UQ y evaluación de recursos completos",
+  "summary": "Sistema volcánico de alta entalpía al sureste de la Ciudad de Guatemala. Un pozo exploratorio alcanzó 806m de profundidad en lavas andesíticas y piroclastos a 235°C; la geotermometría sugiere que el yacimiento podría alcanzar hasta 300°C. Ahora llevado mucho más allá de ese único dato mediante nuestra propia calibración de estado natural, cuantificación de incertidumbre por conjunto (ensemble) completa y evaluación automatizada de recursos.",
+  "detail": "Construido a partir de un único pozo exploratorio y geociencia de superficie, nuestro modelo de estado natural se llevó a través de un conjunto (ensemble) completo de cuantificación de incertidumbre en lugar de dejarlo como una sola realización de mejor ajuste — las dos secciones transversales a continuación muestran la dispersión P10–P90 resultante en las isotermas de 250°C, 270°C y 290°C en Tecuamburro, y las bandas equivalentes de 160–200°C en el recurso vecino de Infiernitos, ambos estudiados en conjunto como un sistema combinado. Un algoritmo automatizado de evaluación de recursos luego ubicó pozos de producción e inyección directamente contra ese conjunto, mostrado aquí para una corrida de muestra representativa. Esta es la misma metodología detrás de nuestro manuscrito Tecuamburro–Infiernitos actualmente en preparación, y la fuente de las secciones transversales de permeabilidad calibrada mostradas en nuestra página de Tecnología.",
+  "figures": [
+    {
+      "key": "tecuamburro-cross-section-a",
+      "fig": "Fig. A–A′ — Isotermas del conjunto y ubicación de pozos RA, Tecuamburro",
+      "note": "Isotermas P50 del conjunto de 250°C / 270°C / 290°C con dispersión P10–P90, pozos de muestra de evaluación de recursos superpuestos",
+      "alt": "Sección geológica transversal A-A' a través de Tecuamburro mostrando unidades litológicas, fallas, y bandas de incertidumbre del conjunto (dispersión P10-P90) para las isotermas de 250, 270 y 290 grados Celsius, con zonas de alimentación de pozos de producción e inyección de muestra de una corrida automatizada de evaluación de recursos"
+    },
+    {
+      "key": "tecuamburro-cross-section-b",
+      "fig": "Fig. B–B′ — Isotermas del conjunto y ubicación de pozos RA, Infiernitos",
+      "note": "Isotermas P50 del conjunto de 160°C / 180°C / 200°C con dispersión P10–P90, misma corrida de muestra",
+      "alt": "Sección geológica transversal B-B' a través del recurso vecino de Infiernitos mostrando unidades litológicas, fallas, y bandas de incertidumbre del conjunto (dispersión P10-P90) para las isotermas de 160, 180 y 200 grados Celsius, con zonas de alimentación de pozos de producción e inyección de muestra de la misma corrida automatizada de evaluación de recursos"
+    }
+  ],
+  "source": "Figuras de nuestro propio manuscrito en preparación sobre evaluación de recursos de Tecuamburro–Infiernitos."
 }

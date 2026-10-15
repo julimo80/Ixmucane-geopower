@@ -703,7 +703,7 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 }
 .back-link:hover{ color:var(--accent); }
 #project-detail .section-head{ max-width:72ch; }
-.project-detail-fig{ margin-top:32px; max-width:900px; }
+.project-detail-fig{ margin-top:32px; }
 .project-detail-fig + .project-detail-fig{ margin-top:24px; }
 
 /* TEAM */
