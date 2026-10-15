@@ -384,6 +384,10 @@ section{ padding-block:clamp(52px,7vw,92px); border-bottom:1px solid var(--borde
 .project-map-card .project-map{
   width:100%; height:320px; border-radius:3px; background:var(--fav-1);
 }
+.map-attribution{
+  margin-top:4px; padding:0 8px; font-size:9.5px; color:var(--text-dim); text-align:right;
+}
+.map-attribution a{ color:var(--text-dim); }
 .project-list{
   margin-top:10px; padding:0 8px; display:flex; flex-wrap:wrap; gap:6px;
 }

@@ -10,6 +10,7 @@ const { mapUi } = flagship;
 ---
 <div class="fav-card project-map-card">
   <div id="project-map" class="project-map" role="img" aria-label={mapUi.ariaLabel}></div>
+  <p class="map-attribution">&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
 
   <div class="project-list">
     {projects.map((p: any) => (
@@ -55,9 +56,8 @@ const { mapUi } = flagship;
     (mapEl as HTMLElement).dataset.initialized = 'true';
     const projects: Project[] = JSON.parse(dataEl.textContent || '[]');
 
-    const map = L.map(mapEl as HTMLElement, { scrollWheelZoom: false }).setView([14.6, -90.8], 7);
+    const map = L.map(mapEl as HTMLElement, { scrollWheelZoom: false, attributionControl: false }).setView([14.6, -90.8], 7);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 16,
     }).addTo(map);
 
