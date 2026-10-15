@@ -5,5 +5,27 @@
   "lng": -90.650,
   "tier": 4,
   "status": "Licensed prospect",
-  "summary": "Licensed for a 25 MW first-phase flash plant between Volcán de Agua and Pacaya, structurally controlled by faulting related to the Mixco Fault within the Guatemala City graben. 22 wells drilled to date; up to 274°C measured at depth. Conceptual model places a shallow 200–400m-deep, ~200°C target above a deeper resource that still needs drilling below 1200m to test its permeability."
+  "summary": "Licensed for a 25 MW first-phase flash plant between Volcán de Agua and Pacaya, structurally controlled by faulting related to the Mixco Fault within the Guatemala City graben. 22 wells drilled to date; up to 274°C measured at depth. Conceptual model places a shallow 200–400m-deep, ~200°C target above a deeper resource that still needs drilling below 1200m to test its permeability.",
+  "detail": "Quaternary-Tertiary volcanics sit on a Cretaceous granitic basement, with heatflow tied to Holocene volcanism and upflow channelled along structures related to the Mixco Fault. A Bouguer gravity survey across the field defines the two cross-section lines below: A-A′, running SE from the EC-4/EC-3/EC-5 cluster through EC-1 to the B-series wells, and B-B′, cutting the opposite way across EC-8 through to TG-9. Both sections show the same two-tier picture — a shallow reservoir in fractured rhyolite, volcanic breccia, andesite and granite beneath a clay cap, with 230°C measured directly at 1170m depth and a deeper, down-dip fracture target projected between 600–900m that still needs drilling to confirm.",
+  "figures": [
+    {
+      "key": "el-ceibillo-gravity-map",
+      "fig": "Fig. — El Ceibillo Bouguer gravity and cross-section locations",
+      "note": "Residual gravity contours over satellite imagery, with named wells and the A–A′ and B–B′ section lines",
+      "alt": "Plan-view map of El Ceibillo showing complete Bouguer gravity residual contours over satellite imagery, named EC deep wells, EC temperature-gradient wells and B-series wells, and the locations of the A-A' and B-B' cross-section lines"
+    },
+    {
+      "key": "el-ceibillo-cross-section-aa",
+      "fig": "Fig. A–A′ — El Ceibillo resource conceptual model",
+      "note": "Lithology, named wells and calibrated isotherms (100–250°C) through the shallow and deep reservoir targets",
+      "alt": "Geological cross-section A-A' through El Ceibillo showing tuff/breccia, rhyolite, volcanic breccia/andesite, granite and metamorphic lithology, the clay cap, named wells (EC and B series), and calibrated temperature isotherms from 100 to 250 degrees Celsius with a 230C measurement at 1170m depth annotated"
+    },
+    {
+      "key": "el-ceibillo-cross-section-bb",
+      "fig": "Fig. B–B′ — El Ceibillo resource conceptual model",
+      "note": "Orthogonal section showing the same reservoir and a projected deeper fracture target at 600–900m",
+      "alt": "Geological cross-section B-B' through El Ceibillo, orthogonal to A-A', showing the clay cap and shallow reservoir in fractured volcanic breccia, andesite and granite, named wells, calibrated isotherms, and a down-dip projected fracture target between 600 and 900 metres depth with projected 230C contour"
+    }
+  ],
+  "source": "Figures and resource parameters adapted from Ormat Technologies' internal El Ceibillo wells, cross-sections and gravity survey materials."
 }

@@ -5,5 +5,27 @@
   "lng": -90.650,
   "tier": 4,
   "status": "Prospecto licenciado",
-  "summary": "Licenciado para una planta flash de primera fase de 25 MW entre el Volcán de Agua y el Pacaya, controlado estructuralmente por fallamiento relacionado con la Falla de Mixco dentro del graben de la Ciudad de Guatemala. 22 pozos perforados hasta la fecha; hasta 274°C medidos en profundidad. El modelo conceptual ubica un objetivo somero de 200–400m de profundidad a ~200°C sobre un recurso más profundo que aún requiere perforación por debajo de 1200m para probar su permeabilidad."
+  "summary": "Licenciado para una planta flash de primera fase de 25 MW entre el Volcán de Agua y el Pacaya, controlado estructuralmente por fallamiento relacionado con la Falla de Mixco dentro del graben de la Ciudad de Guatemala. 22 pozos perforados hasta la fecha; hasta 274°C medidos en profundidad. El modelo conceptual ubica un objetivo somero de 200–400m de profundidad a ~200°C sobre un recurso más profundo que aún requiere perforación por debajo de 1200m para probar su permeabilidad.",
+  "detail": "Volcánicas del Cuaternario-Terciario se asientan sobre un basamento granítico cretácico, con flujo de calor ligado al vulcanismo del Holoceno y ascenso canalizado a lo largo de estructuras relacionadas con la Falla de Mixco. Un levantamiento de gravedad Bouguer a través del campo define las dos líneas de sección transversal a continuación: A-A′, que corre al SE desde el grupo EC-4/EC-3/EC-5 pasando por EC-1 hasta los pozos de la serie B, y B-B′, que cruza en sentido opuesto desde EC-8 hasta TG-9. Ambas secciones muestran el mismo panorama de dos niveles — un yacimiento somero en riolita fracturada, brecha volcánica, andesita y granito bajo una capa sello, con 230°C medidos directamente a 1170m de profundidad y un objetivo de fractura más profundo, proyectado entre 600–900m, que aún requiere perforación para confirmarse.",
+  "figures": [
+    {
+      "key": "el-ceibillo-gravity-map",
+      "fig": "Fig. — Gravedad Bouguer y ubicación de secciones transversales, El Ceibillo",
+      "note": "Contornos de gravedad residual sobre imagen satelital, con pozos nombrados y las líneas de sección A–A′ y B–B′",
+      "alt": "Mapa en planta de El Ceibillo mostrando contornos completos de gravedad residual Bouguer sobre imagen satelital, pozos EC profundos nombrados, pozos EC de gradiente de temperatura y pozos de la serie B, y las ubicaciones de las líneas de sección transversal A-A' y B-B'"
+    },
+    {
+      "key": "el-ceibillo-cross-section-aa",
+      "fig": "Fig. A–A′ — Modelo conceptual del recurso de El Ceibillo",
+      "note": "Litología, pozos nombrados e isotermas calibradas (100–250°C) a través de los objetivos somero y profundo del yacimiento",
+      "alt": "Sección geológica transversal A-A' de El Ceibillo mostrando litología de tufo/brecha, riolita, brecha volcánica/andesita, granito y rocas metamórficas, la capa sello, pozos nombrados (series EC y B), e isotermas de temperatura calibradas de 100 a 250 grados Celsius con una medición de 230C a 1170m de profundidad anotada"
+    },
+    {
+      "key": "el-ceibillo-cross-section-bb",
+      "fig": "Fig. B–B′ — Modelo conceptual del recurso de El Ceibillo",
+      "note": "Sección ortogonal mostrando el mismo yacimiento y un objetivo de fractura más profundo proyectado a 600–900m",
+      "alt": "Sección geológica transversal B-B' de El Ceibillo, ortogonal a A-A', mostrando la capa sello y el yacimiento somero en brecha volcánica, andesita y granito fracturados, pozos nombrados, isotermas calibradas, y un objetivo de fractura proyectado en profundidad entre 600 y 900 metros con contorno proyectado de 230C"
+    }
+  ],
+  "source": "Figuras y parámetros del recurso adaptados de materiales internos de pozos, secciones transversales y levantamiento de gravedad de El Ceibillo de Ormat Technologies."
 }
