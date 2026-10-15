@@ -1,0 +1,97 @@
+---
+import 'leaflet/dist/leaflet.css';
+import { loadData } from '../i18n/data';
+import projectKeys from '../data/projectsIndex.json';
+
+const locale = Astro.currentLocale ?? 'en';
+const flagship = loadData(locale, 'flagship');
+const projects = (projectKeys as string[]).map((key) => loadData(locale, `projects/${key}`));
+const { mapUi } = flagship;
+---
+<div class="fav-card project-map-card">
+  <div id="project-map" class="project-map" role="img" aria-label={mapUi.ariaLabel}></div>
+
+  <div class="project-list">
+    {projects.map((p: any) => (
+      <button type="button" class="project-pill" data-key={p.key}>
+        <span class="dot" style={`background:var(--fav-${p.tier})`}></span>
+        {p.name}
+      </button>
+    ))}
+  </div>
+
+  <div class="project-panel" id="project-panel">
+    <p class="project-panel-hint">{mapUi.hint}</p>
+  </div>
+
+  <p class="field-source">{mapUi.sourceNote}</p>
+
+  <div class="cap">
+    <span>{flagship.mapCaption.fig}</span>
+    <span>{flagship.mapCaption.note}</span>
+  </div>
+</div>
+
+<script type="application/json" id="project-map-data" set:html={JSON.stringify(projects)}></script>
+<script>
+  import L from 'leaflet';
+  import markerIcon from 'leaflet/dist/images/marker-icon.png?url';
+  import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png?url';
+  import markerShadow from 'leaflet/dist/images/marker-shadow.png?url';
+
+  delete (L.Icon.Default.prototype as any)._getIconUrl;
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl: markerIcon2x,
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+  });
+
+  type Project = { key: string; name: string; lat: number; lng: number; tier: number; status: string; summary: string };
+
+  const dataEl = document.getElementById('project-map-data');
+  const mapEl = document.getElementById('project-map');
+  const panel = document.getElementById('project-panel');
+  if (dataEl && mapEl && panel && !(mapEl as HTMLElement).dataset.initialized) {
+    (mapEl as HTMLElement).dataset.initialized = 'true';
+    const projects: Project[] = JSON.parse(dataEl.textContent || '[]');
+
+    const map = L.map(mapEl as HTMLElement, { scrollWheelZoom: false }).setView([14.6, -90.8], 7);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 16,
+    }).addTo(map);
+
+    const markers: Record<string, L.Marker> = {};
+
+    function showProject(p: Project) {
+      panel.innerHTML = `
+        <h4>${p.name}</h4>
+        <span class="project-status">${p.status}</span>
+        <p>${p.summary}</p>
+      `;
+      document.querySelectorAll('.project-pill').forEach((el) => {
+        el.classList.toggle('active', el.getAttribute('data-key') === p.key);
+      });
+    }
+
+    projects.forEach((p) => {
+      const marker = L.marker([p.lat, p.lng]).addTo(map);
+      markers[p.key] = marker;
+      marker.on('click', () => {
+        showProject(p);
+        map.panTo(marker.getLatLng());
+      });
+    });
+
+    document.querySelectorAll('.project-pill').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-key');
+        const p = projects.find((pr) => pr.key === key);
+        if (p) {
+          showProject(p);
+          map.setView([p.lat, p.lng], 11);
+        }
+      });
+    });
+  }
+</script>

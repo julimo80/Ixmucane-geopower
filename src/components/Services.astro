@@ -1,6 +1,6 @@
 ---
 import { loadData } from '../i18n/data';
-import FavorabilityMap from './FavorabilityMap.astro';
+import ProjectMap from './ProjectMap.astro';
 import DrawingGallery from './DrawingGallery.astro';
 import MufflerThermo from './MufflerThermo.astro';
 import ServicePhotoGallery from './ServicePhotoGallery.astro';
@@ -27,7 +27,7 @@ const servicesPage = loadData(locale, 'servicesPage');
           {flagship.tags.map((tag) => <span class="tag">{tag}</span>)}
         </div>
       </div>
-      <FavorabilityMap />
+      <ProjectMap />
     </div>
 
     <div class="svc-grid">
