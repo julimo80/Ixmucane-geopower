@@ -5,15 +5,5 @@
   "lng": -90.6068,
   "tier": 5,
   "status": "Producing",
-  "summary": "25.2 MWe installed capacity — 3 units (2×12 MW + 1×1.2 MW), online since 2007",
-  "detail": "A deep 285°C Na-Cl reservoir with upflow concentrated around the AMF-2/AMF-6 area, magmatically heated by the active Pacaya volcano and structurally controlled by overlapping caldera faults and a post-caldera dacite intrusion. The wellfield currently runs 5 active production wells plus 1 idle (AMF-1RD, AMF-2, AMF-5, AMF-6, AMF-8) feeding the plant, with 2 active injectors (AMF-3, AMF-4) returning fluid northward along the outflow path. Field pressure drew down fast in 2007–09 immediately after startup; the original AMF-1 then suffered scaling and mechanical failures through 2009–13, AMF-8 lost productivity over the same period, and its replacement AMF-1RD has needed recurring mechanical and acid cleaning for calcite scale since 2013.",
-  "figures": [
-    {
-      "key": "amatitlan-summary-map",
-      "fig": "Fig. — Amatitlán resource summary map",
-      "note": "Wellfield layout, reservoir-area estimate, steam vents and mapped faults over hillshade terrain",
-      "alt": "Plan-view resource map of the Amatitlán geothermal field showing production and injection well locations, the pipeline network, steam vent surface manifestations, surface alteration zone, mapped faults and a P10/P90 reservoir-area estimate, overlaid on hillshade terrain near Lake Amatitlán"
-    }
-  ],
-  "source": "Figure and wellfield data adapted from Ormat Technologies' internal Amatitlán resource review materials."
+  "summary": "25.2 MWe installed capacity — 3 units (2×12 MW + 1×1.2 MW), online since 2007"
 }

@@ -5,15 +5,5 @@
   "lng": -90.650,
   "tier": 4,
   "status": "Prospecto licenciado",
-  "summary": "Licenciado para una planta flash de primera fase de 25 MW entre el Volcán de Agua y el Pacaya, controlado estructuralmente por fallamiento relacionado con la Falla de Mixco dentro del graben de la Ciudad de Guatemala. 22 pozos perforados hasta la fecha; hasta 274°C medidos en profundidad. El modelo conceptual ubica un objetivo somero de 200–400m de profundidad a ~200°C sobre un recurso más profundo que aún requiere perforación por debajo de 1200m para probar su permeabilidad.",
-  "detail": "Volcánicas del Cuaternario-Terciario se asientan sobre un basamento granítico cretácico, con flujo de calor ligado al vulcanismo del Holoceno y ascenso canalizado a lo largo de estructuras relacionadas con la Falla de Mixco. El levantamiento de gravedad Bouguer a continuación define dos líneas de sección transversal a través del campo — A-A′, que corre al SE desde el grupo EC-4/EC-3/EC-5 pasando por EC-1 hasta los pozos de la serie B, y B-B′, que cruza en sentido opuesto desde EC-8 hasta TG-9 — construidas a partir de un modelo conceptual de dos niveles: un yacimiento somero en riolita fracturada, brecha volcánica, andesita y granito bajo una capa sello, con 230°C medidos directamente a 1170m de profundidad y un objetivo de fractura más profundo, proyectado entre 600–900m, que aún requiere perforación para confirmarse.",
-  "figures": [
-    {
-      "key": "el-ceibillo-gravity-map",
-      "fig": "Fig. — Gravedad Bouguer y ubicación de secciones transversales, El Ceibillo",
-      "note": "Contornos de gravedad residual sobre imagen satelital, con pozos nombrados y las líneas de sección A–A′ y B–B′",
-      "alt": "Mapa en planta de El Ceibillo mostrando contornos completos de gravedad residual Bouguer sobre imagen satelital, pozos EC profundos nombrados, pozos EC de gradiente de temperatura y pozos de la serie B, y las ubicaciones de las líneas de sección transversal A-A' y B-B'"
-    }
-  ],
-  "source": "Figura y parámetros del recurso adaptados de materiales internos de pozos, secciones transversales y levantamiento de gravedad de El Ceibillo de Ormat Technologies."
+  "summary": "Licenciado en 2010 para una planta flash de primera fase de 25 MW a unos 14km al suroeste de la Ciudad de Guatemala, cerca del complejo de volcanes gemelos Agua–Pacaya. Licencia ambiental para la primera fase emitida en 2013; perfil detallado del recurso en preparación."
 }

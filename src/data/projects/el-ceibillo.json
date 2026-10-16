@@ -5,15 +5,5 @@
   "lng": -90.650,
   "tier": 4,
   "status": "Licensed prospect",
-  "summary": "Licensed for a 25 MW first-phase flash plant between Volcán de Agua and Pacaya, structurally controlled by faulting related to the Mixco Fault within the Guatemala City graben. 22 wells drilled to date; up to 274°C measured at depth. Conceptual model places a shallow 200–400m-deep, ~200°C target above a deeper resource that still needs drilling below 1200m to test its permeability.",
-  "detail": "Quaternary-Tertiary volcanics sit on a Cretaceous granitic basement, with heatflow tied to Holocene volcanism and upflow channelled along structures related to the Mixco Fault. The Bouguer gravity survey below defines two cross-section lines through the field — A-A′, running SE from the EC-4/EC-3/EC-5 cluster through EC-1 to the B-series wells, and B-B′, cutting the opposite way across EC-8 through to TG-9 — built from a two-tier conceptual model: a shallow reservoir in fractured rhyolite, volcanic breccia, andesite and granite beneath a clay cap, with 230°C measured directly at 1170m depth and a deeper, down-dip fracture target projected between 600–900m that still needs drilling to confirm.",
-  "figures": [
-    {
-      "key": "el-ceibillo-gravity-map",
-      "fig": "Fig. — El Ceibillo Bouguer gravity and cross-section locations",
-      "note": "Residual gravity contours over satellite imagery, with named wells and the A–A′ and B–B′ section lines",
-      "alt": "Plan-view map of El Ceibillo showing complete Bouguer gravity residual contours over satellite imagery, named EC deep wells, EC temperature-gradient wells and B-series wells, and the locations of the A-A' and B-B' cross-section lines"
-    }
-  ],
-  "source": "Figure and resource parameters adapted from Ormat Technologies' internal El Ceibillo wells, cross-sections and gravity survey materials."
+  "summary": "Licensed in 2010 for a 25 MW first-phase flash plant about 14km southwest of Guatemala City, near the Agua–Pacaya twin-volcano complex. Environmental license for the first phase issued in 2013; detailed resource profile in preparation."
 }
